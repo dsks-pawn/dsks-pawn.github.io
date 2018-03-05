@@ -1,0 +1,49 @@
+img {
+	max-width: 500px;
+
+}
+
+a:link {
+	color: pink;
+}
+a:visited {
+	color: grey;
+}
+a:hover {
+	color: green
+}
+a:active {
+	color: red;
+}
+
+
+img:active {
+	border-radius: 10%;
+}
+
+h1 {
+	color: purple;
+	text-indent: 30px;
+}
+
+#virus {
+	color: #668cff;
+}
+
+h2 {
+	color: blue;
+}
+
+h4 {
+
+	text-align: right;
+}
+
+h6 {
+	color: red;
+	font-size: 15px;
+}
+
+p {
+	text-align: justify;
+}
