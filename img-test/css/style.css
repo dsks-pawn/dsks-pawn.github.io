@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+#wrap {
+	max-width: 1200px;
+	margin: auto;
+}
+
+
+#main {
+	text-align: center;
+	font-size: 30px;
+	color: #ac3939;
+	
+}
+
+div #main a {
+	text-decoration: none; 
+}
+
+
+h1 {
+	text-align: center;
+}
+
+.content img {
+	width: 100%;
+	margin-right: 20px;
+	border-top-width: 5px;
+	float: left;
+}
+
+span {
+	color: blue;
+}
+
+img:hover {
+	border-radius: 20px;
+}
+
+
+a:link {
+	color: #cc0000;
+}
+a:visited {
+	color: grey;
+}
+a:hover {
+	color: green;
+}
+a:active {
+	color: red;
+}
