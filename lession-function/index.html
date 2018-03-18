@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Test JS</title>
+	<link rel="stylesheet">
+</head>
+<body>
+		<script>
+
+			/*- Bài 1. Viết 1 function tính bình phương của 1 số.
+			Tham số truyền vào là 1 số.
+			Kết quả là bình phương của số đó.*/
+
+			function example(x) {
+				return x * x;
+			}
+
+			console.log(example(4));
+
+			/*- Bài 2. Cho 3 số a, b và c. Viết function tính bình phương của (3a + 2b - c)
+
+			Tham số truyền vào là 3 số a, b, c.
+			Kết quả là bình phương của (3a + 2b - c). Sử dụng hàm viết sẵn của Bài 1.*/
+
+			function example2(a, b, c) {
+				return example(3*a + 2*b - c);
+			}
+
+			console.log(example2(3,4,5));
+			
+			/*- Bài 3. Cho 1 chuỗi dài hơn 30 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu "..." ở cuối chuỗi.
+
+				Tham số truyền vào là 1 chuỗi dài hơn 30 ký tự.
+				Kết quả là chuỗi đó sau khi cắt đi còn 10 ký tự, cuối chuỗi có dấu "..." biểu thị là chuỗi bị cắt.*/
+
+			var string = "Tham số truyền vào là 1 chuỗi dài hơn 30 ký tự."
+
+			function example3(string) {
+				return ("10 ký tự đầu tiên: " + string.substr(0, 10) + "..." + "<br/>")
+			}
+
+			document.write(example3(string));
+
+			/*- Bài 4. Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên.
+
+			Tham số truyền vào là 1 chuỗi.
+			Kết quả là 1 chuỗi mới chỉ viết hoa từ đầu tiên. Ví dụ "welcome to Techmaster" sẽ được convert thành "Welcome to techmaster".*/
+
+			var string = 'viết hoa từ đầu tiên'
+			function example4(string) {
+
+				return string.charAt(0).toUpperCase() + string.slice(1);
+			}
+
+			document.write(example4(string));
+
+		</script>
+	
+
+
+
+
+
+</body>
+</html>
