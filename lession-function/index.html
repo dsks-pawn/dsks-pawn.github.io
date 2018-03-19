@@ -92,41 +92,42 @@
 			firstName: "Tieu",
 			 lastName: "Phong",
 			 age: 22,
-			 say: function(firstName, lastName, age) {
-			 	
-
+			 say: function() {
+			 	document.write();
 			 }
-			}
-
+			 }
+				
 			var student = {
 			firstName: "Doan",
 			 lastName: "Du",
 			 age: 27,
-			 say: function(firstName, lastName, age){
-
+			 say: function() {
+			 	document.write();
 			 }
-			}
-
-
+			 }
+			
 			var parent = {
 			firstName: "Hu",
 			 lastName: "Truc",
 			 age: 33,
-			 say: function(firstName, lastName, age){
-			 	
+			  say: function() {
+			 	document.write();
 			 }
-			}		
-			
-
-			function aboutMe(){	
-				document.write("Xin chào các bạn tôi là " + " năm nay tôi  tuổi");
 			}	
 			
 			teacher.say = aboutMe;
+			student.say = aboutMe;
+			parent.say = aboutMe;
+			
+			
+			function aboutMe() {
+						document.write('Chào các bạn tôi là ' + this.firstName + this.lastName + " tôi " + this.age + " tuổi");
+					}
+
+		
 
 
-
-
+		
 
 
 		</script>
