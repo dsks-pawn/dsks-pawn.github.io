@@ -38,7 +38,7 @@
 			var string = "Tham số truyền vào là 1 chuỗi dài hơn 30 ký tự."
 
 			function example3(string) {
-				return ("10 ký tự đầu tiên: " + string.substr(0, 10) + "..." + "<br/>")
+				return ("10 ký tự đầu tiên: " + string.substr(0, 10) + "..." + "<br/>");
 			}
 
 			document.write(example3(string));
@@ -48,13 +48,86 @@
 			Tham số truyền vào là 1 chuỗi.
 			Kết quả là 1 chuỗi mới chỉ viết hoa từ đầu tiên. Ví dụ "welcome to Techmaster" sẽ được convert thành "Welcome to techmaster".*/
 
-			var string = 'viết hoa từ đầu tiên'
+			var string = 'viết hoa từ đầu tiên';
 			function example4(string) {
 
-				return string.charAt(0).toUpperCase() + string.slice(1);
+				return string.charAt(0).toUpperCase() + string.slice(1) + "<br/>";
 			}
 
 			document.write(example4(string));
+
+			/*- Bài 5. Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số.
+
+			Tham số truyền vào là 1 mảng các số.
+			Kết quả là số nhỏ nhất trong mảng.
+			Gợi ý: có thể dùng phương thức sort() hoặc object Math, chú ý khi sort số khác với chữ.*/
+
+			var arr = [10, 22, 55, -89, 44, 84, 5, -4];
+			
+			function example5(arr) {
+				return arr.sort(function(a, b){return a-b});
+				
+			}
+			document.write("Số nhỏ nhất mảng: " + example5(arr).slice(0, 1) + "<br/>");
+
+			/*- Bài 6. Cho 1 mảng gồm tên của 5 học viên. Hãy viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên.
+
+			Tham số truyền vào là 1 mảng gồm tên của 5 người.
+			Kết quả: In ra màn hình danh sách các học viên theo thứ tự bảng chữ cái (tiếng Anh), không phân biệt hoa thường.*/
+
+			var arr2 = ['Phuong', 'Mai', 'Nhung', 'An', 'Binh'];
+
+			function example6(arr2) {
+				return arr2.sort();
+			}
+				document.write(example6(arr2));
+			/*- Bài 7. Tạo 3 đối tượng là teacher, student và parent. Mỗi đối tượng đều có các thuộc tính: firstName, lastName, age. Cả 3 đối tượng đều có chung 1 phương thức là say(). Hãy viết function aboutMe() in ra màn hình 1 câu giới thiệu bản thân và gán vào phương thức say() của các đối tượng trên.
+
+			Function aboutMe() không có tham số truyền vào.
+			Khi truy xuất đến phương thức say() của một đối tượng bất kỳ trong 3 đối tượng tạo sẵn teacher, student và parent thì phải in ra được giá trị các thuộc tính của đối tượng đó.*/
+
+
+
+			var teacher = {
+			firstName: "Tieu",
+			 lastName: "Phong",
+			 age: 22,
+			 say: function(firstName, lastName, age) {
+			 	
+
+			 }
+			}
+
+			var student = {
+			firstName: "Doan",
+			 lastName: "Du",
+			 age: 27,
+			 say: function(firstName, lastName, age){
+
+			 }
+			}
+
+
+			var parent = {
+			firstName: "Hu",
+			 lastName: "Truc",
+			 age: 33,
+			 say: function(firstName, lastName, age){
+			 	
+			 }
+			}		
+			
+
+			function aboutMe(){	
+				document.write("Xin chào các bạn tôi là " + " năm nay tôi  tuổi");
+			}	
+			
+			teacher.say = aboutMe;
+
+
+
+
+
 
 		</script>
 	
