@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Branching one</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script >
+
+	//exercise 1
+	function compare(a,  b) {
+		if(typeof a == "number" &&  typeof b == "number") {  
+			if(a>b) {
+				document.write("a > b");
+				return(" a > b ");
+			}
+			if(b>a){
+				document.write("a < b");
+				return(" a < b ");
+			}
+		}
+	}
+
+
+	//exercise 2
+
+	function factorial(x) {	
+		if (x > 0) {
+			var kq = 1;
+			for(i=1;  i<=x; i++){
+				kq = kq *i;
+			}
+			return (kq);
+		}
+	}
+
+	//exercise 3
+	
+	function uot(random){
+		var group = [];
+		for(var i = 0; i < random.length; i++){
+			if(random[i] % 2 != 1){
+				group.push(random[i]);
+
+			}
+		}return group.sort(function(a, b){return b-a});
+	}
+
+	
+
+
+		//exercise 4
+
+		function validateUserObj() {
+			var user = {
+				username: prompt('username'),
+				password: prompt('password'),
+				confirm: prompt('confirm'),
+			}
+
+			$flag = 0;
+
+            // check username
+            if(user.username.length > 0 && user.username.length <= 20){
+            	$flag++;
+            	console.log('Username is valid!');
+            }else{
+            	console.log('Error: username not invalid!');
+            }
+            
+             // check password
+             if(user.password.length >= 6 && user.password.length <= 32){
+             	$flag++;
+             	console.log('Password is valid!');
+             }else{
+             	console.log('Error: Password not invalid!');
+             }
+
+            // check confirm
+            if(user.confirm.length >=6 && user.confirm.length <=32 && user.password === user.confirm){
+            	$flag++;
+            	console.log('Confirm is valid!');
+            }else{
+            	console.log('Error: Confirm not invalid!');
+            }
+            
+            if($flag == 3){
+            	return 'User object is valid!';
+            }else{
+            	return 'User object is invalid!'
+            }
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
