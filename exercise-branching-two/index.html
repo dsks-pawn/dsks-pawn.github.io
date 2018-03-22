@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Branching two</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script >
+
+	//exercise 1
+/*- Bài 1. In ra màn hình ngày, tháng năm hiện tại và xác định đó là mùa nào trong năm. Ví dụ lấy ngày tháng năm hiện tại bằng đối tượng Date của javascript:
+
+		var now = new Date();   // Lấy thời gian hiện tại
+		var date = now.getDate();   // Lấy ngày từ thời gian hiện tại
+		var month = now.getMonth() + 1;   // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
+		var year = now.getFullYear();   // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại*/
+		
+
+		var time = new Date();
+		var date = time.getDate();
+		document.write('Date :' + date);
+		var month = time.getMonth() + 1;
+		document.write('Month :' + month);
+		var year = time.getFullYear();
+		document.write('Year :' + year);
+
+		function xacDinh() {
+			if(month > 1 && month <= 3){
+				document.write('Mùa xuân');
+			}
+			else if(month > 3  && month <= 6){
+				document.write('Mùa hạ');
+			}
+			else if(month > 6 && month <= 9){
+				document.write('Mùa thu');
+			}
+			else (month > 9 && month <= 12){
+				document.write('Mùa đông');
+			}
+			
+		}
+	</script>
+
+
+
+</body>
+</html>
