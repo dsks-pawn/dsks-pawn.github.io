@@ -45,16 +45,16 @@
 
 	function docking(){
 		var arrN = arrName.sort();
-		for(var i=0; i<arrN.length; i++){
-			document.write("<p>" + i + " " + arrN[i]+"</p>");
+		for(var i=0; i < arrName.length; i++){
+			document.write("<p>" + [i+1] + " " + arrN[i]+"</p>");
 		}
+		return arrN;
 	}
 
 
 
 	//Example 5
-
-	var num = [1,3,4]
+		var num = [1,3,4];
 		function duplicated() {
 			var depot = [];
 			for(i=0; i<num.length; i++){

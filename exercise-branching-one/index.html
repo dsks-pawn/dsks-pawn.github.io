@@ -15,12 +15,20 @@
 				document.write("a > b");
 				return(" a > b ");
 			}
-			if(b>a){
+			else if(b>a){
 				document.write("a < b");
 				return(" a < b ");
 			}
+			else {
+				document.write("a = b");
+				return(" a = b ");
+				}
+			}
+		else {
+			document.write("1 trong 2 số, hoặc cả 2 không phải number")
+		}	
 		}
-	}
+	
 
 
 	//exercise 2
@@ -32,6 +40,9 @@
 				kq = kq *i;
 			}
 			return (kq);
+		}
+		else {
+			document.write("số bạn nhập không phải là số nguyên dương")
 		}
 	}
 
