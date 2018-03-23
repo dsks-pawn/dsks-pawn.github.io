@@ -4,43 +4,172 @@
 
 	<title>Branching two</title>
 	<meta charset="utf-8">
+	<style type="text/css">
+		
+
+
+	</style>
+
 </head>
 <body>
 	<script >
 
-	//exercise 1
-/*- Bài 1. In ra màn hình ngày, tháng năm hiện tại và xác định đó là mùa nào trong năm. Ví dụ lấy ngày tháng năm hiện tại bằng đối tượng Date của javascript:
+	//Exercise 1
 
-		var now = new Date();   // Lấy thời gian hiện tại
-		var date = now.getDate();   // Lấy ngày từ thời gian hiện tại
-		var month = now.getMonth() + 1;   // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
-		var year = now.getFullYear();   // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại*/
-		
 
-		var time = new Date();
-		var date = time.getDate();
-		document.write('Date :' + date);
-		var month = time.getMonth() + 1;
-		document.write('Month :' + month);
-		var year = time.getFullYear();
-		document.write('Year :' + year);
+	var time = new Date();
+	var date = time.getDate();
+	document.write('Ngày: ' + date +'<br/>');
+	var month = time.getMonth() + 1;
+	document.write('Tháng: ' + month+'<br/>');
+	var year = time.getFullYear();
+	document.write('Năm: ' + year+'<br/>');
 
-		function xacDinh() {
-			if(month > 1 && month <= 3){
-				document.write('Mùa xuân');
-			}
-			else if(month > 3  && month <= 6){
-				document.write('Mùa hạ');
-			}
-			else if(month > 6 && month <= 9){
-				document.write('Mùa thu');
-			}
-			else (month > 9 && month <= 12){
-				document.write('Mùa đông');
+	function xacDinh() {
+		var kq;
+		if(month > 1 && month <= 3){
+			kq= 'Mùa Xuân';
+		}
+		else if(month > 3  && month <= 6){
+			kq= 'Mùa Hạ';
+		}
+		else if(month > 6 && month <= 9){
+			kq= 'Mùa Thu';
+		}
+		else{
+			kq= 'Mùa Đông';
+		}
+		return "Hiện tại đang là mùa " + kq;
+	}
+
+	//Exercise 2
+	
+
+	var str = 12345321321321;
+
+	function checkStr(){
+		if(typeof str == 'string'){
+			if (str.length > 10) {
+				str = str.slice(0,10)+ "...";
 			}
 			
+			return str;
 		}
-	</script>
+		else if(typeof str == 'number'){
+			str = str.toString();
+			if(str.length > 10){
+				str = str.slice(0,10)+ "...";
+			}
+			return str;
+		}
+		
+		else {
+			document.write("Không xác định được dữ liệu");
+		}
+	}	
+
+	//Exercise 3
+
+	var x;
+
+	function scores(x) {
+		if(x >= 0 && x <= 10) {
+			if (x <= 3.9) {
+				document.write('Điểm F')
+			}
+			else if(x <= 5.4) {
+				document.write('Điểm D');
+			}
+			else if(x <= 6.9) {
+				document.write('Điểm C');
+			}
+			else if(x <= 8.4) {
+				document.write('Điểm B');
+			}
+			else {
+				document.write('Điểm A');
+			}
+		}
+
+		else {
+			alert("Số không được xác định");
+		}
+		return x;	
+	}
+
+
+	//Exercise 4
+	
+
+	function translate(){
+		var u = prompt("Nhập mã quốc gia mà bạn muốn translate (it, am, jp, np, mt)");
+		document.write("Translate Vietnames: Xin Chào <br/>");
+		var kqkq = "";
+		switch (u) {
+			
+			case 'it':
+			kqkq = ("Ciao");
+			break;
+
+			case 'am':
+			kqkq = ("Բարեւ");
+			break;
+
+			case 'jp':
+			kqkq = ("こんにちは");
+			break;
+
+			case 'np':
+			kqkq = ("नमस्ते");
+			break;
+
+			case 'mt':
+			kqkq = ("Bongu");
+			break;
+
+			default:
+			alert("Mã bạn cần không có sẵn");
+		}
+		document.write("Translate từ Hello theo mã quốc gia bạn cần là: " + kqkq + "<br/>");
+
+	}
+	
+	//Exercise 5
+
+	//True sẽ bị ngắt ở vị trí đầu tiên
+
+
+	var arr = [false, false, false, true, false, true, false, true];
+	
+	function seachTrue() {
+		document.write("Mảng gốc " + arr + " sẽ bị ngắt ở vị trí true đầu tiên")
+		for (var i = 0; i <= arr.length; i++) {
+			document.write("<br>" + arr[i] + "<br/>");
+			if(arr[i] == true) {
+				break;
+
+			}
+		}
+	}
+
+	//Exercise 6
+
+	/*- Bài 6. Chỉ sử dụng while hoặc for, hãy viết function in ra màn hình các số từ 1 đến 100. Với điều kiện những giá trị là chẵn sẽ có màu xanh, giá trị lẻ có màu đỏ.*/
+
+	function print() {
+		for (var j = 1; j <= 100; j++) {
+			if([j] % 2 == 1){
+				document.write("<br> <h1 style="color:red;">" + [j] + "</h1> <br/>");
+			}
+			else {
+				document.write("<br> <h1 style="color:red;">" + [i] + "</h1> <br/>");
+			}
+		}
+	}
+
+
+
+</script>
 
 
 
