@@ -1,0 +1,50 @@
+
+#master {
+	width:  600px;
+	height: 600px;
+	border: 3px solid black;
+	margin: 0 auto;
+	margin-top: 75px;
+	position: relative;
+	
+}
+
+#title {
+	width: 600px;
+	height: 35px;
+	border-bottom: 3px solid black;
+}
+span {	
+
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+#content {
+	margin: 0 auto;
+}
+ #login {
+	 width: 300px;
+  	 height:300px;
+	border: 3px solid black;
+	margin: auto;
+	margin-top: 90px;
+}  
+
+#write {
+	font-size: 65px;
+}
+#input {
+
+	text-shadow: 5px 5px 5px black;
+}
+#below {
+	height: 35px;
+	width: 600px;
+	position: absolute;
+	bottom: 0px;
+	border-top: 3px solid black;
+	
+	
+}
