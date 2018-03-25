@@ -1,0 +1,188 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#master {
+	width: 1200px;
+	height: 1200px;
+	border: 3px solid black;
+	margin: 0 auto;
+}
+#seach {
+	width: 1200px;
+	height: 100px;
+	border-bottom:  3px solid black;
+	background-color: gainsboro;
+}
+#icon {
+	display: -webkit-inline-box;
+	float: left;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+img {
+	padding-right: 10px;
+	width: 50px;
+}
+
+#put {
+	padding-left: 20px;
+	font-size: 30px;
+}
+#put-1 {
+	width: 770px;
+	border-radius: 5%;
+	height: 25px;
+}
+#put-2 {
+	width: 100px;
+	margin-left: 20px;
+	border-radius: 20%;
+	height: 25px;
+}
+#manager {
+	width: 1200px;
+	height: 100px;
+	border-bottom:  3px solid black;
+}
+#round {
+	width: 85px;
+	height: 85px;
+	border: 3px solid black;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-left: 870px;
+} 
+#round-2  p {
+	margin-left: 1000px;
+	margin-top: -60px;
+	font-size: 30px;
+}
+#title h1 {
+	text-align: center;
+	
+}
+#title input {
+	margin-left: 23px;
+	font-size: 20px;
+	border: 1px solid black;
+
+}
+#content-1 {
+	width: 1150px;
+	height: 820px;
+	border: 3px solid black;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#content-2 {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+#content-2 h1 {
+	margin-top: -51px;
+	padding-left: 62px;
+}
+#content-2 input{
+	margin-left: 610px;
+	float: left;
+	margin-top: -30px;
+	font-size: 20px;
+	background-color: #ffcc80;
+	 border: 3px solid black;
+}
+
+#content-4 {
+	border: 3px solid black;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-left: 100px;
+	margin-top: 15px;
+}
+#content-4 img {
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+#content-5 {
+	float: left;
+	display: -webkit-inline-box;
+	margin-left: 166px;
+	margin-top: -35px;
+	font-size: 20px;
+}
+#content-5 p {
+	padding-right: 50px;
+}
+#dash {
+	width: 530px;
+	border: 1px solid black;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+#between {
+	margin-top: 50px;
+	margin-left: 70px;
+}
+#between img {
+	margin-top: 40px;
+	width: 40px;
+}
+#andress {
+	margin-left: 30px;
+	display: inline;
+	font-size: 20px;
+}
+#andress-2 {
+	float: right;
+	margin-top: 15px;
+	margin-right: 100px;
+	border-radius: 50%;
+}
+#andress-2  input{
+	font-size: 20px;
+	border-radius: 15%;
+}
+#dash-1 {
+	margin: 0 auto;
+	width: 530px;
+	border: 1px solid black;
+	margin-top: 80px;
+
+}
+#drawing h2{
+	margin-top: 20px;
+	margin-left: 55px;
+}
+table, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+
+}
+table {
+	width: 90%;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+#load	{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+#below {
+
+	width: 1200px;
+	height: 40px;
+	border-top: 3px solid black;
+	margin-top: 30px;
+	background-color: gainsboro;
+}
+#below p {
+	float: right;
+	font-size: 30px;
+}
