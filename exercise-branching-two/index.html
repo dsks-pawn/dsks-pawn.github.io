@@ -142,9 +142,9 @@
 	var arr = [false, false, false, true, false, true, false, true];
 	
 	function seachTrue() {
-		document.write("Mảng gốc " + arr + " sẽ bị ngắt ở vị trí true đầu tiên")
+		
 		for (var i = 0; i <= arr.length; i++) {
-			document.write("<br>" + arr[i] + "<br/>");
+			document.write("<br>" + [i+1] + " " + arr[i] + "<br/>");
 			if(arr[i] == true) {
 				break;
 

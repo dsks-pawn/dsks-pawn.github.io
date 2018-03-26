@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#master  {
+	width: 800px;
+	height: 400px;
+	border: 3px solid black;
+	margin: 0 auto;
+}
+#ip {
+	margin-top: 80px;
+	margin-left: 40px;
+}
+#master input {
+	margin: 0 auto;
+	border: 1px solid grey;
+	font-size: 50px;
+	width: 720px;
+	height: 100px;
+}
+#master button {
+	font-size: 40px;
+	height: 70px;
+	width: 70px;
+}

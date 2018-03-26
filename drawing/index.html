@@ -41,7 +41,7 @@
 	// 				}
 	// 				str += '<br/>';
 	// 			}
-				
+
 	// 			else if ( i > 1 && i < a) {
 	// 				str +=  "*";
 
@@ -54,7 +54,7 @@
 	// 			}
 
 	// 		}
-			
+
 	// 		return str;
 	// 	}
 	// 	else {
@@ -62,7 +62,7 @@
 	// 	}
 	// }
 	
-	//  Example 2 
+	//  Example 3 
 	// Bài 3. Viết function printSpecialTrigangle(n), với n là số integer > 1, 
 	// in ra hình tam giác cân ngược với chiều cao bằng n. Ví dụ: 
 	// Với n = 3
@@ -71,7 +71,20 @@
 	//     *
 
 
+	function printSpecialTrigangle(n) {
+		var str = "";
+		for (var i =  1; i <= n; i++) {
+			if(i == 1) {
+				for(var j = 1; j <= n; j++) {
+				str +=  "*";
+			}
+			
+		}
+		str += '<br/>';
+	}
+	return str;
 
+}
 
 
 
