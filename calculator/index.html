@@ -6,38 +6,52 @@
 	<title>Calculator</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/javascript.js"></script>
+
 </head>
 <body>
-	<div id="master">
-		<div id="ip">
-			<input type="text">
-		</div>
-		<div>
-			<div>
-				<button type=""> 1 </button>
-				<button type=""> 2 </button>
-				<button type=""> 3 </button>
-				<button type=""> 4 </button>
-				<button type=""> 5 </button>
-				<button type=""> 6 </button>
-				<button type=""> 7 </button>
-				<button type=""> 8 </button>
-				<button type=""> 9 </button>
-				<button type=""> 0 </button>
+	<div id="war">
+		<div id="master">
+			<div id="ip">
+				<input id="result" type="text">
 			</div>
-			<button type=""> + </button>
-			<button type=""> - </button>
-			<button type=""> x </button>
-			<button type=""> : </button>
-			<button type=""> % </button>
-			<button type=""> = </button>
-			<button type=""> . </button>
-			<button type=""> √ </button>
-			<button type=""> x<sup>y</sup></button>
-			<button type=""> n! <button>
-				
+			<div id="bt">
+				<div id="ob">
+					<div>
+						<button class="btn" value="1" type="button" onclick="result.value += this.value"> 1 </button>
+						<button class="btn" value="2" type="button" onclick="result.value += this.value"> 2 </button>
+						<button class="btn" value="3" type="button" onclick="result.value += this.value"> 3 </button>
+						<button class="btn" value="+" type="button" onclick="result.value += this.value"> + </button>
+						<button class="btn" value="-" type="button" onclick="result.value += this.value"> - </button>
+					</div>
+					<div>
+						<button class="btn" value="4" type="button" onclick="result.value += this.value"> 4 </button>
+						<button class="btn" value="5" type="button" onclick="result.value += this.value"> 5 </button>
+						<button class="btn" value="6" type="button" onclick="result.value += this.value"> 6 </button>
+						<button class="btn" value="x" type="button" onclick="result.value += this.value"> x </button>
+						<button class="btn" value=":" type="button" onclick="result.value += this.value"> : </button>
+					</div>
+					<div>
+						<button class="btn" value="7" type="button" onclick="result.value += this.value"> 7 </button>
+						<button class="btn" value="8" type="button" onclick="result.value += this.value"> 8 </button>
+						<button class="btn" value="9" type="button" onclick="result.value += this.value"> 9 </button>
+						<button class="btn" value="%" type="button" onclick="result.value += this.value"> % </button>
+						<button class="btn" value="√" type="button" onclick="result.value += this.value"> √ </button>
+					</div>
+					<div>								
+						<button class="btn" value="1" type="button" onclick="result.value = this.value.substr(0,result.value.length-1)"> R/s</button>
+						<button class="btn" value="0" type="button" onclick="result.value += this.value"> 0 </button>
+						<button class="btn" value="." type="button" onclick="result.value += this.value"> . </button>
+						<button class="btn" value="n!" type="button" onclick="result.value += this.value"> n! </button>
+						<button class="btn" value="^" type="button" onclick="result.value += this.value"> x<sup style="font-size: 20px;">y</sup></button>
+					</div>	
+				</div>
+			</div>
+			<div id="clear">
+				<button class="btn" value="" type="button" onclick="result.value += this.value"> = </button>
+				<button class="btn" value="" type="button" onclick="result.value += this.value"> <-- </button>
+
 			</div>
 		</div>
-		
-	</body>
-	</html>
+	</div>
+</body>
+</html>
