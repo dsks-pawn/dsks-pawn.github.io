@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<div id="war">
+
 		<div id="master">
 			<div id="ip">
 				<input id="result" type="text">
@@ -17,41 +17,45 @@
 			<div id="bt">
 				<div id="ob">
 					<div>
-						<button class="btn" value="1" type="button" onclick="result.value += this.value"> 1 </button>
-						<button class="btn" value="2" type="button" onclick="result.value += this.value"> 2 </button>
-						<button class="btn" value="3" type="button" onclick="result.value += this.value"> 3 </button>
-						<button class="btn" value="+" type="button" onclick="result.value += this.value"> + </button>
-						<button class="btn" value="-" type="button" onclick="result.value += this.value"> - </button>
-					</div>
-					<div>
-						<button class="btn" value="4" type="button" onclick="result.value += this.value"> 4 </button>
-						<button class="btn" value="5" type="button" onclick="result.value += this.value"> 5 </button>
-						<button class="btn" value="6" type="button" onclick="result.value += this.value"> 6 </button>
-						<button class="btn" value="x" type="button" onclick="result.value += this.value"> x </button>
-						<button class="btn" value=":" type="button" onclick="result.value += this.value"> : </button>
-					</div>
-					<div>
-						<button class="btn" value="7" type="button" onclick="result.value += this.value"> 7 </button>
-						<button class="btn" value="8" type="button" onclick="result.value += this.value"> 8 </button>
-						<button class="btn" value="9" type="button" onclick="result.value += this.value"> 9 </button>
-						<button class="btn" value="%" type="button" onclick="result.value += this.value"> % </button>
-						<button class="btn" value="√" type="button" onclick="result.value += this.value"> √ </button>
-					</div>
-					<div>								
-						<button class="btn" value="1" type="button" onclick="result.value = this.value.substr(0,result.value.length-1)"> R/s</button>
-						<button class="btn" value="0" type="button" onclick="result.value += this.value"> 0 </button>
-						<button class="btn" value="." type="button" onclick="result.value += this.value"> . </button>
-						<button class="btn" value="n!" type="button" onclick="result.value += this.value"> n! </button>
-						<button class="btn" value="^" type="button" onclick="result.value += this.value"> x<sup style="font-size: 20px;">y</sup></button>
+						
+						<div class="box">
+							<button class="btn" value="1" type="button" onclick="xuLy(this.value)"> 1 </button>
+							<button class="btn" value="2" type="button" onclick="xuLy(this.value)"> 2 </button>
+							<button class="btn" value="3" type="button" onclick="xuLy(this.value)"> 3 </button>
+							<button class="btn" value="+" type="button" onclick="xuLy(this.value)"> + </button>
+							<button class="btn" value="-" type="button" onclick="xuLy(this.value)"> - </button>
+						</div>
+						<div class="box">
+							<button class="btn" value="4" type="button" onclick="xuLy(this.value)"> 4 </button>
+							<button class="btn" value="5" type="button" onclick="xuLy(this.value)"> 5 </button>
+							<button class="btn" value="6" type="button" onclick="xuLy(this.value)"> 6 </button>
+							<button class="btn" value="*" type="button" onclick="xuLy(this.value)"> x </button>
+							<button class="btn" value="/" type="button" onclick="xuLy(this.value)"> : </button>
+						</div>
+						<div class="box">
+							<button class="btn" value="7" type="button" onclick="xuLy(this.value)"> 7 </button>
+							<button class="btn" value="8" type="button" onclick="xuLy(this.value)"> 8 </button>
+							<button class="btn" value="9" type="button" onclick="xuLy(this.value)"> 9 </button>
+							<button class="btn" value="%" type="button" onclick="xuLy(this.value)"> % </button>
+							<button class="btn" value="√" type="button" onclick="root()"> √ </button>
+						</div>
+						<div class="box">				
+							<button class="btn" value="R/s" type="button" onclick="del()"> R/s</button>
+							<button class="btn" value="0" type="button" onclick="xuLy(this.value)"> 0 </button>
+							<button class="btn" value="." type="button" onclick="xuLy(this.value)"> . </button>
+							<button class="btn" value="!" type="button" onclick="factorial(this.value)"> n! </button>
+							<button class="btn" value="^2" type="button" onclick="square(this.value)"> x<sup style="font-size: 20px;">2</sup></button>
+						</div>	
 					</div>	
 				</div>
 			</div>
 			<div id="clear">
-				<button class="btn" value="" type="button" onclick="result.value += this.value"> = </button>
-				<button class="btn" value="" type="button" onclick="result.value += this.value"> <-- </button>
 
+				<button class="btn" value="" type="button" onclick="res()"> = </button>
+				<button class="btn" value="<--" type="button" onclick="dell()"> <-- </button>
+				
 			</div>
 		</div>
-	</div>
+
 </body>
 </html>
