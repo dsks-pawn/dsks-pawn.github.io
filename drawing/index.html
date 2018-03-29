@@ -72,19 +72,37 @@
 
 
 	function printSpecialTrigangle(n) {
+		var n = 5;
+		var g = n + 2;
 		var str = "";
+		var uuu = "";
 		for (var i =  1; i <= n; i++) {
-			if(i == 1) {
-				for(var j = 1; j <= n; j++) {
-				str +=  "*";
+			if ( i == 1) {               // khi i = 1 vong dau tien j = 1 -> 7 = 7 sao
+				for (var j =  1; j <=g; j++) {	
+					str += "*";
+				}		
+			}
+
+			if ( i > 1 && i <n) { 
+					// i=2 vong thu 2 j = 2 > 7 = 5 sao
+				for (j = [i++] ; j < g; j++) {	// i = 2 vong thu 3 j = 4  > 7 = 3 sao
+					str += "*";			
+				}
+
+			}
+			if (i==n) {
+				str += "<br/> *";
 			}
 			
-		}
-		str += '<br/>';
-	}
-	return str;
+			
 
-}
+			str += '<br/>';
+		}
+
+		return uuu + str;
+		
+
+	}
 
 
 

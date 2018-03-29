@@ -26,6 +26,7 @@ body {
 	height: 100px;
 	text-align: right;
 	background-color: grey;
+	 color: #800000;
 }
 #bt {
 	margin: 0 auto;
@@ -41,6 +42,7 @@ body {
 	margin-bottom: 20px;
 	border-radius: 20px;
 	text-align: center;
+	color: 
 }
 #pt	{
 	float: left;
@@ -52,4 +54,17 @@ body {
 	width: 43%;
     border-radius: unset;
     margin: 0 auto;
+}
+.btn {
+	color: #660000;
+}
+.bt {
+	background: #538cc6;
+	color: #eee;
+	border: 1px solid #001a1a;
+	
+}
+.bto {
+	background: #b3b3ff;
+	color: #eee;
 }
