@@ -13,6 +13,7 @@
 			Tham số truyền vào là 1 số.
 			Kết quả là bình phương của số đó.*/
 
+			var x;
 			function example(x) {
 				return x * x;
 			}
@@ -35,23 +36,27 @@
 				Tham số truyền vào là 1 chuỗi dài hơn 30 ký tự.
 				Kết quả là chuỗi đó sau khi cắt đi còn 10 ký tự, cuối chuỗi có dấu "..." biểu thị là chuỗi bị cắt.*/
 
-			var string = "Tham số truyền vào là 1 chuỗi dài hơn 30 ký tự."
+			var quit = "";
+				function example3(quit) {
+					if (quit.length > 30){
 
-			function example3(string) {
-				return ("10 ký tự đầu tiên: " + string.substr(0, 10) + "..." + "<br/>");
+						console.log("10 ký tự đầu tiên: " + quit.substr(0, 10) + "..." + "<br/>");
+					}
+					else {
+						alert("error")
+					}
 			}
-
-			document.write(example3(string));
+		
 
 			/*- Bài 4. Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên.
 
 			Tham số truyền vào là 1 chuỗi.
 			Kết quả là 1 chuỗi mới chỉ viết hoa từ đầu tiên. Ví dụ "welcome to Techmaster" sẽ được convert thành "Welcome to techmaster".*/
 
-			var string = 'viết hoa từ đầu tiên';
+			var string = '';
 			function example4(string) {
-
-				return string.charAt(0).toUpperCase() + string.slice(1) + "<br/>";
+				str2 = string.slice(1).toLowerCase();
+				return string.charAt(0).toUpperCase() + str2 + "<br/>";
 			}
 
 			document.write(example4(string));
@@ -62,7 +67,7 @@
 			Kết quả là số nhỏ nhất trong mảng.
 			Gợi ý: có thể dùng phương thức sort() hoặc object Math, chú ý khi sort số khác với chữ.*/
 
-			var arr = [10, 22, 55, -89, 44, 84, 5, -4];
+			var arr = [];
 			
 			function example5(arr) {
 				return arr.sort(function(a, b){return a-b});
@@ -75,10 +80,10 @@
 			Tham số truyền vào là 1 mảng gồm tên của 5 người.
 			Kết quả: In ra màn hình danh sách các học viên theo thứ tự bảng chữ cái (tiếng Anh), không phân biệt hoa thường.*/
 
-			var arr2 = ['Phuong', 'Mai', 'Nhung', 'An', 'Binh'];
+			var arr2 = [];
 
 			function example6(arr2) {
-				return arr2.sort();
+				return arr2.sort(function(a, b) {return a.localeCompare(b)});
 			}
 				document.write(example6(arr2));
 			/*- Bài 7. Tạo 3 đối tượng là teacher, student và parent. Mỗi đối tượng đều có các thuộc tính: firstName, lastName, age. Cả 3 đối tượng đều có chung 1 phương thức là say(). Hãy viết function aboutMe() in ra màn hình 1 câu giới thiệu bản thân và gán vào phương thức say() của các đối tượng trên.

@@ -45,9 +45,9 @@
 	//Exercise 2
 	
 
-	var str = 12345321321321;
+	var str = '';
 
-	function checkStr(){
+	function checkStr(str){
 		if(typeof str == 'string'){
 			if (str.length > 10) {
 				str = str.slice(0,10)+ "...";
@@ -64,7 +64,7 @@
 		}
 		
 		else {
-			document.write("Không xác định được dữ liệu");
+			document.write("Error");
 		}
 	}	
 
@@ -73,7 +73,7 @@
 	var x;
 
 	function scores(x) {
-		if(x >= 0 && x <= 10) {
+		if(typeof x == 'number' && x >= 0 && x <= 10) {
 			if (x <= 3.9) {
 				document.write('Điểm F')
 			}
@@ -92,7 +92,7 @@
 		}
 
 		else {
-			alert("Số không được xác định");
+			alert("Error");
 		}
 		return x;	
 	}
@@ -128,7 +128,7 @@
 			break;
 
 			default:
-			alert("Mã bạn cần không có sẵn");
+			alert("Error");
 		}
 		document.write("Translate từ Hello theo mã quốc gia bạn cần là: " + kqkq + "<br/>");
 
@@ -141,11 +141,12 @@
 
 	var arr = [false, false, false, true, false, true, false, true];
 	
-	function seachTrue() {
+	function seachTrue(arr) {
 		
-		for (var i = 0; i <= arr.length; i++) {
-			document.write("<br>" + [i+1] + " " + arr[i] + "<br/>");
+		for (var i = 0; i < arr.length; i++) {
+			document.write("<br>" + [i+1] + "<br/>");
 			if(arr[i] == true) {
+				document.write(arr[i]);
 				break;
 
 			}
@@ -157,15 +158,12 @@
 	/*- Bài 6. Chỉ sử dụng while hoặc for, hãy viết function in ra màn hình các số từ 1 đến 100. Với điều kiện những giá trị là chẵn sẽ có màu xanh, giá trị lẻ có màu đỏ.*/
 
 	function print() {
-		for (var j = 1; j <= 100; j++) {
-			if([j] % 2 == 1){
-				document.write("<br> <h1 style ='color:red;'>" + [j] + "</h1> <br/>");
-			}
-			else {
-				document.write("<br> <h1 style='color:green;'>" + [j] + "</h1> <br/>");
+		for (var i = 1,j=2; i <= 100; j+=2 , i+=2) {		
+				document.write("<br> <h5 style ='color:red;'>" + [i] + "</h5> <br/>");
+				document.write("<br> <h5 style='color:green;'>" + [j] + "</h5> <br/>");
 			}
 		}
-	}
+	
 
 
 

@@ -9,19 +9,21 @@
 	<script >
 
 	//exercise 1
+	var a;
+	var b;
 	function compare(a,  b) {
 		if(typeof a == "number" &&  typeof b == "number") {  
-			if(a>b) {
-				document.write("a > b");
-				return(" a > b ");
+			if(a > b) {
+				document.write(a > b);
+				return(a > b );
 			}
-			else if(b>a){
-				document.write("a < b");
-				return(" a < b ");
+			else if(b > a){
+				document.write(a < b);
+				return(a < b );
 			}
 			else {
-				document.write("a = b");
-				return(" a = b ");
+				document.write(a = b);
+				return(a = b );
 				}
 			}
 		else {
@@ -32,9 +34,9 @@
 
 
 	//exercise 2
-
+	var x;
 	function factorial(x) {	
-		if (x > 0) {
+		if (x > 0 && typeof x == 'number') {
 			var kq = 1;
 			for(i=1;  i<=x; i++){
 				kq = kq *i;
@@ -47,7 +49,7 @@
 	}
 
 	//exercise 3
-	
+	var random = [];
 	function uot(random){
 		var group = [];
 		for(var i = 0; i < random.length; i++){
