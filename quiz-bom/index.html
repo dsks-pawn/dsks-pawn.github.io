@@ -10,10 +10,16 @@
 <body>
 
 	<div id="war">
+		<div id="quit">
+			<h2>Phần thưởng dành cho người thắng cuộc</h2>
+			<img src="img.jpg">
+		</div>
+
 		<div id="container">
 			<div id="title">
 				<h1>Quiz-Bom Javascript</h1>
 			</div>
+
 			<div id="text_1">
 				<h2 id="question">Nhấn Start Ở Dưới Để Bắt Đầu Quiz</h2>
 			</div>
@@ -25,16 +31,21 @@
 				<div id="bt-two">
 					<button id="btn3" class="choice" type="button" value="reply"></button> 
 					<button id="btn4" class="choice" type="button" value="reply"></button>
+					
 				</div>
 			</div>
 			<div id="bottom">
-				<div>
-					<h3>Câu số 1/5</h3>
+				<div id="count">
+					<h3 id="round"></h3>
 				</div>
-				<div>
+				<div id="start">
 					<button id="btn5" type="button" value="" onclick="quiz.start();">Start</button>
 				</div>
+				<div>
+					<a href="index.html"><button id="btn6">Play Again</button></a>
+				</div>
 			</div>
+			
 		</div>
 	</div>
 	

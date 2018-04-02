@@ -1,4 +1,4 @@
-var question0 = {
+var question = {
 	ques: "Xã đông nhất là xã nào?",
 	answer1: "Không biết",
 	answer2: "Xã đoàn",
@@ -38,26 +38,29 @@ var question4 = {
 	answer4: "Chơi cờ",
 	reply: "Chơi cờ"
 }
-
-var questions = [question0, question1, question2, question3, question4];
+var questions = [question, question1, question2, question3, question4];
 var quesTitle = document.getElementById('question');
 var btn1 = document.getElementById('btn1');
 var btn2 = document.getElementById('btn2');
 var btn3 = document.getElementById('btn3');
 var btn4 = document.getElementById('btn4');
-var count = 0;
-var kq = [];
+var round = document.getElementById('round');
+var count = 1;
+var result = 0;
 var quiz = {};
 
 
 quiz.start = function() {
+	document.getElementById('content').style.display = "block";
+	document.getElementById('start').style.display = "none";
+	document.getElementById('count').style.display = "block";
 	btn1.setAttribute("onclick", "quiz.saveQuest(this)");
 	btn2.setAttribute("onclick", "quiz.saveQuest(this)");
 	btn3.setAttribute("onclick", "quiz.saveQuest(this)");
 	btn4.setAttribute("onclick", "quiz.saveQuest(this)");
-	quiz.loadQuest();
+	quiz.loadQuest(count-1);
 }
-quiz.loadQuest = function() {
+quiz.loadQuest = function(count) {
 	var move = questions[count];
 	quesTitle.innerHTML = move.ques;
 	btn1.innerHTML = move.answer1;
@@ -68,23 +71,37 @@ quiz.loadQuest = function() {
 	btn2.value = move.reply;
 	btn3.value = move.reply;
 	btn4.value = move.reply;
+	round.innerText = 'Câu số ' + (count +1) + " / " + questions.length;
 }		
-quiz.saveQuest = function(elm) {
+quiz.saveQuest = function(elm){
 	if(count < questions.length){
-		if(elm.innerHTML == elm.value) {
-			kq.push(true);
-		}else {	
-			kq.push(false);
+		if(elm.innerText == elm.value) {	
+			result++;
 		}
-		quiz.loadQuest();
-		count++;
-	}else{
-		quesTitle.innerHTML = 'Điểm của bạn là : ' ;
-		for(var i = 0; i < kq.length; i++){
-			quesTitle.innerHTML += "Câu số " + i + " là " + kq[i] + "<br>";
+		quiz.loadQuest(count);			
+		console.log(result);
+		count++;	
+
+	}
+	else{
+		if(elm.innerText == elm.value) {	
+			result++;
+		}
+		if (result == 5) {
+			quesTitle.innerHTML = 'Thưởng nóng của sự thông minh';
+			document.getElementsByTagName('img')[0].style.display = 'block';
+			document.getElementById('container').style.display = "none";
+			document.getElementById('quit').style.display = "block";
+		}else if (result == 0) {
+			quesTitle.innerHTML = 'Bạn không trả lời đúng câu nào';
+			document.getElementById('btn6').style.display = "block";
+		}else{
+			quesTitle.innerHTML = 'Bạn trả lời đúng ' + result + ' câu hỏi';
+			document.getElementById('btn6').style.display = "block";
+			// for(var i = 0; i < result.length; i++){
+			// 	quesTitle.innerHTML += "<br>Câu số " + [i+1] + ": " + result[i];	
 		}
 		document.getElementById('content').style.display = "none";
+		document.getElementById('count').style.display = "none";
 	}
 }
-
-

@@ -14,8 +14,6 @@ h1 {
 	width: calc(100% - 200px); 
 	text-shadow: 10px 7px 9px grey;
 }
-
-
 #war {
 	margin: 0 auto;	
 	width: 800px;
@@ -25,11 +23,15 @@ h1 {
 	border-top: 1px solid #ccccff;
 	border-left: 1px solid #ccccff;
 	box-shadow: 15px 15px 12px 0px rgba(204, 48, 74, 1);
+	position: relative;
 }
-#container, #title {
+#container {
 	text-align: center;
 	margin-top: 20px;
-	
+}
+#title {
+	text-align: center;
+	margin-top: 20px;
 	
 }
 #title {
@@ -45,33 +47,77 @@ h1 {
 	font-size: 30px;
 	color: #800000;
 }
-
 #content button { 
 	width: 300px;
 	height: 80px;
 	margin: 15px 15px 15px 15px;
-	font-size: 23px;
+	font-size: 25px;
 	transition: transform 2s linear;
 	background: #b3d9ff;
-	color: #990000;
-
+	color: #ac3939;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	text-shadow: 2px 5px 10px #f2d9d9;
 }
 button:hover {
 	transform: translate(5px, -10px);	
 	border: 1px solid grey;
 	border-radius: 3px;
-	box-shadow: 10px 10px 12px 0px #eee;
+	box-shadow: 10px 10px 12px 0px grey;
 	height: 100px;
 }
 #bt-two > button:hover {
-	transform: scale(1.2);
-	box-shadow: 10px 10px 12px 0px grey;
+	transform: scale(1.2);	
+	box-shadow: 10px 10px 12px 0px #eee;
 }	
-
 h3 {
 	text-align: right;
 	margin-top: 5px;
 	margin-right: 50px;
 	font-family: arial;
 	color: #4d0000;
+}
+#content {
+	display: none;
+}
+#count {
+	display: none;
+}
+#btn5 {
+	width: 200px;
+	height: 50px;
+	font-size: 23px;
+	transition: transform 100000s linear;
+	color: #669999;
+	border-radius: 80px;
+	margin-top: 80px;
+}
+#btn5:hover {
+	background: #cccccc;
+}
+#quit {
+	display: none;
+	text-align: center;
+	text-shadow: 2px 5px 10px #f2d9d9;
+}
+#quit img {
+	width: 800px;
+	height: 440px;
+	border-radius: 80px;
+}
+a {
+	text-decoration: none;
+}
+#btn6 {
+	width: 200px;
+	height: 50px;
+	font-size: 23px;
+	transition: transform 100000s linear;
+	color: white;
+	border-radius: 80px;
+	margin-top: 80px;
+	display: none;
+	margin: 0 auto;
+	margin-top: 80px;
+	background: #a07878;
 }
