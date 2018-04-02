@@ -3,9 +3,9 @@
 	padding: 0;
 }
 body {
-	
-	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+	background-image: url("../images/img.jpg");
 	background-size: cover;
+
 }
 #master  {
 	width: 520px;
@@ -26,7 +26,7 @@ body {
 	height: 100px;
 	text-align: right;
 	background-color: grey;
-	 color: #800000;
+	color: #800000;
 }
 #bt {
 	margin: 0 auto;
@@ -52,8 +52,8 @@ body {
 }
 #clear button {
 	width: 43%;
-    border-radius: unset;
-    margin: 0 auto;
+	border-radius: unset;
+	margin: 0 auto;
 }
 .btn {
 	color: #660000;
