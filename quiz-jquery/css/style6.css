@@ -2,11 +2,16 @@
 	margin: 0;
 	padding: 0;
 }
-@import url("https://fonts.googleapis.com/css?family=Fauna+One");
+#winner {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 100px;
+	display: none;
+}
 
 body {
-	
-	 background-image: linear-gradient(-90deg, #FFD09E, #106564);
+	background-image: url("../img/6.jpg");
+	background-size: cover;
 }
 h1 {
 	margin: auto;
@@ -21,19 +26,34 @@ h1 {
 	height: 500px;
 	border-radius: 15%;
 	margin-top: 100px;
-	border-top: 1px solid #ccccff;
-	border-left: 1px solid #ccccff;
-	box-shadow: 15px 15px 12px 0px rgba(204, 48, 74, 1);
+	box-shadow: 15px 15px 12px 0px #663300;
 	position: relative;
 }
 #container {
 	text-align: center;
 	margin-top: 20px;
+	position: relative;
 }
+#themen {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+}
+#themen input{
+	width: 90px;
+	height: 40px;
+	border-radius: 5px;
+	background: #99ddff;
+	font-weight: bold;
+}
+#btn6 {
+	left: 0px;
+	position: absolute;
+}
+
 #title {
 	text-align: center;
 	margin-top: 20px;
-	
 }
 #title {
 	margin-bottom: 30px;
@@ -46,7 +66,7 @@ h1 {
 #bt-one, h2 {
 	margin-top: 25px;
 	font-size: 30px;
-	color: #800000;
+	color: #5c5c3d;
 }
 #content button { 
 	width: 300px;
@@ -54,11 +74,9 @@ h1 {
 	margin: 15px 15px 15px 15px;
 	font-size: 25px;
 	transition: transform 2s linear;
-	background: #b3d9ff;
-	color: #ac3939;
+	background: aliceblue;
+	color: #37385f;
 	font-weight: bold;
-	font-family: "Times New Roman", Times, serif;
-	text-shadow: 2px 5px 10px #f2d9d9;
 }
 button:hover {
 	transform: translate(5px, -10px);	
@@ -77,48 +95,4 @@ h3 {
 	margin-right: 50px;
 	font-family: arial;
 	color: #4d0000;
-}
-#content {
-	display: none;
-}
-#count {
-	display: none;
-}
-#btn5 {
-	width: 200px;
-	height: 50px;
-	font-size: 23px;
-	transition: transform 100000s linear;
-	color: #669999;
-	border-radius: 80px;
-	margin-top: 80px;
-}
-#btn5:hover {
-	background: #cccccc;
-}
-#quit {
-	display: none;
-	text-align: center;
-	text-shadow: 2px 5px 10px #f2d9d9;
-}
-#quit img {
-	width: 800px;
-	height: 440px;
-	border-radius: 80px;
-}
-a {
-	text-decoration: none;
-}
-#btn6 {
-	width: 200px;
-	height: 50px;
-	font-size: 23px;
-	transition: transform 100000s linear;
-	color: white;
-	border-radius: 80px;
-	margin-top: 80px;
-	display: none;
-	margin: 0 auto;
-	margin-top: 80px;
-	background: #a07878;
 }

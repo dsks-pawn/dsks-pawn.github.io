@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bom Quiz</title>
+	<meta charset="utf-8">
+	<link id="themen" rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<div id="winner">
+	<h1>Phần thưởng nè cưng</h1>
+	<img src="img/img.jpg">
+	</div>
+	<div id="war">
+		<div id="container">
+			<div id="title">
+				<h1>Quiz-Bom Javascript</h1>
+			</div>
+			<div id="text_1">
+				<h2 id="question">Câu hỏi</h2>
+				<div id="themen">
+					<input id="btn5"type="button" value="Change Themen" onclick="quiz.themens()"></input>
+					<a href="index.html"><input id="btn6" type="button" value="Play again"></input></a>
+				</div>
+				
+					
+			
+			</div>
+			<div id="content">
+				<div id="bt-one">
+					<button id="btn1" class="choice" type="button" value="reply" onclick="quiz.loadtQuest(this)"></button> 
+					<button id="btn2" class="choice" type="button" value="reply" onclick="quiz.loadtQuest(this)"></button>
+				</div>
+				<div id="bt-two">
+					<button id="btn3" class="choice" type="button" value="reply" onclick="quiz.loadtQuest(this)"></button> 
+					<button id="btn4" class="choice" type="button" value="reply" onclick="quiz.loadtQuest(this)"></button>
+				</div>
+			</div>
+			<div id="bottom">
+				<div id="count">
+					<h3 id="round"></h3>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script  src="js/javascript.js" ></script>
+
+</body>
+</html>

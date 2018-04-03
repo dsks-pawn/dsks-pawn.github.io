@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#winner {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 100px;
+	display: none;
+}
+
+body {
+	background-image: url("../img/4.jpg");
+	background-size: cover;
+}
+h1 {
+	margin: auto;
+	font-family: 'Fauna One', Helvetica, sans-serif;
+	color: #660066;
+	width: calc(100% - 200px); 
+	text-shadow: 10px 7px 9px  #c2f0f0;
+}
+#war {
+	margin: 0 auto;	
+	width: 800px;
+	height: 500px;
+	border-radius: 15%;
+	margin-top: 100px;
+	box-shadow: 15px 15px 12px 0px #660033;
+	position: relative;
+}
+#container {
+	text-align: center;
+	margin-top: 20px;
+	position: relative;
+}
+#themen {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+}
+#themen input{
+	width: 90px;
+	height: 40px;
+	border-radius: 5px;
+	background: #99ddff;
+	font-weight: bold;
+}
+#btn6 {
+	left: 0px;
+	position: absolute;
+}
+#title {
+	text-align: center;
+	margin-top: 20px;
+}
+#title {
+	margin-bottom: 30px;
+	line-height: 50px;
+	width: 500px;
+	margin: 0 auto;
+	border-radius: 40px;
+	background: #cce0ff
+}
+#bt-one, h2 {
+	margin-top: 25px;
+	font-size: 30px;
+	color: #471405;
+}
+#content button { 
+	width: 300px;
+	height: 80px;
+	margin: 15px 15px 15px 15px;
+	font-size: 25px;
+	transition: transform 2s linear;
+	background: aliceblue;
+	color: black;
+	font-weight: bold;
+}
+button:hover {
+	transform: translate(5px, -10px);	
+	border: 1px solid grey;
+	border-radius: 3px;
+	box-shadow: 10px 10px 12px 0px grey;
+	height: 100px;
+}
+#bt-two > button:hover {
+	transform: scale(1.2);	
+	box-shadow: 10px 10px 12px 0px #eee;
+}	
+h3 {
+	text-align: right;
+	margin-top: 5px;
+	margin-right: 50px;
+	font-family: arial;
+	color: #4d0000;
+}
