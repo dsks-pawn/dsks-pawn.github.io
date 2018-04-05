@@ -60,7 +60,7 @@
 }
 #menu ul ul{
 	background-color: #404040;
-	position:absolute;
+	position: absolute;
 	top:100%;
 	left:0;
 	z-index:1000;
@@ -96,10 +96,11 @@
 }
 #wel h2 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 }
 #come {
-	width: 100%
+	width: 100%;
+	position: relative;
 }
 #come img {
 	width: 15%;
@@ -109,18 +110,145 @@
 	margin-left: 200px;
 	margin-right: 100px;
 }
-#ps  p {
-	float: left;
+#come img:hover {
+	transform: scale(1.1);
+	transition:all 3s 0s linear;
+	opacity: 0.4;
+	overflow: hidden;
+}
+#ps {
+	position: absolute;
+    top: 315px;
+}
+#ps p {
+	margin-left: 290px;
+    margin-right: 187px;
+	display: inline-block;
+	font-size: 20px;
 }
 #free {
 	width: 100%;
-	height: 1000px;
-	border:  1px solid black;
+	height: 1600px;
+	padding-top: 100px;
+	position: relative;
+	background-color: #cccccc;
+}
+#freetit {
+	
+	margin-bottom: 100px;
+	text-align: center;
+	font-size: 40px;
+}
+.free {
+	float: left;
+	width: 22%;
+	font-size: 20px;
+	margin-left: 27px;
+	margin-right: 25px;
+	text-align: center;
+	color: #660000;
+
+}
+.free:hover {
+	background-color: grey;
+	transition:all 1s 0s linear;
+	color: white;
+}
+.free p {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.free button {
+	margin-top: 30px;
+	color: #cccccc;
+	background: #737373;
+	font-size: 22px;
+	padding: 5px;
+}
+.free button:hover {
+	color: #660000;
+	background: white;
+	transition:all 1s 0s linear;
+	transform: scale(1.2);
+}
+.free img:hover {
+	opacity: 3;
+}
+.free_1 {
+	width: 100%;
+	height: 670px;
+}
+#free h2 {
+	position: absolute;
+    left: 680px;
+    top: 900px;
+    border-radius: 100px;
+    padding: 35px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#free h2:hover {
+	background-color: grey;
+	transition:all 3s 0s linear;
+}
+.free_2 {
+	margin-top: 150px;
+	color: grey;
+}
+.free_2 input {
+	margin: 50px 0 0px 300px;
+	font-size: 20px;
+    line-height: 80px;
+    padding-right: 13%;
+}
+.free_3 {
+	margin-left: 830px;
+    display: block;
+    margin-top: -351px;
+    font-size: 20px;
+    color: grey;
+}
+.free_3 input {
+	padding-right: 50%;
+    line-height: 240px;
+}
+.free_4 {
+	margin-left: 830px;
+    font-size: 20px;
+    margin-top: 35px;
+    color: grey;
+}
+.free_4 button {
+	 line-height: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 #news {
+	margin-top: 200px;
 	width: 100%;
-	height: 800px;
-	border:  1px solid black;
+	height: 500px;
+
+}
+.bor {
+	width: 24%;
+    height: 500px;
+    float: left;
+    font-size: 20px;
+    padding: 30px;
+    margin-left: 15px;
+    color: #800000;
+}
+.bor:hover {
+	transform: translate(0, -10px);
+	transition:all 3s 0s linear;
+	background-color: grey;
+	border-radius: 100px;
+	color: white;
+}
+#clients {
+	width: 100%;
+	height: 500px;
+	border: 1px solid black;
 }
 #staff {
 	width: 100%;
