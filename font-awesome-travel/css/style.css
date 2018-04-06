@@ -33,7 +33,7 @@
 }
 #menu ul li {
 	float:left;	
-	border-right:1px dotted  grey;
+	border-right:1px dotted grey;
 	position:relative;
 }
 #menu ul li:last-child{
@@ -41,7 +41,7 @@
 }
 #menu ul li a {
 	text-decoration:none;
-	padding: 10px 40px;
+	padding: 10px 35px;
 	display:block;
 	white-space:pre;
 	color: #F2F2ED;
@@ -134,10 +134,10 @@
 	height: 1600px;
 	padding-top: 100px;
 	position: relative;
-	background-color: #cccccc;
+	background-color: #404040;
 }
 #freetit {
-	
+	color: #85adad;
 	margin-bottom: 100px;
 	text-align: center;
 	font-size: 40px;
@@ -149,7 +149,7 @@
 	margin-left: 27px;
 	margin-right: 25px;
 	text-align: center;
-	color: #660000;
+	color: #a3c2c2;
 
 }
 .free:hover {
@@ -170,7 +170,7 @@
 }
 .free button:hover {
 	color: #660000;
-	background: white;
+	background: #f2f2f2;
 	transition:all 1s 0s linear;
 	transform: scale(1.2);
 }
@@ -180,6 +180,7 @@
 .free_1 {
 	width: 100%;
 	height: 670px;
+	color: #cccccc;
 }
 #free h2 {
 	position: absolute;
@@ -242,6 +243,7 @@
 	padding: 30px;
 	margin-left: 15px;
 	color: #800000;
+	overflow: auto;
 }
 .bor:hover {
 	transform: translate(0, -10px);
@@ -271,11 +273,28 @@
 .content-3 {
 	width: 36%;
 	height: 1200px;
-	border: 1px solid grey;
 	position: absolute;
 	top: 149px;
 	right: 42px;
+	text-align: center;
 }
+#guys {
+	margin: 0 auto;
+	height: 0px;
+	width: 80%;
+	border:1px solid black;
+}
+#mxh {
+	float: left;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#mxh h6:hover {
+	transform: rotate(360deg);
+	transition:all 3s 0s linear;
+}
+
 .content-4 {
 	width: 30%;
 	position: absolute;
@@ -283,7 +302,7 @@
 	bottom: 20px;
 }
 #img {
-	width: 80%;
+	width: 70%;
 	margin-left: 62px;
 	margin-top: 10px;
 }
@@ -291,20 +310,26 @@
 	clear: both;
 }
 #bottom {
+	margin-top: 200px;
 	width: 100%;
-	height: 900px;
-
+	height: 800px;
+	background-color: #262626;
+	color: white;
 }
 #icon {
 	font-size: 20px;
 	float: left;
-	margin-top: 100px;
-	margin-left: 80px;
+	margin-top: 200px;
+	margin-left: 50px;
 }
+#icon img {
+	margin-top: 200px;
+}
+
 #map {
 	width: 500px;
 	height: 500px;
-	margin-top: 180px;
+	margin-top: 200px;
 	margin-right: 165px;
 	float: right;
 }
