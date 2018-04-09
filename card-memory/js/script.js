@@ -7,14 +7,14 @@ var double2;
 var score = 0;
 
 $(document).ready(function(){
-    loadGame();
-    shuffle();
+     shuffle();
     loadGame();
 })
 loadGame = function(){
     themes();
 }
 nextImages = function(){
+
   for(var i = 1; i <= 12; i++){
     arrImages.push('img/'+ i +".jpg",'img/'+ i +".jpg");
 }
@@ -26,11 +26,10 @@ function shuffle() {
         arrImages[i] = arrImages[j];
         arrImages[j] = temp;
     }
-    return arrImages;
-    console.log(arrImages);
 }
 themes = function(){
     nextImages();
+    shuffle();
     var images ='';
     for(var i = 0; i < arrImages.length; i++){
         images += "<div class ='card'><img class='back' id = 'back' "+i+" onclick='clickImages(this,"+i+")'; src='img/up.jpg'><img class='front' id='front'"+i+" src='"+arrImages[i]+"'/></div>";
@@ -38,6 +37,7 @@ themes = function(){
     $('#one').html(images);
     // $('#diemtong').html("</br><span>Điểm "+ score +"</span");
 }
+
 clickImages = function(ctrl, i){
     if(click == 2) //Nếu đã click lần 2 rồi mà chưa chạy hàm kiểm tra xong thì ko cho chọn ảnh khác
         return;
@@ -69,5 +69,4 @@ clickImages = function(ctrl, i){
             return;
         }   
     }
-    console.log(ctrl);
 }
