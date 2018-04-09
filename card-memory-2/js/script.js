@@ -63,7 +63,6 @@ clickImages = function(ctrl, i){
          //quay ảnh off
          $('#front' + double2).css('transform', 'rotateY(0deg)');
          //quay ảnh on
-         click = 2;
          if (ctrl1 != ctrl2){
             setTimeout(checkImages(), 200);
          }
@@ -72,6 +71,7 @@ clickImages = function(ctrl, i){
             return;
         }   
     }
+    alert(click);
 }
 
 //Hàm kiểm tra ảnh giống nhau
@@ -90,7 +90,8 @@ function checkImages(double1, double2) {
         $("#front" + double2).css('display:', 'none');
         //hiển thị điểm lên giao diện
         result++;
-        $("#result").html("Điểm " + result);    
+        $("#result").html("Điểm " + result); 
+           console("up bai khong?"); 
     }
     else {
         console("up bai khong?");
