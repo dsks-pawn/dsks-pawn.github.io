@@ -7,7 +7,7 @@ var double2;
 var score = 0;
 
 $(document).ready(function(){
-     shuffle();
+    shuffle();
     loadGame();
 })
 loadGame = function(){
@@ -32,20 +32,22 @@ themes = function(){
     shuffle();
     var images ='';
     for(var i = 0; i < arrImages.length; i++){
-        images += "<div class ='card'><img class='back' id = 'back' "+i+" onclick='clickImages(this,"+i+")'; src='img/up.jpg'><img class='front' id='front'"+i+" src='"+arrImages[i]+"'/></div>";
+        images += "<div class ='card'><img class='back' id = 'back ' "+ i +" onclick='clickImages(this,"+i+")'; src='img/up.jpg'>"
+        +"<img class='front' id='front' " + i + " src='"+arrImages[i]+"'/></div>";
     }
     $('#one').html(images);
-    // $('#diemtong').html("</br><span>Điểm "+ score +"</span");
+    $('#result').html("</br><span>Điểm "+ score +"</span");
 }
 
 clickImages = function(ctrl, i){
+    // console.log(ctrl)
     if(click == 2) //Nếu đã click lần 2 rồi mà chưa chạy hàm kiểm tra xong thì ko cho chọn ảnh khác
         return;
     if(click == 0 ){
         //Gán vị trí lần chọn
         double1 = i;
         //Gán this từ hàm clickImages
-        ctrl1 = ctrl;    
+        ctrl1 = ctrl;
         $(ctrl).addClass("js-back");
         $($(ctrl).next()).addClass("js-front");
         //quay ảnh on
@@ -61,12 +63,44 @@ clickImages = function(ctrl, i){
          //quay ảnh off
          $('#front' + double2).css('transform', 'rotateY(0deg)');
          //quay ảnh on
-         click = 0;
-         if (ctrl1 != ctrl2)
-            setTimeout(click, 500);
+         click = 2;
+         if (ctrl1 != ctrl2){
+            setTimeout(checkImages(), 200);
+         }
          else {
             click = 1;
             return;
         }   
+    }
+}
+
+//Hàm kiểm tra ảnh giống nhau
+function checkImages(double1, double2) {
+    console.log("check");
+    //gán lại số lần click = 0
+    click = 0;
+    // kiểm tra ảnh giống nhau
+    if(arrImages[double1] == arrImages[double2]){
+        //ẩn ảnh đi
+        console.log(double1);
+        console(double2);
+        console.log("giống nhau khong?");
+
+        $("#front" + double1).css('display:', 'none');
+        $("#front" + double2).css('display:', 'none');
+        //hiển thị điểm lên giao diện
+        result++;
+        $("#result").html("Điểm " + result);    
+    }
+    else {
+        console("up bai khong?");
+        $("#back"+ double1).css('transform', 'rotateY(0deg)');
+        $("#back"+ double2).css('transform', 'rotateY(0deg)');
+        $("#front"+ double1).css('transform', 'rotateY(180deg)');
+        $("#front"+ double2).css('transform', 'rotateY(180deg)');
+    }
+    // Kiểm tra thắng
+    if(result == arrImages.length/2){
+        alert('win')
     }
 }
