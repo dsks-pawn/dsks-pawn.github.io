@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+#master {
+	margin:  0 auto;
+}
+#war {
+	margin:  auto;
+	text-align: center;
+}
+#facebook {
+	height: 90px;
+	width: 100%;
+	background-color: #3f5c9a;
+}
+#facebook img {
+	width: 15%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 140px;
+}
+.one {
+	float:  right;
+	margin-right: 10px;
+}
+.login {
+	margin-right: 20px;
+}
+.one p {
+	color: white;
+	font-size: 15px;
+	text-align: left;
+
+}
+.login input {
+	background: #4267b2;
+	border-color: #29487d;
+	color: white;
+	border-radius: 2px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 25px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+	margin-top: 34px;
+	width: 50px;
+}
+#put1,  #put2 {
+	height: 25px;
+}
+
+.content {
+	margin-top: 30px;
+}
+#title h1  {
+	font-family: arial;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#title h3 {
+	font-family: arial;
+	color: grey;
+}
+
+.content input {
+	margin-bottom: 20px;
+	width: 400px;
+	height: 50px;
+	font-size: 18px;
+	border-radius: 0.1px;
+}
+
+#day, #month, #year {
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: #426790;
+	border: 1px solid white;
+}
+
+#remember input {
+	width: 25px;
+	color: red;
+}
+#login {
+	width: 150px;
+	color: white;
+	background-color: #3f5c9a;
+	border: 1px solid white;
+}
+#login:hover {
+	opacity: 0.8;
+	transition:all 1s 0s linear;
+}
+#leg {
+	font-size: 30px;
+	color: #3f5c9a;;
+	font-family: arial;
+	padding: 20px;
+}
+#result {
+	margin:  0 auto;
+	text-align: center;
+	width: 500px;
+	font-size: 20px;
+	font-family: sans-serif;
+	border: 1px solid grey;
+	border-radius: 30px;
+	box-shadow: 10px 10px 10px #426790;
+}
+#result h2 {
+	color: #426790;
+}
+#result p {
+	margin-top: 10px;
+	color: grey;
+}
