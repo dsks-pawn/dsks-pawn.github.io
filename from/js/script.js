@@ -18,10 +18,31 @@ function loadBirthday(){
 	}
 }
 
+function getUrlwindow(sParam) {
+	var pageUrl =  $(location).attr('search').substring(1);
+	var arrUrl = pageUrl.split("&");
+	 for (var i=0; i< arrUrl.length; i++) {
+               var pair = arrUrl[i].split("=");
+               if(pair[0] == sParam){
+               	return pair[1];}
+       }
 
-$('#register-form').on('submit', function(){
-	if ($('#lastname').val().trim()  == '') {
-	     $('#lastname').next('span').text('Error lastname');
+}
+var lastname = decodeURIComponent(getUrlwindow('lastname'));
+var name = decodeURIComponent(getUrlwindow('name'));
+var address = decodeURIComponent(getUrlwindow('address'));
+var number = decodeURIComponent(getUrlwindow('number'));
+var email = decodeURIComponent(getUrlwindow('email'));
+var password = decodeURIComponent(getUrlwindow('password'));
+var day = decodeURIComponent(getUrlwindow('day'));
+var month = decodeURIComponent(getUrlwindow('month'));
+var year = decodeURIComponent(getUrlwindow('year'));
+var sex = decodeURIComponent(getUrlwindow('sex'));
 
-	}
-})
+$('#name-finish').html('User name: '+ lastname);
+$('#address-finish').html('Address: '+ address);
+$('#number-finish').html('Number: '+ number);
+$('#email-finish').html('Email: '+ email);
+$('#password-finish').html('Password: '+ password);
+$('#birth-finish').html('Birthday: '+ day + ' / ' + month + ' / ' + year);
+$('#sex-finish').html('Sex: '+ sex);
