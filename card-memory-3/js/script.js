@@ -8,10 +8,9 @@ var score = 0;
 var main = document.getElementById('audio-main');
 var front =document.getElementById('audio-front');
 var back = document.getElementById('audio-back');
-var yes =document.getElementById('audio-yes');
+var yes = document.getElementById('audio-yes');
 var victory = document.getElementById('audio-victory');
 var lost = document.getElementById('audio-lost');
-var remainingTime = 50;
 
 $(document).ready(function(){
     shuffle();
@@ -45,21 +44,11 @@ themes = function(){
     }
     $('#one').html(images);
     $('#result').html("</br><span>Điểm "+ score +"</span");
-
-
-
-    var run = setInterval(function(){
-    remainingTime--;
-    console.log(remainingTime);
-    if ( remainingTime == 0) {
-        clearInterval(run);
-        alert('Loser');
-    }
-    }, 1000);
+    $('#result').css('color', 'white');
 }
 
 clickImages = function(ctrl, i){
-    playSound(front)
+    playSound(front);
    // console.log(ctrl)
     if(click == 2) //Nếu đã click lần 2 rồi mà chưa chạy hàm kiểm tra xong thì ko cho chọn ảnh khác
         return;
@@ -115,18 +104,41 @@ function checkImages() {
     }
     // Kiểm tra thắng
     if (score == arrImages.length/2){
-        alert('win');
+        $('#vic').css('display', 'block');
+        $('#loser').css('display', 'none');
         playSound(victory);
         pauseSound(main);
     }
 }
-
-function playSound(id) {
+function playSound(id){
         id.load(),
         id.play()
 }
 function pauseSound(id) {
         id.pause();
 }
+
+
+function progressBarSim(al) {
+  var bar = document.getElementById('bar');
+  var status = document.getElementById('status');
+  status.innerHTML = al+" %";
+  bar.value = al;
+  al--;
+    var sim = setTimeout("progressBarSim("+al+")",1000);
+    if(al == 0){
+      status.innerHTML = "0%";
+      bar.value = 0;
+      clearTimeout(sim);
+      $('#img').css('display', 'block');
+      $('#loser').css('display', 'none');
+      pauseSound(main);
+      playSound(lost);
+    }
+}
+var amountLoaded = 100;
+progressBarSim(amountLoaded);
+
+
 
 

@@ -1,17 +1,42 @@
 * {
 	box-sizing: border-box;
+		padding: 0;
+	margin: 0;
 }
 body {
 	background-image: url('../img/back7.jpg');
 	background-size: cover;
 }
+
 #master {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+#start {
+	margin: 0 auto;
+	margin-top: 300px;
+	width: 600px;
+	height: 300px;
+}
+#zzz {
+	 text-align: center;
+	 margin-top: 100px;
+}
+#zzz button {
+	opacity: 0.7;
+	width: 250px;
+    height: 80px;
+    background-color: #66b3ff;
+    font-size: 25px;
+    font-family: arial;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
 #title {
 	font-size: 25px;
-	line-height: 50px;
+	line-height: 150px;
 	text-align: center;
 	color: #dfcdcd;
 	font-family: "Tahoma", sans-serif;
@@ -19,7 +44,7 @@ body {
 }
 .war {
 	margin: 0 auto;
-	margin-top: 80px;
+	margin-top: 35px;
 	margin-left: 30px;
 }
 .one {
@@ -64,7 +89,71 @@ body {
     float: right;
     font-size: 30px;
 }
-/@media (max-width: 800px) and (min-width: 400px ){
+
+#result {
+	color: grey;
+}
+progress {
+  -webkit-appearance: none;
+	display: block;
+  	width: 1200px;
+  	height: 20px;
+}
+progress::-webkit-progress-bar { 
+        background: rgba(255, 253, 253, 0);
+        border: 1px solid rgba(230, 113, 113, 0.6);
+        border-radius: 5px;
+}
+progress::-webkit-progress-value {
+        background-image:
+        -webkit-linear-gradient(-45deg, 
+        transparent 33%, rgba(0, 0, 0, .1) 33%, 
+        rgba(0,0, 0, .1) 66%, transparent 66%),
+        -webkit-linear-gradient(top, 
+        rgba(255, 255, 255, .25), 
+        rgba(0, 0, 0, .25)),
+        -webkit-linear-gradient(left, rgb(4, 255, 79), rgb(253, 0, 0)); 
+        border-radius: 5px; 
+        background-size: 30px 20px, 100% 100%, 100% 100%; 
+        transition: all 0.5s linear;
+}
+#img {
+	text-align: center;
+	display: none;
+	position: relative;
+}
+#img img {
+	width: 100%;
+	opacity: 0.8;
+
+}
+#posi {
+	position: absolute;
+  	top: 130px;
+    left: 800px;
+    opacity: 0.7;
+	width: 250px;
+    height: 80px;
+    background-color: #999999;
+    font-size: 25px;
+    font-family: arial;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#vic {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	color: #660000;
+	display: none;
+}
+#vic img {
+	width: 100%;
+	margin-top: 20px;
+}
+@media (max-width: 600px) and (min-width: 200px){
 	.card {
 	width: 50%
 }
