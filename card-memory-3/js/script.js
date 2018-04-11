@@ -11,7 +11,7 @@ var back = document.getElementById('audio-back');
 var yes =document.getElementById('audio-yes');
 var victory = document.getElementById('audio-victory');
 var lost = document.getElementById('audio-lost');
-
+var remainingTime = 50;
 
 $(document).ready(function(){
     shuffle();
@@ -45,6 +45,17 @@ themes = function(){
     }
     $('#one').html(images);
     $('#result').html("</br><span>Điểm "+ score +"</span");
+
+
+
+    var run = setInterval(function(){
+    remainingTime--;
+    console.log(remainingTime);
+    if ( remainingTime == 0) {
+        clearInterval(run);
+        alert('Loser');
+    }
+    }, 1000);
 }
 
 clickImages = function(ctrl, i){
