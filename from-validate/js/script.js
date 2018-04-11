@@ -60,22 +60,22 @@ function getUrlwindow(sParam) {
 			}
 		}
 		if ($('#name').val().trim() == ''){
-			$('#name').next('span').text('name must start with lowercase, 6 to 20 characters (eg: breack213)');
+			$('#name').next('span').text('Name must start with lowercase, 6 to 20 characters (eg: breack213)');
 			checkValis = false;
 		}else {
 			if ($('#name').val().match(/^\D\w{5,20}/)==null) {
-				$('#name').next('span').text('name must start with lowercase, 6 to 20 characters (eg: breack213)');
+				$('#name').next('span').text('Name must start with lowercase, 6 to 20 characters (eg: breack213)');
 				checkValis = false;
 			}else {
 				$('#name').next('span').text('');
 			}
 		}
 		if ($('#address').val().trim() == ''){
-			$('#address').next('span').text('address must start with lowercase, 6 to 30 characters (eg: California, USA)');
+			$('#address').next('span').text('Address must start with lowercase, 6 to 30 characters (eg: California, USA)');
 			checkValis = false;
 		}else {
 			if ($('#address').val().match(/^\D\w{5,30}/)==null) {
-				$('#address').next('span').text('address must start with lowercase, 6 to 30 characters (eg: California, USA)');
+				$('#address').next('span').text('Address must start with lowercase, 6 to 30 characters (eg: California, USA)');
 				checkValis = false;
 			}else {
 				$('#address').next('span').text('');
