@@ -140,3 +140,10 @@ a {
 #bb:hover {
 	color: white;
 }
+
+@media only screen and (max-width: 500px){
+#facebook img {
+	margin-top: 5px;
+	margin-left: 0px;
+}
+}

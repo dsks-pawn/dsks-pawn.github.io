@@ -4,7 +4,7 @@
 	padding: 0;
 }
 #bag {
-	width: 1800px;
+	max-width: 1800px;
 	margin: 0 auto;
 }
 #master {
@@ -391,4 +391,22 @@ h1 {
 	margin-top: 180px;
 	margin-right: 53px;
 	float: right;
+}
+@media only screen and (max-width: 500px){
+#title {
+    height: 10%;
+
+}
+#menu {
+    font-size: 8px;
+    line-height: 0px;
+    height: 12%;
+}
+
+#slider img {
+ 
+}
+.container {
+	display: none;
+}
 }
