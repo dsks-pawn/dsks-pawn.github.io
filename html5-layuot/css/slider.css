@@ -1,161 +1,94 @@
-@import url(https://fonts.googleapis.com/css?family=Questrial);
-  
-  body{
-    padding: 0;
-    margin: 0;
-    background: grey;
-    font-family: "Questrial", Arial, Helvetica, sans-serif;
-  }
-  
-  #slider-wrapper{
-    width: 1024px;
-    height: auto;
-    margin: 20px auto;
-    text-align: center;
-  }
-  
-  #dots{
-    cursor: default;
-  }
-  
-  ul{
-    padding: 0;
-    margin: 0;
-  }
-  
-  #dots li{
-    display: inline-block;
-      *display: inline;
-      zoom: 1.0;
-    background: #61676D;
-    width: 10px;
-    height: 10px;
-    border-radius: 8px;
-    margin: 0 2px;
-    cursor: pointer;
-  }
-  
-  #dots li.active, #dots li:hover{
-    background: #c4c9cf;
-  }
-  
-  
-  .nav-arrow{
-    width: 46px;
-    height: 343px;
-    display: inline-block;
-      *display: inline;
-      zoom: 1.0;
-    cursor: pointer;
-  }
-  
-  #arrow-left{
-    background: url(http://www.derekhilldesign.com/projects/slider-header/images/arrow-left.png) center center no-repeat;
-  }
-  
-  #arrow-right{
-    background: url(http://www.derekhilldesign.com/projects/slider-header/images/arrow-right.png) center center no-repeat;
-  }
-  
-  #arrow-right:hover, #arrow-left:hover{
-    background-color: #1e2225;
-  }
-  
-  #image-slider{
-    width: 923px;
-    height: 343px;
-    position: relative;
-    margin-top: 10px;
-    overflow: hidden;
-    display: inline-block;
-      *display: inline;
-      zoom: 1.0;
-  }
-  
-  #slider-wrapper:before{
-    content: '';
-    width: 974px;
-    height: 52px;
-    display: block;
-    position: absolute;
-    left: 50%;
-    margin-left: -487px;
-    top: 375px;
-    background: url(http://www.derekhilldesign.com/projects/slider-header/images/shadow.png) center center no-repeat;
-  }
-  #image-slider ul{
-    width: 923px;
-    height: 343px;
-    position: relative;
-  }
-  #image-slider ul li{
-    display: inline-block;
-      *display: inline;
-      zoom: 1.0;
-    position: absolute;
-    top: 0;
-    left: -923px;
-  }
-  
-  #image-slider ul li.active-img{
-    left: 0;
-  }
-  .next-img{
-    z-index: 9999;
-  }
-  
-  #nav-bar{
-    width: 923px;
-    position: absolute;
-    z-index: 999999;
-    bottom: -3px;
-  }
-  
-  #nav-bar a{
-    display: inline-block;
-      *display: block;
-      zoom: 1.0;
-    width: 231px;
-    text-align: center;
-    height: 26px;
-    padding-top: 9px;
-    color: #fff;
-    overflow: hidden;
-    font-size: 21px;
-    text-shadow: 0 1px 5px #000;
-    text-decoration: none;
-    position: relative;
-    background: rgba(2, 19, 32, 0.9);
-    -webkit-transition: padding-top .25s;
-    -moz-transition: padding-top .25s;
-    transition: padding-top .25s;
-  }
-  
-  #nav-bar a:first-child{
-    width: 230px;
-  }
-  
-  #nav-bar a div{
-    height: 0;
-    width: 231px;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  
-  #nav-bar a div img{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 0.3;
-  }
-  
-  #nav-bar a:hover{
-    padding-top: 317px;
-    box-shadow: 0 0 5px #000;
-  }
-  
-  #nav-bar a:hover div{
-    height: 343px;
-  }
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

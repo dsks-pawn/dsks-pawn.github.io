@@ -15,7 +15,7 @@ var lost = document.getElementById('audio-lost');
 $(document).ready(function(){
     shuffle();
     loadGame();
-    playSound(main);
+    // playSound(main);
 })
 loadGame = function(){
     themes();
@@ -125,7 +125,7 @@ function progressBarSim(al) {
   status.innerHTML = al+" %";
   bar.value = al;
   al--;
-    var sim = setTimeout("progressBarSim("+al+")",1000);
+    var sim = setTimeout("progressBarSim("+al+")",700);
     if(al == 0){
       status.innerHTML = "0%";
       bar.value = 0;
