@@ -85,7 +85,7 @@ function getUrlwindow(sParam) {
 			$('#number').next('span').text('Mobile numbers must contain 10 or 11 numbers, starting with 0 (eg: 0988432234)');
 			checkValis = false;
 		}else {
-			if ($('#number').val().match(/e^0[0-9]\w{8,9}$/)==null) {
+			if ($('#number').val().match(/^0[0-9]\w{8,9}$/)== null) {
 				$('#number').next('span').text('Mobile numbers must contain 10 or 11 numbers, starting with 0 (eg: 0988432234)');
 				checkValis = false;
 			}else {
