@@ -1,0 +1,9 @@
+.col-md-3 img:hover {
+	transform: translateY(-10px);
+	border-radius: 20px;
+	opacity: 0.8;
+	box-shadow: 3px 3px 3px 3px black;
+	transition: all 1s linear;
+
+}
+ 
