@@ -1,1 +1,16 @@
-style.css
+.bgimg-2 {
+	background-image: url('../images/3.jpg');
+	background-size: cover;
+	min-height: 500px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;    
+}
+#one {
+	background-image: url('../images/6.jpg');
+	background-size: cover;
+	min-height: 800px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;    
+}
