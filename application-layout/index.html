@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="icon" type="images/jepg" href="icons/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<style>
+	.navbar  {
+		background-color: #a13445 !important;
+		margin-bottom: 100px;
+		transform: skewX(-15deg);
+		border-radius: 10px;
+	}
+	.navbar h1 {
+		color: white;
+	}
+	.navbar-brand  {
+		margin: 0 auto;
+	}
+	svg:not(:root).svg-inline--fa {
+		float: right;
+	}
+	.col-md-3 button {
+		padding-right: 19px;
+		padding-left: 18px;
+		background: #0e5483;
+		color: white;
+	}
+	 .title-h3  {
+		background: #191315;
+		color: white;
+	}
+	.title-h3:hover {
+		background: #191315;
+		color: white;
+	}
+</style>
+
+
+
+</head>
+<body>
+
+
+
+
+	<!-- HEADER -->		
+	<header class="container">
+		<nav  class="navbar navbar-light bg-light">
+			<a class="navbar-brand " href="#"><h1>Kanban Board</h1></a>
+		</nav>
+	</header>
+	<!-- /HEADER -->
+
+	<!-- CONTENT -->
+	<section class="container">
+		<div class="row text-center">
+			<div class="col-xs-12 col-md-4">
+				<div class="card">
+					<a href="#" class="list-group-item list-group-item-action title-h3"><h3>Todo</h3></a>
+					<div class="list-group sort-list">
+						<a href="#" class="list-group-item list-group-item-action list-group-item-primary"> Làm Project  <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Học Nodejs<i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-success">Avengers infinity war <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-danger">Cut PSD <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Responsive Web <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-info">Xử lý dữ liệu <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-light">Có việc làm <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Về quê <i class="fas fa-trash-alt"></i></a>
+					</div>
+					<form class="form-row">
+						<div class="col-md-9">
+							<input class="form-control mr-sm-2" type="search" placeholder="Việc mới cần làm">
+						</div>
+						<div class="col-md-3">
+							<button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Thêm</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card">
+					<a href="#" class="list-group-item list-group-item-action title-h3"><h3>Doing</h3></a>
+					<div class="list-group sort-list">
+						<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Web application  <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Giải trí <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-success">Tech Master <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-danger">CSS <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Java script <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-info">HTML <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-light">Jquery <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Bootstrap <i class="fas fa-trash-alt"></i></a>
+					</div>
+					<form class="form-row">
+						<div class="col-md-9">
+							<input class="form-control mr-sm-2" type="search" placeholder="Việc mới cần làm">
+						</div>
+						<div class="col-md-3">
+							<button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Thêm</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="card">
+					<a href="#" class="list-group-item list-group-item-action title-h3"><h3>Done</h3></a>
+					<div class="list-group sort-list">
+						<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Animation  <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Loop <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-success">Function<i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-danger">Font Awesome <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Login form <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-info">Table<i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-light">Media Query <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Memory Card <i class="fas fa-trash-alt"></i></a>
+					</div>
+					<form class="form-row">
+						<div class="col-md-9">
+							<input class="form-control mr-sm-2" type="search" placeholder="Việc mới cần làm">
+						</div>
+						<div class="col-md-3">
+							<button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Thêm</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			
+			
+
+
+			
+		</div>
+
+	</section>
+	<!-- /CONTENT -->	
+
+	<!-- FOOTER	 -->
+	<footer>
+
+	</footer>
+	<!-- FOOTER	 -->
+
+
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+
+</body>
+</html>

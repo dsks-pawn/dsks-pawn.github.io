@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script|Cantata+One|Chewy|Racing+Sans+One');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+
+#master {
+  margin:  auto;
+  max-width: 1500px;
+}
+#content {
+  height: 3850px;
+  width: 100%;
+  padding-top: 60px;
+}
+#intro {
+  width: 100%;
+  height: 1180px;
+}
+#intro_title {
+  margin-bottom: 100px;
+}
+#intro_title h1, #store_title h1 {
+  text-align: center;
+  font-family: 'Aguafina Script', cursive;
+  font-size: 70px;
+  color: #823636;
+}
+#intro_pattern {
+  margin-top: 40px;
+  text-align: center;
+}
+#intro_pattern img {
+  width: 10%;
+}
+
+#intro_img div {
+  float: left;
+  max-width: 25%;
+  text-align: center;
+  font-size: 20px;
+}
+#intro_img img {
+  width: 80%;
+}
+#intro_img img:hover {
+  /* transform: rotate(10deg); */
+  transition:all 1s linear;
+  border-radius: 50%;
+}
+#intro_img p {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 39px;
+  color: #ab4b5d;
+  font-family: Chewy;
+}
+#intro_bottom  div div {
+  max-width: 19%;
+  float: left;
+  font-size: 20px;
+  overflow: auto;
+  margin: 200px 5px 0px 5px;
+  font-family: arial;
+  font-weight: bold;
+}
+#intro_bottom div {
+  margin-left: 20px;
+}
+.fa-paper-plane, .fa-gift, .fa-history, .fa-angellist  {
+  font-size: 60px;
+  color: #269d11;
+}
+#intro_bottom h3 {font-family: 'Chewy', cursive;font-size: 32px;color: #0e3c65;}
+#between {
+  width: 100%;
+  height: 2370px;
+  padding-top: 80px;
+  margin-top: 70px;
+}
+#between_title {
+  text-align: center;
+  font-size: 25px;
+  height: 0px;
+  height: 100px;
+}
+
+#welcome {
+  float: left;
+  height: 800px;
+  font-size: 20px;
+  text-align: center;
+  color: #a3c2c2;
+  margin: 0 auto;
+  background-color: #404040;
+  margin: 100px 0px 150px 0px;
+  box-shadow: 10px 8px 10px 10px grey;
+}
+.free {
+  width: 20%;
+  float: left;
+  margin: 70px 37px 0px 37px;
+}
+.free:hover {
+  background-color: #ce8383;
+  transition:all 1s 0s linear;
+  color: white;
+}
+.free img {
+  width: 100%;
+}
+.free p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.free img:hover {
+  transition:all 1s 0s linear;
+}
+.free button {
+  margin-top: 30px;
+  color: #cccccc;
+  background: #737373;
+  font-size: 20px;
+  padding: 5px;
+}
+.free button:hover {
+  color: #660000;
+  background: #f2f2f2;
+  transition:all 1s 0s linear;
+  transform: scale(1.2);
+}
+
+#store_title {
+  text-align: center;
+  font-size: 24px;
+  height: 187px;
+}
+#between_title h1 {
+  font-size: 60px;
+  font-family: 'Aguafina Script', cursive;
+  color: #823636;
+}
+#between_top {
+  height: 970px;
+}
+#between_store {
+  width: 100%;
+  height: 1187px;
+  box-shadow: 13px 12px 13px 13px grey;
+}
+#between_store .store {
+  max-width: 18%;
+  float: left;
+  margin: 100px 15px 0px 14px;
+  text-align: center;
+  position: relative;
+  height: 380px;
+  font-weight: bold;
+  color: black;
+}
+#store_content {
+  background-image: url("../images/back2.jpg");
+  height: 1000px;
+  background-size: cover;
+}
+.store:hover {
+  transition:all 1s 0s linear;
+  background: cadetblue;
+}
+.store img {
+  width: 100%;
+}
+.store p {
+  margin:10px 0px 10px 0px;
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+}
+.store p:hover {
+  color: white;
+    transition:all 1s linear;
+}
+.store button {
+  color: white;
+  background: #ba9393;
+  font-size: 22px;
+  padding: 5px 25px 5px 25px;
+  position: absolute;
+  top: 105px;
+  right: 100px;
+  display: none;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+.store:hover button{
+  display: block;
+  transition:all 3s linear;
+}
+
