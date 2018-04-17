@@ -1,26 +1,69 @@
 
-#one {
+
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script');
+
+
+#welcome {
+	margin-top: 50px;
+}
+
+#one, #two, #three{
 	background-image: url('../images/one.jpg');
 	background-size: cover;
 	min-height: 500px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-   	 background-position: center;    
+	background-position: center;    
 }
 #two {
 	background-image: url('../images/two.jpg');
-	background-size: cover;
-	min-height: 500px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-  	 background-position: center;    
 }
 #three {
 	background-image: url('../images/three.jpg');
-	background-size: cover;
-	min-height: 500px;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-   	 background-position: center;    
+
+}
+
+.w3-col {
+
+	margin-bottom: 5px;
+}
+
+.ih-item {
+	margin: 0 auto;
+}
+.thumbnail button {
+	padding: 8px 12px 8px 12px;
+	margin-top: 10px;
+}
+
+.w3-light-grey.test-button{
+	color: white !important;
+	background-color: #009999 !important;
+
+}
+#test {
+	background-color: #009999  !important;
+
+}
+.w3-green {
+	background-color: #4CAF7D!important;
+}
+.w3-green:hover{
+	background-color: #4CAF7D!important;
+	color: white !important;
+}
+.w3-black {
+	background-color: #304f6b !important;
+
+}
+.navbar-form button {
+	color: black;
+	font-weight: bold;
+}
+.navbar-form button:hover {
+	background-color: #009999;
+}
+h1, h2 {
+	font-family: arial !important;
 
 }
