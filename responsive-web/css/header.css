@@ -18,3 +18,6 @@
 .navbar-inverse .navbar-toggle:hover {
     background-color: #009999;
 }
+.carousel-inner>.item>img {
+	width: 100%;
+}
