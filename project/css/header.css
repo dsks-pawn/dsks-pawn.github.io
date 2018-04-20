@@ -5,15 +5,11 @@
 .navbar-nav {
 	margin: 0 auto;
 }
-section img {
-	width: 100%;
-}
+
 footer img {	
 	width: 100%;
 }
-#content-header {
- margin-top: 100px;
-}
+
 .card, .list-group-item{
   border:none;
 }

@@ -6,11 +6,18 @@ i {
 	font-size: 16px;
 	color: grey;
 }
+
+#content-header {
+	margin-top: 100px;
+}
+.images-main img, .registration img{
+	width: 100%;
+}
 .card-text {
 	color:  #e44c2a;
 	font-weight: bold;
 }
-.foot-today, .foot-menu {
+.foot-today, .foot-menu, .menu-product{
 	margin-top: 100px;
 }
 .bg-light {
@@ -23,3 +30,60 @@ i {
 	position: relative;
 	display: inline-block;
 }
+.card-body a {
+	color: black;
+}
+.card-body a:hover {
+	color: #e44c2a;
+}
+.menu-tab .nav-item a {
+	color: black;
+}
+.menu-tab .nav-item a:hover {
+	color:  #e44c2a;
+}
+.card-foot {
+	margin-top: 12px;
+}
+.mr-3 {
+	max-width: 100%;
+}
+.nav-link {
+	padding: 20px 5px;
+}
+.media-body .mt-0 {
+	font-size: 14px;
+}
+.media-body .mt-0:hover {
+	color: #e44c2a;
+}
+
+#content-body {
+	margin-top: 100px;
+}
+#content-body-food {
+	margin-top: 100px;
+	box-shadow: 5px 5px 10px 5px black;
+	background-image: url('../images/back.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;   
+}
+.collection-image {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.collection-title {
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+.collection-body {
+	margin-bottom: 100px;
+}
+.registration {
+	margin-top: 100px;
+}
+
+
