@@ -1,0 +1,33 @@
+address {
+	padding-top: 100px;
+}
+footer .nav-link {
+	color: black;
+	font-size: 13px;
+}
+.address-title {
+	padding-bottom: 30px;
+}
+.address-top  {
+	padding: 10px;
+}
+.address-body {
+	padding-left: 0px;
+	font-weight: bold;
+}
+.fuct-day {
+	font-size: 12px;
+	color: grey;
+}
+.fuct-title {
+	padding-bottom: 30px;
+}
+.fuct-about {
+	font-size: 12px;
+}
+.icon .fa-3x {
+	margin: 20px 20px 0px 0px;
+}
+.aside-bottom {
+	color: #e44c2a !important;
+}

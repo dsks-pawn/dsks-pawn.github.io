@@ -20,6 +20,7 @@
 }
 .navbar-nav>li>a {
 	color: black !important;
+	font-weight: bold;
 }
 .navbar-nav>li>a:hover {
 	color: #e44c2a !important;
