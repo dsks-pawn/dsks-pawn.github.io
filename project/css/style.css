@@ -11,7 +11,6 @@ img {
 }
 a:hover {
 	text-decoration: none;
-	transition: 1s all;
 	color: #e44c2a !important;
 }
 .nav-link {
@@ -34,10 +33,12 @@ a:hover {
 	color:  #e44c2a;
 	font-weight: bold;
 }
-.foot-today, .foot-menu, .menu-product{
+.foot-today, .foot-menu{
 	padding-top: 100px;
 }
-
+.menu-product {
+	padding-top: 30px;
+}
 .menu-tab {
 	text-align: center;
 }
@@ -58,7 +59,6 @@ a:hover {
 }
 #itemslider a h4:hover{
 	color: #e44c2a;
-	transition: 1s all;
 
 }
 #itemslider h5 {
@@ -143,7 +143,7 @@ a:hover {
 }
 .collection-title {
 	margin-top: 70px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .collection-body {
 	margin-bottom: 100px;
@@ -218,24 +218,53 @@ a:hover {
 }
 .news-font a:hover {
 	color: #e44c2a;
-	transition: 1s all;
 }
 .news-font .read-more{
 	color: #e44c2a;
 }
-
 .maps {
 	padding: 0px 15px 0px 15px;
 }
-.fa-2x {
-	color: grey;
+.carousel-showmanymoveone .carousel-control {
+	color: #e44c2a !important;
+	margin-top: 80px !important;
+} 
+.sale {
+	padding-bottom: 50px;
 }
-.carousel-inner {
-	position: relative;
+.foot-home {
+	padding-bottom: 20px;
+}
+.opinion {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.opinion-top {
+	margin-top: 20px;
+}
+.mySlides {
 	width: 60%;
-	overflow: hidden;
 	margin: 0 auto;
+	font-size: 13px;
+	line-height: 23px;
 }
-.carousel-control {
-    background-color: none !important;
+.mySlides p {
+	margin-top: 10px;
+	color: #e44c2a;
+	font-weight: bold;
+}
+.slider-bulletin {
+	font-size: 11px;
+	color: grey !important;
+	font-weight: normal !important ;
+}
+
+.w3-black {
+	color: #e44c2a  !important;
+	background-color: #fff!important;
+}
+.w3-black:hover {
+	color: white !important;
+	background-color: #e44c2a  !important;
+	border: none;
 }
