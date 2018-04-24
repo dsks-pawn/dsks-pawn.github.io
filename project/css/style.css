@@ -18,7 +18,7 @@ a:hover {
 	font-size: 16px;
 }
 .link-title {
-		color: black !important;
+	color: black !important;
 }
 
 #content-header {
@@ -35,7 +35,8 @@ a:hover {
 	font-weight: bold;
 }
 .foot-today, .foot-menu, .menu-product{
-	padding-top: 100px;}
+	padding-top: 100px;
+}
 
 .menu-tab {
 	text-align: center;
@@ -94,7 +95,7 @@ a:hover {
 	color: #e44c2a;
 }
 .menu-product ul {
-padding: 0px;
+	padding: 0px;
 }
 .card-foot {
 	margin-top: 12px;
@@ -125,6 +126,16 @@ padding: 0px;
 	background-attachment: fixed;
 	background-position: center;   
 }
+.tab>li>p {
+	cursor: pointer;
+}
+.tab>li>p:hover {
+	cursor: pointer;
+	color: #e44c2a;
+}
+.tab>li>p.active {
+	color: #e44c2a;
+}
 .collection-image {
 	width: 100%;
 	margin-top: 10px;
@@ -140,10 +151,10 @@ padding: 0px;
 .registration {
 	padding-top: 100px;
 }
-
-
-
-
+.active>p>a {
+	color: #e44c2a !important;
+	text-decoration: none;
+}
 
 
 .time-open {
@@ -176,9 +187,6 @@ padding: 0px;
 	margin-top: 40px;
 }
 
-
-
-
 #content-footer {
 	padding-top: 100px;
 }
@@ -186,7 +194,9 @@ padding: 0px;
 	padding: 0px;
 }
 
-
+.tab-menu.active2 {
+	color: red !important;
+}
 
 .font-video {
 	background: #f5f5f5;
@@ -220,8 +230,12 @@ padding: 0px;
 .fa-2x {
 	color: grey;
 }
-
-
-
-
-
+.carousel-inner {
+	position: relative;
+	width: 60%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.carousel-control {
+    background-color: none !important;
+}

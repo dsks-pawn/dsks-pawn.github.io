@@ -4,6 +4,7 @@ address {
 footer .nav-link {
 	color: black;
 	font-size: 13px;
+	font-weight: normal;
 }
 .address-title {
 	padding-bottom: 30px;
@@ -31,3 +32,6 @@ footer .nav-link {
 .aside-bottom {
 	color: #e44c2a !important;
 }
+
+
+
