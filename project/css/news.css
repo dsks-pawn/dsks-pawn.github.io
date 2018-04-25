@@ -1,0 +1,41 @@
+section .card {
+  margin-top: 80px; }
+  section .card h3 {
+    color: #666; }
+    section .card h3:hover {
+      color: #e44c2a; }
+  section .card img {
+    margin: 30px 0px 30px 0px; }
+  section .card span {
+    color: grey; }
+  section .card p {
+    color: #565656;
+    font-family: inherit; }
+  section .card a {
+    color: #e44c2a; }
+  section .card #icon-share a {
+    color: grey !important; }
+    section .card #icon-share a:hover {
+      color: #e44c2a !important; }
+    section .card #icon-share a .fa-twitter {
+      color: grey; }
+      section .card #icon-share a .fa-twitter:hover {
+        color: #e44c2a; }
+section .list-right a {
+  color: #666; }
+section .bookmarks nav {
+  text-align: center; }
+  section .bookmarks nav .pagination a {
+    color: black; }
+    section .bookmarks nav .pagination a:hover {
+      background: #e44c2a !important;
+      border: #e44c2a !important;
+      color: white !important; }
+  section .bookmarks nav .pagination .active a {
+    color: white !important;
+    background: #e44c2a !important;
+    border: #e44c2a !important; }
+    section .bookmarks nav .pagination .active a:hover {
+      color: white !important; }
+
+/*# sourceMappingURL=news.css.map */

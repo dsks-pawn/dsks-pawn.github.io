@@ -1,0 +1,72 @@
+section {
+	.card {
+		margin-top: 80px;
+		h3 {
+			color: #666;
+			&:hover {
+				color: #e44c2a;
+			}
+		}
+		img {
+			margin: 30px 0px 30px 0px;
+		}
+		span {
+			color: grey;
+		}
+		p {
+			color: #565656;
+			font-family: inherit;
+		}
+		a {
+			color: #e44c2a;
+		}
+		#icon-share {
+			a {	
+				color: grey !important;
+				&:hover {
+					color: #e44c2a !important;
+				}
+				.fa-twitter {
+					color: grey;
+					&:hover {
+						color: #e44c2a;
+					}
+				}
+			}
+		}
+	}
+	.list-right {
+		a { 
+			color: #666;
+		}
+	}
+	.bookmarks {
+		nav {
+			text-align: center;
+			.pagination {
+				a {
+					color: black;
+					&:hover {
+						background : #e44c2a !important;
+						border:  #e44c2a !important;
+						color: white !important;
+					}
+				}
+				.active {
+					a {	
+						color: white !important;
+						background : #e44c2a !important;
+						border:  #e44c2a !important;
+						&:hover {
+							color: white !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
