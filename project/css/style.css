@@ -26,8 +26,13 @@ a:hover {
 .list-group-item {
 	border: none;
 }
-.about-title, .about-body {
+.about-title {
 	padding-bottom: 30px;
+}
+.about-body {
+	padding-bottom: 5px;
+	font-size: 14px;
+	color: grey;
 }
 .card-text {
 	color:  #e44c2a;
@@ -138,6 +143,7 @@ a:hover {
 }
 .collection-image {
 	width: 100%;
+	box-shadow: -2px 11px 10px -2px #333;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
