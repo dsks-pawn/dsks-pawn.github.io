@@ -1,0 +1,105 @@
+#content-head {
+	.tabcontent {
+		display: none;
+	}
+	#images-1 {
+		display: block;
+	}
+	.note {
+		padding-top: 80px;
+	}
+	padding-top: 80px;
+	.dolar-food {
+		color: #e44c2a;
+	}
+	.detaill-img {
+		margin-top: 30px;
+	}
+	.icon-share {
+		a {
+			padding-right: 10px;
+			color: grey;
+			.fa-twitter {
+				color: grey;
+				&:hover {
+					color: #e44c2a;
+				}
+			}
+		}
+		margin-top: 30px;
+	}
+	form {
+		padding-top: 30px;
+		input {
+			border-radius: 0px;
+			height: 40px;
+		}
+		select {
+			width: 100%;
+			height: 40px;
+			border: 1px solid #ccc;
+		}
+		button {
+			width: 100%;
+			height: 45px;
+			color: white;
+			background: #e44c2a;
+			border: none;
+		}
+	}
+}
+#content-body {
+	padding: 80px 0px 80px 0px;
+	.carousel-showmanymoveone .carousel-control {
+		color: #e44c2a !important;
+		margin-top: 80px !important;
+	} 
+	.sale {
+		padding-bottom: 50px;
+	}
+	.slider-foot {
+		a {
+			h4{
+				font-weight: bold;
+			}
+			color: black;
+		}
+		h5 {
+			font-weight: bold;
+			color: #e44c2a;
+		}
+	}
+}
+#content-footer {
+	padding-top: 50px;
+	.welcome-registration {
+		margin-top: 10px;
+		color: black;
+		padding: 0px;
+		.time-open {
+			list-style-type:none;
+			padding: 0px 0px 0px 0px;
+			font-size: 13px;
+			color: grey;
+		}
+		.nav-link {
+			color: black;
+		}
+	}
+	.form-registration {
+		margin-top: 40px;
+		.submit-result {
+			button {
+				padding: 10px 40px 10px 40px !important;
+				background: #e44c2a;
+				border: #e44c2a;
+			}
+		}
+		.date-time {
+			padding-right: 0px;
+		}
+		.time-date {
+			padding-left: 0px;
+		}
+	}
+}

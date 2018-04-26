@@ -1,6 +1,29 @@
 section {
+	padding-top: 50px;
 	.card {
-		margin-top: 80px;
+		h5 {
+			b{
+				line-height: 50px;
+			}
+		}
+		.form-chat {
+			background: #f9f9f9;
+			padding: 40px 40px 40px 40px;
+			h4 {
+				padding-bottom: 40px;
+			}
+			.form-group { 
+				margin-bottom: 30px;
+				input {
+					border-radius: 0px;
+				}
+			}
+			button {
+				padding: 10px 20px 10px 20px;
+				background: #e44c2a;
+				border: none;
+			}
+		}
 		h3 {
 			color: #666;
 			&:hover {
@@ -12,6 +35,7 @@ section {
 		}
 		span {
 			color: grey;
+
 		}
 		p {
 			color: #565656;

@@ -176,6 +176,7 @@ html, body, header, main, .content, .slideshow, .slide, .slide__bg {
 .welcome-registration .nav-link{
 	margin-top: 10px;
 	padding: 0px;
+	 color: black
 }
 .form-registration	{
 	margin-top: 40px;
