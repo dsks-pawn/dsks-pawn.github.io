@@ -1,4 +1,6 @@
-
+html, body, header, main, .content, .slideshow, .slide, .slide__bg {
+	width: 100%;
+}
 .nav-link {
 	font-size: 16px;
 }
@@ -257,6 +259,28 @@
 }
 .w3-black:hover {
 	color: white !important;
-	background-color: #e44c2a  !important;
+	background-color: #e44c2a !important;
 	border: none;
 }
+#itemslider {
+	position: sticky;
+	opacity: 1;
+	height: auto;
+	pointer-events: auto;
+}
+
+@media only screen and (max-width: 880px) {
+    html {
+      height: 45%;
+    }
+}
+/*@media screen and (max-width: 700) {
+	html {
+		height: 45%;
+	}
+}
+@media screen and (max-width: 576) {
+	html {
+		height: 35%;
+	}
+}*/

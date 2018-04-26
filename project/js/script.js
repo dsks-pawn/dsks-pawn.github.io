@@ -1,3 +1,4 @@
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -55,12 +56,3 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
-
-
-
-
-
-
-
-
-// https://codepen.io/search/pens?q=scroll%20smooth&page=1&order=popularity&depth=everything&show_forks=false

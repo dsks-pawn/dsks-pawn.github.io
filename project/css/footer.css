@@ -11,6 +11,12 @@ footer .nav-link {
 	padding-bottom: 30px;
 	text-align: center;
 }
+.text-center .fuct-about {
+	color: black;
+}
+.text-center .fuct-about:hover {
+	color: #e44c2a !important;
+}
 .address-top  {
 	padding: 10px;
 }
@@ -28,10 +34,11 @@ footer .nav-link {
 .fuct-about {
 	font-size: 12px;
 }
-.icon {
+
+.icons-address {
 	text-align: center;
 }
-.icon .fa-3x {
+.icons-address .fa-3x {
 	margin: 0px 20px 20px 20px;
 }
 .aside-bottom {
