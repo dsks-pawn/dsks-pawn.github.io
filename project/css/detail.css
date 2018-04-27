@@ -2,76 +2,135 @@
   padding-top: 80px; }
   #content-head .tabcontent {
     display: none; }
-  #content-head #images-1 {
-    display: block; }
-  #content-head .note {
-    padding-top: 80px; }
-  #content-head .dolar-food {
-    color: #e44c2a; }
-  #content-head .detaill-img {
-    margin-top: 30px; }
-  #content-head .icon-share {
-    margin-top: 30px; }
-    #content-head .icon-share a {
-      padding-right: 10px;
-      color: grey; }
-      #content-head .icon-share a .fa-twitter {
-        color: grey; }
-        #content-head .icon-share a .fa-twitter:hover {
-          color: #e44c2a; }
-  #content-head form {
-    padding-top: 30px; }
-    #content-head form input {
-      border-radius: 0px;
-      height: 40px; }
-    #content-head form select {
-      width: 100%;
-      height: 40px;
-      border: 1px solid #ccc; }
-    #content-head form button {
-      width: 100%;
-      height: 45px;
-      color: white;
-      background: #e44c2a;
-      border: none; }
+    #content-head #images-1 {
+      display: block; }
+      #content-head .note {
+        padding-top: 80px; }
+        #content-head .note .panel-default a {
+          text-decoration: none; }
+          #content-head .note .panel-default #collapse3 {
+            padding: 0px 15px 15px 15px; }
+            #content-head .note .panel-default #collapse3 .heading {
+              font-size: 25px;
+              margin-right: 25px; }
+              #content-head .note .panel-default #collapse3 .fa {
+                font-size: 25px; }
+                #content-head .note .panel-default #collapse3 .checked {
+                  color: orange; }
+                  #content-head .note .panel-default .side {
+                    float: left;
+                    width: 15%;
+                    margin-top: 10px; }
+                    #content-head .note .panel-default .right {
+                      text-align: right; }
+                      #content-head .note .panel-default .row:after {
+                        content: "";
+                        display: table;
+                        clear: both; }
+                        #content-head .note .panel-default .middle {
+                          margin-top: 10px;
+                          float: left;
+                          width: 70%; }
+                          #content-head .note .panel-default .middle .bar-container {
+                            width: 100%;
+                            background-color: #f1f1f1;
+                            text-align: center;
+                            color: white; }
+                            #content-head .note .panel-default .middle .bar-container .bar-5 {
+                              width: 60%;
+                              height: 18px;
+                              background-color: #4CAF50; }
+                              #content-head .note .panel-default .middle .bar-container .bar-4 {
+                                width: 30%;
+                                height: 18px;
+                                background-color: #2196F3; }
+                                #content-head .note .panel-default .middle .bar-container .bar-3 {
+                                  width: 10%;
+                                  height: 18px;
+                                  background-color: #00bcd4; }
+                                  #content-head .note .panel-default .middle .bar-container .bar-2 {
+                                    width: 4%;
+                                    height: 18px;
+                                    background-color: #ff9800; }
+                                    #content-head .note .panel-default .middle .bar-container .bar-1 {
+                                      width: 15%;
+                                      height: 18px;
+                                      background-color: #f44336; }
+                                      @media (max-width: 400px) {
+                                        #content-head .note .panel-default .side, #content-head .note .panel-default .middle {
+                                          width: 100%; }
+                                          #content-head .note .panel-default .right {
+                                            display: none; } }
+                                            #content-head .dolar-food {
+                                              color: #e44c2a; }
+                                              #content-head .detaill-img {
+                                                margin-top: 30px; }
+                                                #content-head .icon-share {
+                                                  margin-top: 30px; }
+                                                  #content-head .icon-share a {
+                                                    padding-right: 10px;
+                                                    color: grey; }
+                                                    #content-head .icon-share a .fa-twitter {
+                                                      color: grey; }
+                                                      #content-head .icon-share a .fa-twitter:hover {
+                                                        color: #e44c2a; }
+                                                        #content-head form {
+                                                          padding-top: 30px; }
+                                                          #content-head form .modal-button {
+                                                            margin-top: 30px; }
+                                                            #content-head form .modal-content {
+                                                              padding: 40px 30px 40px 30px; }
+                                                              #content-head form input {
+                                                                border-radius: 0px;
+                                                                height: 40px; }
+                                                                #content-head form select {
+                                                                  width: 100%;
+                                                                  height: 40px;
+                                                                  border: 1px solid #ccc; }
+                                                                  #content-head form button {
+                                                                    width: 100%;
+                                                                    height: 45px;
+                                                                    color: white;
+                                                                    background: #e44c2a;
+                                                                    border: none; }
 
-#content-body {
-  padding: 80px 0px 80px 0px; }
-  #content-body .carousel-showmanymoveone .carousel-control {
-    color: #e44c2a !important;
-    margin-top: 80px !important; }
-  #content-body .sale {
-    padding-bottom: 50px; }
-  #content-body .slider-foot a {
-    color: black; }
-    #content-body .slider-foot a h4 {
-      font-weight: bold; }
-  #content-body .slider-foot h5 {
-    font-weight: bold;
-    color: #e44c2a; }
+                                                                    #content-body {
+                                                                      padding: 80px 0px 80px 0px; }
+                                                                      #content-body .carousel-showmanymoveone .carousel-control {
+                                                                        color: #e44c2a !important;
+                                                                        margin-top: 80px !important; }
+                                                                        #content-body .sale {
+                                                                          padding-bottom: 50px; }
+                                                                          #content-body .slider-foot a {
+                                                                            color: black; }
+                                                                            #content-body .slider-foot a h4 {
+                                                                              font-weight: bold; }
+                                                                              #content-body .slider-foot h5 {
+                                                                                font-weight: bold;
+                                                                                color: #e44c2a; }
 
-#content-footer {
-  padding-top: 50px; }
-  #content-footer .welcome-registration {
-    margin-top: 10px;
-    color: black;
-    padding: 0px; }
-    #content-footer .welcome-registration .time-open {
-      list-style-type: none;
-      padding: 0px 0px 0px 0px;
-      font-size: 13px;
-      color: grey; }
-    #content-footer .welcome-registration .nav-link {
-      color: black; }
-  #content-footer .form-registration {
-    margin-top: 40px; }
-    #content-footer .form-registration .submit-result button {
-      padding: 10px 40px 10px 40px !important;
-      background: #e44c2a;
-      border: #e44c2a; }
-    #content-footer .form-registration .date-time {
-      padding-right: 0px; }
-    #content-footer .form-registration .time-date {
-      padding-left: 0px; }
+                                                                                #content-footer {
+                                                                                  padding-top: 50px; }
+                                                                                  #content-footer .welcome-registration {
+                                                                                    margin-top: 10px;
+                                                                                    color: black;
+                                                                                    padding: 0px; }
+                                                                                    #content-footer .welcome-registration .time-open {
+                                                                                      list-style-type: none;
+                                                                                      padding: 0px 0px 0px 0px;
+                                                                                      font-size: 13px;
+                                                                                      color: grey; }
+                                                                                      #content-footer .welcome-registration .nav-link {
+                                                                                        color: black; }
+                                                                                        #content-footer .form-registration {
+                                                                                          margin-top: 40px; }
+                                                                                          #content-footer .form-registration .submit-result button {
+                                                                                            padding: 10px 40px 10px 40px !important;
+                                                                                            background: #e44c2a;
+                                                                                            border: #e44c2a; }
+                                                                                            #content-footer .form-registration .date-time {
+                                                                                              padding-right: 0px; }
+                                                                                              #content-footer .form-registration .time-date {
+                                                                                                padding-left: 0px; }
 
-/*# sourceMappingURL=detail.css.map */
+                                                                                                /*# sourceMappingURL=detail.css.map */
