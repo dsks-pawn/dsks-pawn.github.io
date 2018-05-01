@@ -1,6 +1,55 @@
 
 		{
 			const effects = [
+						// Effect 3
+					{
+						options: {
+							shapeColors: ['red','#000','#fff'],
+							shapeFill: false,
+							shapeStrokeWidth: 10
+						},
+						hide: {
+							shapesAnimationOpts: {
+								duration: 250,
+								delay: (t,i) => i*20,
+								easing: 'easeOutExpo',
+								translateX: () => [0,anime.random(-200,200)],
+								translateY: () => [0,anime.random(-200,200)],
+								scale: () => [randomBetween(0.2,0.6),randomBetween(0.2,0.6)],  
+								rotate: () => [0,anime.random(-16,16)],
+								opacity: [
+								{value: 1, duration: 1, easing: 'linear', delay: (t,i) => i*20}, 
+								{value: 0, duration: 150, delay: 100, easing: 'easeOutQuad'}
+								]
+							}
+						},
+						show: {
+							lettersAnimationOpts: {
+								duration: 400,
+								delay: (t,i) => i*60,
+								easing: 'easeOutExpo',
+								opacity: {
+									value: [0,1], 
+									duration: 100, 
+									easing: 'linear'
+								},
+								translateY: (t,i) => i%2 ? [anime.random(-350,-300),0] : [anime.random(300,350),0]
+							},
+							shapesAnimationOpts: {
+								duration: 500,
+								delay: (t,i) => i*30,
+								easing: 'easeOutExpo',
+								translateX: () => [0,anime.random(-200,200)],
+								translateY: () => [0,anime.random(-200,200)],
+								scale: () => [randomBetween(0.2,0.6),randomBetween(0.2,0.6)],  
+								rotate: () => [0,anime.random(-16,16)],
+								opacity: [
+								{value: 1, duration: 1, easing: 'linear'}, 
+								{value: 0, duration: 350, delay: 150, easing: 'easeOutQuad'}
+								]
+							}
+						}
+					},
 					// Effect 1
 					{
 						options: {
@@ -108,55 +157,7 @@
 							}
 						}
 					},
-						// Effect 3
-					{
-						options: {
-							shapeColors: ['red','#000','#fff'],
-							shapeFill: false,
-							shapeStrokeWidth: 10
-						},
-						hide: {
-							shapesAnimationOpts: {
-								duration: 250,
-								delay: (t,i) => i*20,
-								easing: 'easeOutExpo',
-								translateX: () => [0,anime.random(-200,200)],
-								translateY: () => [0,anime.random(-200,200)],
-								scale: () => [randomBetween(0.2,0.6),randomBetween(0.2,0.6)],  
-								rotate: () => [0,anime.random(-16,16)],
-								opacity: [
-								{value: 1, duration: 1, easing: 'linear', delay: (t,i) => i*20}, 
-								{value: 0, duration: 150, delay: 100, easing: 'easeOutQuad'}
-								]
-							}
-						},
-						show: {
-							lettersAnimationOpts: {
-								duration: 400,
-								delay: (t,i) => i*60,
-								easing: 'easeOutExpo',
-								opacity: {
-									value: [0,1], 
-									duration: 100, 
-									easing: 'linear'
-								},
-								translateY: (t,i) => i%2 ? [anime.random(-350,-300),0] : [anime.random(300,350),0]
-							},
-							shapesAnimationOpts: {
-								duration: 500,
-								delay: (t,i) => i*30,
-								easing: 'easeOutExpo',
-								translateX: () => [0,anime.random(-200,200)],
-								translateY: () => [0,anime.random(-200,200)],
-								scale: () => [randomBetween(0.2,0.6),randomBetween(0.2,0.6)],  
-								rotate: () => [0,anime.random(-16,16)],
-								opacity: [
-								{value: 1, duration: 1, easing: 'linear'}, 
-								{value: 0, duration: 350, delay: 150, easing: 'easeOutQuad'}
-								]
-							}
-						}
-					},
+					
 					// Effect 4
 					{
 						options: {

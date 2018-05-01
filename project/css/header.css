@@ -82,3 +82,44 @@ a:hover {
 .breadcrumb  {
 	padding: 30px 15px;
 }
+.breadcrumb>li+li:before {
+	color: teal;
+}
+.icon-card-food {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+.icon-card-food a   {
+	color: black;
+}
+.icon-card {
+	padding-right: 5px;
+}
+.glyphicon-shopping-cart {
+	color: black;
+}
+.glyphicon-shopping-cart:hover {
+	color: #e44c2a;
+}
+#shopping-count {
+	text-decoration: none;
+	position: relative;
+}
+#count {
+	font-weight: bold;
+	color: #e44c2a;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	border-radius: 50%;
+}
+.icons-shopping-food {
+	display: inline-block;
+}
+@media only screen and (max-width: 780px) {
+    .icon-card-food {
+    	top: 15px;
+    	left: 15px;
+    }
+}

@@ -1,0 +1,55 @@
+.content {
+	padding-top: 50px;
+	.fa-check {
+		color: green;
+	}
+	.order-all {
+		.add {
+			background:  #e44c2a;
+			color: white;
+			border: 0;
+		}
+		.product {
+			padding-bottom: 10px;
+		}
+		.name-food {
+			padding-top: 30px;
+		}
+		.bag-submit {
+			.back-food {
+				a {
+					color: black;
+				}
+			}
+			padding-top: 20px;
+
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li {
+				display: inline;
+			}
+			.money {
+				float: right;
+				color: #e44c2a;
+			}
+			
+		}
+	}
+	.submit-food {
+		text-align: center;
+		margin-top: 30px;
+		a {
+			border: 0px;
+			background:  #e44c2a;
+			border-radius: 4px;
+			padding:15px 40px 15px 40px;
+			color: white;
+			&:hover {
+				color: white !important;
+			}
+		}
+	}
+}

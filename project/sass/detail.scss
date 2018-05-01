@@ -1,5 +1,8 @@
 
 #content-head {
+	.hover-cursor {
+		cursor: pointer;
+	}
 	.tabcontent {
 		display: none;
 	}
@@ -10,10 +13,10 @@
 		padding-top: 80px;
 		.panel-default{
 			a {
-				 text-decoration: none;
+				text-decoration: none;
 			}
 			#collapse3 {
-				    padding: 0px 15px 15px 15px;
+				padding: 0px 15px 15px 15px;
 				.heading {
 					font-size: 25px;
 					margin-right: 25px;
@@ -22,8 +25,8 @@
 					font-size: 25px;
 				}
 				.checked {
-						color: orange;
-					}
+					color: orange;
+				}
 			}
 			.side {
 				float: left;
@@ -89,6 +92,7 @@
 		margin-top: 30px;
 	}
 	form {
+
 		.modal-button {
 			margin-top: 30px;
 		}
@@ -111,6 +115,12 @@
 			color: white;
 			background: #e44c2a;
 			border: none;
+			a {
+				color: white;
+				&:hover {
+					color: white !important;
+				}
+			}
 		}
 	}
 }
@@ -139,6 +149,9 @@
 #content-footer {
 	padding-top: 50px;
 	.welcome-registration {
+		#call-number {
+			color: #e44c2a;
+		}
 		margin-top: 10px;
 		color: black;
 		padding: 0px;
@@ -153,12 +166,20 @@
 		}
 	}
 	.form-registration {
+		padding-bottom: 80px;
 		margin-top: 40px;
 		.submit-result {
+			text-align: center;
 			button {
 				padding: 10px 40px 10px 40px !important;
 				background: #e44c2a;
 				border: #e44c2a;
+				a {
+					color: white;
+					&:hover {
+						color: white !important;
+					}
+				}
 			}
 		}
 		.date-time {
@@ -168,5 +189,22 @@
 			padding-left: 0px;
 		}
 	}
+	.form-chat {
+		background: #f9f9f9;
+		padding: 40px 40px 40px 40px;
+		h4 {
+			padding-bottom: 40px;
+		}
+		.form-group { 
+			margin-bottom: 30px;
+			input {
+				border-radius: 0px;
+			}
+		}
+		button {
+			padding: 10px 20px 10px 20px;
+			background: #e44c2a;
+			border: none;
+		}
+	}
 }
-

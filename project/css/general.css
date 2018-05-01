@@ -1,18 +1,81 @@
 #content-head {
   padding-top: 80px; }
+  #content-head .bookmarks {
+    margin-top: 50px; }
+    #content-head .bookmarks nav {
+      text-align: center; }
+      #content-head .bookmarks nav .pagination a {
+        color: black; }
+        #content-head .bookmarks nav .pagination a:hover {
+          background: #e44c2a !important;
+          border: #e44c2a !important;
+          color: white !important; }
+      #content-head .bookmarks nav .pagination .active a {
+        color: white !important;
+        background: #e44c2a !important;
+        border: #e44c2a !important; }
+        #content-head .bookmarks nav .pagination .active a:hover {
+          color: white !important; }
+  #content-head .flat-tabs .menu-tab {
+    text-align: center; }
+    #content-head .flat-tabs .menu-tab .nav-item {
+      cursor: pointer;
+      position: relative;
+      display: inline-block; }
+      #content-head .flat-tabs .menu-tab .nav-item .nav-link {
+        padding: 20px 5px;
+        font-weight: bold;
+        transition: 1s all; }
+        #content-head .flat-tabs .menu-tab .nav-item .nav-link:hover {
+          transform: translateY(-5px);
+          cursor: pointer;
+          color: #e44c2a; }
+          #content-head .flat-tabs .menu-tab .nav-item .nav-link:hover .active {
+            color: #e44c2a; }
   #content-head select {
     width: 150px;
     height: 30px;
     margin-bottom: 30px; }
-  #content-head .general .card .card-title {
-    font-size: 16px;
-    font-weight: bold; }
-  #content-head .general .card .card-body a {
-    color: black; }
-    #content-head .general .card .card-body a:hover {
+  #content-head .tabcontent {
+    padding-top: 50px; }
+    #content-head .tabcontent .card .card-title {
+      font-size: 16px;
+      font-weight: bold; }
+    #content-head .tabcontent .card .card-body a {
+      color: black; }
+      #content-head .tabcontent .card .card-body a:hover {
+        color: #e44c2a; }
+    #content-head .tabcontent .card .card-text {
+      color: #e44c2a;
+      font-weight: bold; }
+
+#content-footer {
+  padding-top: 80px; }
+  #content-footer .welcome-registration {
+    margin-top: 10px;
+    color: black;
+    padding: 0px; }
+    #content-footer .welcome-registration #call-number {
       color: #e44c2a; }
-  #content-head .general .card .card-text {
-    color: #e44c2a;
-    font-weight: bold; }
+    #content-footer .welcome-registration .time-open {
+      list-style-type: none;
+      padding: 0px 0px 0px 0px;
+      font-size: 13px;
+      color: grey; }
+    #content-footer .welcome-registration .nav-link {
+      color: black; }
+  #content-footer .form-registration {
+    margin-top: 40px;
+    margin-bottom: 100px; }
+    #content-footer .form-registration .submit-result {
+      text-align: center; }
+      #content-footer .form-registration .submit-result button {
+        padding: 10px 40px 10px 40px !important;
+        background: #e44c2a;
+        border: #e44c2a; }
+    #content-footer .form-registration .date-time {
+      padding-right: 0px; }
+    #content-footer .form-registration .time-date {
+      padding-left: 0px; }
 
 /*# sourceMappingURL=general.css.map */

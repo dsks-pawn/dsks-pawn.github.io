@@ -1,0 +1,50 @@
+#myTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+thead {
+    background: #cccc;
+}
+#myTable td, #myTable th {
+    border: 1px solid #ddd;
+    font-size: 16px;
+    text-align: center;
+}
+#myTable th {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.money {
+    color: #e44c2a;
+}
+.title {
+    font-weight: bold;
+}
+td p, .fa-times {
+    margin-top: 35px;
+}
+.result {
+    text-align: right;
+
+}
+#total {
+    padding-bottom: 10px;
+}
+.result a {
+    border: 0px;
+    background:  #e44c2a;
+    border-radius: 4px;
+    padding:15px 40px 15px 40px;
+    color: white;
+    text-decoration: none;  
+}
+.result a:hover {
+    color: white !important;
+}

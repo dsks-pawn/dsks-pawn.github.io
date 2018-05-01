@@ -1,11 +1,61 @@
 #content-head {
+	.bookmarks {
+		margin-top: 50px;
+		nav {
+			text-align: center;
+			.pagination {
+				a {
+					color: black;
+					&:hover {
+						background : #e44c2a !important;
+						border:  #e44c2a !important;
+						color: white !important;
+					}
+				}
+				.active {
+					a {	
+						color: white !important;
+						background : #e44c2a !important;
+						border:  #e44c2a !important;
+						&:hover {
+							color: white !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.flat-tabs {
+		.menu-tab {
+			text-align: center;
+			.nav-item {
+				cursor: pointer;
+				position: relative;
+				display: inline-block;
+				.nav-link {
+					padding: 20px 5px;
+					font-weight: bold;
+					transition: 1s all;
+					&:hover {
+						transform: translateY(-5px);
+						cursor: pointer;
+						color: #e44c2a;
+						.active {
+							color: #e44c2a;
+						}
+					}
+				}
+			}
+		}
+	}
 	padding-top: 80px;
 	select {
 		width: 150px;
 		height: 30px;
 		margin-bottom: 30px;
 	}
-	.general {
+	.tabcontent {
+		padding-top: 50px;
 		.card {
 			.card-title {
 				font-size: 16px;
@@ -23,6 +73,44 @@
 				color:  #e44c2a;
 				font-weight: bold;
 			}
+		}
+	}
+}
+#content-footer {
+	padding-top: 80px;
+	.welcome-registration {
+		#call-number {
+			color: #e44c2a;
+		}
+		margin-top: 10px;
+		color: black;
+		padding: 0px;
+		.time-open {
+			list-style-type:none;
+			padding: 0px 0px 0px 0px;
+			font-size: 13px;
+			color: grey;
+		}
+		.nav-link {
+			color: black;
+		}
+	}
+	.form-registration {
+		margin-top: 40px;
+		margin-bottom: 100px;
+		.submit-result {
+			text-align: center;
+			button {
+				padding: 10px 40px 10px 40px !important;
+				background: #e44c2a;
+				border: #e44c2a;
+			}
+		}
+		.date-time {
+			padding-right: 0px;
+		}
+		.time-date {
+			padding-left: 0px;
 		}
 	}
 }

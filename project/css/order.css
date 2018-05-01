@@ -1,0 +1,66 @@
+html, body, #content {
+  width: 100%; }
+
+#content .bag-submit {
+  margin: 0 auto;
+  padding-top: 20px; }
+  #content .bag-submit li {
+    display: inline; }
+    #content .bag-submit li a {
+      border: 0px;
+      background: #e44c2a;
+      border-radius: 4px;
+      padding: 9px 40px 9px 40px;
+      color: white; }
+#content .title-app {
+  padding-bottom: 20px; }
+#content .title {
+  padding-bottom: 30px; }
+#content .info .btn {
+  color: white;
+  padding: 10px 20px 10px 20px;
+  background: #e44c2a;
+  border: none; }
+#content .info .form-group {
+  margin-bottom: 25px; }
+  #content .info .form-group .form-control {
+    border-radius: 0px; }
+  #content .info .form-group select {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #ccc; }
+#content .pay .pay-content-bag {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; }
+  #content .pay .pay-content-bag .pay-content {
+    padding: 25px 10px 25px 10px; }
+    #content .pay .pay-content-bag .pay-content .check-pay {
+      cursor: pointer; }
+    #content .pay .pay-content-bag .pay-content .fa-bitcoin {
+      color: orange; }
+    #content .pay .pay-content-bag .pay-content .fa-money-bill-alt {
+      color: green; }
+  #content .pay .pay-content-bag .pay-footer {
+    background-color: #d9d9d9;
+    padding: 20px 15px 20px 15px; }
+#content .order-all .add {
+  background: #e44c2a;
+  color: white;
+  border: 0; }
+#content .order-all .product {
+  padding-bottom: 10px; }
+#content .order-all .name-food {
+  padding-top: 30px; }
+#content .order-all ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  #content .order-all ul li {
+    display: inline; }
+  #content .order-all ul .money {
+    float: right;
+    color: #e44c2a; }
+
+/*# sourceMappingURL=order.css.map */

@@ -1,0 +1,38 @@
+.content {
+  padding-top: 50px; }
+  .content .fa-check {
+    color: green; }
+  .content .order-all .add {
+    background: #e44c2a;
+    color: white;
+    border: 0; }
+  .content .order-all .product {
+    padding-bottom: 10px; }
+  .content .order-all .name-food {
+    padding-top: 30px; }
+  .content .order-all .bag-submit {
+    padding-top: 20px; }
+    .content .order-all .bag-submit .back-food a {
+      color: black; }
+  .content .order-all ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .content .order-all ul li {
+      display: inline; }
+    .content .order-all ul .money {
+      float: right;
+      color: #e44c2a; }
+  .content .submit-food {
+    text-align: center;
+    margin-top: 30px; }
+    .content .submit-food a {
+      border: 0px;
+      background: #e44c2a;
+      border-radius: 4px;
+      padding: 15px 40px 15px 40px;
+      color: white; }
+      .content .submit-food a:hover {
+        color: white !important; }
+
+/*# sourceMappingURL=order-result.css.map */

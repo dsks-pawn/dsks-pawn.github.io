@@ -170,13 +170,11 @@ html, body, header, main, .content, .slideshow, .slide, .slide__bg {
 	background: #e44c2a;
 	border: #e44c2a;
 }
-.welcome-registration {
-	padding-top: 10px;
-}
+
 .welcome-registration .nav-link{
 	margin-top: 10px;
 	padding: 0px;
-	 color: black
+	color: black
 }
 .form-registration	{
 	margin-top: 40px;
@@ -269,12 +267,18 @@ html, body, header, main, .content, .slideshow, .slide, .slide__bg {
 	height: auto;
 	pointer-events: auto;
 }
-
-@media only screen and (max-width: 880px) {
-    html {
-      height: 45%;
-    }
+#call-number {
+	color: #e44c2a;
 }
+.btn-primary:hover {
+	background-color: #e44c2a;
+}
+
+@media only screen and (max-width: 720px) {
+   .news-footer {
+          padding: 10px 15px 0px 15px;
+    }
+    }
 /*@media screen and (max-width: 700) {
 	html {
 		height: 45%;
@@ -284,4 +288,4 @@ html, body, header, main, .content, .slideshow, .slide, .slide__bg {
 	html {
 		height: 35%;
 	}
-}*/
+	}*/
