@@ -1,0 +1,21 @@
+* img {
+  width: 100%; }
+* span {
+  text-transform: uppercase;
+  color: #b4ad9e;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif; }
+* h2 {
+  color: #626262;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: 'Playfair Display', serif; }
+* p {
+  color: #626262;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: 'Playfair Display', serif; }
+* nav .navbar-collapse {
+  justify-content: flex-end; }
+
+/*# sourceMappingURL=style.css.map */
