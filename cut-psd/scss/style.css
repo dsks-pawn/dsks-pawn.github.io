@@ -44,5 +44,9 @@
     width: 35px; }
   * section .content-body h2 {
     color: #333333; }
+  * section .content-body .ok-all {
+    float: left; }
+    * section .content-body .ok-all .ok {
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

@@ -67,6 +67,13 @@
             h2 {
                 color: #333333;
             }
+            .ok-all {
+                float: left;
+                .ok {
+                    display: inline-block;
+                }
+            }
+            
            
         }
     }
