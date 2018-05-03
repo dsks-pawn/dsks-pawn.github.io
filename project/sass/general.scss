@@ -1,4 +1,7 @@
 #content-head {
+	.row {
+		padding-bottom: 20px;
+	}
 	.bookmarks {
 		margin-top: 50px;
 		nav {
@@ -37,7 +40,6 @@
 					font-weight: bold;
 					transition: 1s all;
 					&:hover {
-						transform: translateY(-5px);
 						cursor: pointer;
 						color: #e44c2a;
 						.active {

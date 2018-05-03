@@ -9,40 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<style>
-	.navbar  {
-		background-color: #a13445 !important;
-		margin-bottom: 100px;
-		transform: skewX(-15deg);
-		border-radius: 10px;
-	}
-	.navbar h1 {
-		color: white;
-	}
-	.navbar-brand  {
-		margin: 0 auto;
-	}
-	svg:not(:root).svg-inline--fa {
-		float: right;
-		color: black;
-	}
-	.col-md-3 button {
-		padding-right: 19px;
-		padding-left: 18px;
-		background: #0e5483;
-		color: white;
-	}
-	 .title-h3  {
-		background: #191315;
-		color: white;
-	}
-	.title-h3:hover {
-		background: #191315;
-		color: white;
-	}
-</style>
-
-
 
 </head>
 <body>
@@ -63,79 +29,94 @@
 		<div class="row text-center">
 			<div class="col-xs-12 col-md-4">
 				<div class="card">
-					<a href="#" class="list-group-item list-group-item-action title-h3"><h3>Todo</h3></a>
-					<div class="list-group sort-list">
-						<a href="#" class="list-group-item list-group-item-action list-group-item-primary"> Làm Project  <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Học Nodejs<i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success">Avengers infinity war <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-danger">Cut PSD <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Responsive Web <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-info">Xử lý dữ liệu <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-light">Có việc làm <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Về quê <i class="fas fa-trash-alt"></i></a>
+					<a href="#" class="list-group-item  title-h3"><h3>Todo</h3></a>
+					<div class="list-group sort-list"  id="todo">
+						<a href="#" class="list-group-item  bar list-group-item-primary"> Làm Project  <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-secondary">Học Nodejs<i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-success">Avengers infinity war <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-danger">Cut PSD <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-warning">Responsive Web <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-info">Xử lý dữ liệu <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-light">Có việc làm <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-dark">Về quê <i class="fas fa-trash-alt"></i></a>
 					</div>
 					<form class="form-row">
-						<div class="col-md-9">
-							<input class="form-control mr-sm-2" type="search" placeholder="Việc mới cần làm">
-						</div>
 						<div class="col-md-3">
-							<button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Thêm</button>
+							<label for="input-todo">Thêm mới</label>
+						</div>
+						<div class="col-md-9">
+							<input id="input-todo"  class="form-control mr-sm-2" type="text" placeholder="Việc mới cần làm" onkeydown="app.newJob(event, 'todo', $('this'))">
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card">
-					<a href="#" class="list-group-item list-group-item-action title-h3"><h3>Doing</h3></a>
-					<div class="list-group sort-list">
-						<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Web application  <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Giải trí <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success">Tech Master <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-danger">CSS <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Java script <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-info">HTML <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-light">Jquery <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Bootstrap <i class="fas fa-trash-alt"></i></a>
+					<a href="#" class="list-group-item  title-h3"><h3>Doing</h3></a>
+					<div class="list-group sort-list"   id="doing">
+						<a href="#" class="list-group-item  bar list-group-item-primary">Web application  <i cla	rash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-secondary">Giải trí <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-success">Tech Master <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-danger">CSS <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-warning">Java script <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-info">HTML <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-light">Jquery <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-dark">Bootstrap <i class="fas fa-trash-alt"></i></a>
 					</div>
 					<form class="form-row">
-						<div class="col-md-9">
-							<input class="form-control mr-sm-2" type="search" placeholder="Việc mới cần làm">
-						</div>
 						<div class="col-md-3">
-							<button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Thêm</button>
+							<label for="doing">Thêm mới</label>
+						</div>
+						<div class="col-md-9">
+							<input id="input-doing" class="form-control mr-sm-2" type="text" placeholder="Việc đang làm" onkeydown="app.newJob(event, 'doing', $('this'))">
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card">
-					<a href="#" class="list-group-item list-group-item-action title-h3"><h3>Done</h3></a>
-					<div class="list-group sort-list">
-						<a href="#" class="list-group-item list-group-item-action list-group-item-primary">Animation  <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Loop <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-success">Function<i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-danger">Font Awesome <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-warning">Login form <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-info">Table<i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-light">Media Query <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item list-group-item-action list-group-item-dark">Memory Card <i class="fas fa-trash-alt"></i></a>
+					<a href="#" class="list-group-item   title-h3"><h3>Done</h3></a>
+					<div class="list-group sort-list"   id="done">
+						<a href="#" class="list-group-item  bar list-group-item-primary">Animation  <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-secondary">Loop <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-success">Function<i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-danger">Font Awesome <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-warning">Login form <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-info">Table<i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-light">Media Query <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-dark">Memory Card <i class="fas fa-trash-alt"></i></a>			
 					</div>
 					<form class="form-row">
-						<div class="col-md-9">
-							<input class="form-control mr-sm-2" type="search" placeholder="Việc mới cần làm">
-						</div>
 						<div class="col-md-3">
-							<button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Thêm</button>
+							<label for="done">Thêm mới</label>
+						</div>
+						<div class="col-md-9">
+							<input  id="input-done" class="form-control mr-sm-2" type="text" placeholder="Việc đã làm" onkeydown="app.newJob(event, 'done',$('this'))">
 						</div>
 					</form>
 				</div>
 			</div>
-			
-			
-			
+		</div>
 
-
-			
+		<!-- Modal -->
+		<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Cảnh báo</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Bạn có chắc chắn muốn xóa công việc?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
+						<button type="button" id="btn-primary" class="btn btn-primary">Đồng ý</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</section>

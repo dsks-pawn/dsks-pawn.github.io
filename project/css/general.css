@@ -1,5 +1,7 @@
 #content-head {
   padding-top: 80px; }
+  #content-head .row {
+    padding-bottom: 20px; }
   #content-head .bookmarks {
     margin-top: 50px; }
     #content-head .bookmarks nav {
@@ -27,7 +29,6 @@
         font-weight: bold;
         transition: 1s all; }
         #content-head .flat-tabs .menu-tab .nav-item .nav-link:hover {
-          transform: translateY(-5px);
           cursor: pointer;
           color: #e44c2a; }
           #content-head .flat-tabs .menu-tab .nav-item .nav-link:hover .active {

@@ -87,8 +87,9 @@ a:hover {
 }
 .icon-card-food {
 	position: absolute;
-	top: 5px;
+	top: 22%;
 	right: 20px;
+	font-size: 20px;
 }
 .icon-card-food a   {
 	color: black;
@@ -98,6 +99,7 @@ a:hover {
 }
 .glyphicon-shopping-cart {
 	color: black;
+	font-size: 20px;
 }
 .glyphicon-shopping-cart:hover {
 	color: #e44c2a;
@@ -110,8 +112,8 @@ a:hover {
 	font-weight: bold;
 	color: #e44c2a;
 	position: absolute;
-	right: -10px;
-	top: -10px;
+	right: -12px;
+	top: -13px;
 	border-radius: 50%;
 }
 .icons-shopping-food {
@@ -119,7 +121,6 @@ a:hover {
 }
 @media only screen and (max-width: 780px) {
     .icon-card-food {
-    	top: 15px;
-    	left: 15px;
+    	left: -22px;
     }
 }
