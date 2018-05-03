@@ -1,8 +1,8 @@
 var app = {
 	newJob: function(e, type) {
 		var event = e;
-		var name = $("#input-" +type).val();
-		if (event.keyCode === 13 && name !== '') {
+		var name = $("#input-" + type).val();
+		if (event.keyCode === 13 && name  !== '') {
 			// update công việc 
 			this.addJob(type, name);
 			// reset input về rỗng

@@ -31,14 +31,14 @@
 				<div class="card">
 					<a href="#" class="list-group-item  title-h3"><h3>Todo</h3></a>
 					<div class="list-group sort-list"  id="todo">
-						<a href="#" class="list-group-item  bar list-group-item-primary"> Làm Project  <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-secondary">Học Nodejs<i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-success">Avengers infinity war <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-danger">Cut PSD <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-warning">Responsive Web <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-info">Xử lý dữ liệu <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-light">Có việc làm <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-dark">Về quê <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-primary"> Làm Project  <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-secondary">Học Nodejs<i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-success">Avengers infinity war <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-danger">Cut PSD <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-warning">Responsive Web <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-info">Xử lý dữ liệu <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-light">Có việc làm <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-dark">Về quê <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
 					</div>
 					<form class="form-row">
 						<div class="col-md-3">
@@ -54,21 +54,21 @@
 				<div class="card">
 					<a href="#" class="list-group-item  title-h3"><h3>Doing</h3></a>
 					<div class="list-group sort-list"   id="doing">
-						<a href="#" class="list-group-item  bar list-group-item-primary">Web application  <i cla	rash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-secondary">Giải trí <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-success">Tech Master <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-danger">CSS <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-warning">Java script <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-info">HTML <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-light">Jquery <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-dark">Bootstrap <i class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-primary">Web application  <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-secondary">Giải trí <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-success">Tech Master <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-danger">CSS <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-warning">Java script <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-info">HTML <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-light">Jquery <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-dark">Bootstrap <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
 					</div>
 					<form class="form-row">
 						<div class="col-md-3">
 							<label for="doing">Thêm mới</label>
 						</div>
 						<div class="col-md-9">
-							<input id="input-doing" class="form-control mr-sm-2" type="text" placeholder="Việc đang làm" onkeydown="app.newJob(event, 'doing', $('this'))">
+							<input id="input-doing" class="form-control mr-sm-2" type="text" placeholder="Việc đang làm" onkeydown="app.newJob(event, 'doing',  $('this'))">
 						</div>
 					</form>
 				</div>
@@ -77,21 +77,21 @@
 				<div class="card">
 					<a href="#" class="list-group-item   title-h3"><h3>Done</h3></a>
 					<div class="list-group sort-list"   id="done">
-						<a href="#" class="list-group-item  bar list-group-item-primary">Animation  <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-secondary">Loop <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-success">Function<i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-danger">Font Awesome <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-warning">Login form <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-info">Table<i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-light">Media Query <i class="fas fa-trash-alt"></i></a>
-						<a href="#" class="list-group-item  bar list-group-item-dark">Memory Card <i class="fas fa-trash-alt"></i></a>			
+						<a href="#" class="list-group-item  bar list-group-item-primary">Animation  <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-secondary">Loop <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-success">Function<i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-danger">Font Awesome <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-warning">Login form <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-info">Table<i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-light">Media Query <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>
+						<a href="#" class="list-group-item  bar list-group-item-dark">Memory Card <i onclick="app.deleteJob(this)" class="fas fa-trash-alt"></i></a>			
 					</div>
 					<form class="form-row">
 						<div class="col-md-3">
 							<label for="done">Thêm mới</label>
 						</div>
 						<div class="col-md-9">
-							<input  id="input-done" class="form-control mr-sm-2" type="text" placeholder="Việc đã làm" onkeydown="app.newJob(event, 'done',$('this'))">
+							<input  id="input-done" class="form-control mr-sm-2" type="text" placeholder="Việc đã làm" onkeydown="app.newJob(event, 'done', $('this'))">
 						</div>
 					</form>
 				</div>
