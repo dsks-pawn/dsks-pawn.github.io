@@ -11,21 +11,63 @@
     h2 {
         color: #626262;
         font-size: 30px;
-        text-transform: capitalize;
         font-family: 'Playfair Display', serif;
     }
     p {
         color: #626262;
         font-size: 14px;
-        text-transform: capitalize;
         font-family: 'Playfair Display', serif;
     }
-    nav {
-        h2 {
-            
+    section {
+        .container {
+            .content-head {
+                padding-left: 80px;
+                padding-right: 52px;
+                .bag {
+                    width: 420px;                
+                    .images-fix {
+                        height: 280px;
+                        width: 420px;             
+                    }
+                    .bag-write {
+                        padding-top: 24px;
+                        padding-bottom: 17px;
+                    }
+                   
+                    .bag-body {
+                        padding-bottom: 111px;
+
+                    }  
+                }
+                .bag-write-db {
+                    padding-top: 91px;
+                    padding-bottom: 17px;
+                }
+                .bag-title {
+                    padding-bottom: 19px;
+                    
+                }
+                .bag-body-db {
+                    width: 893px;
+                     padding-bottom: 27px;
+                }
+                .bag-bottom-db {
+                   padding-bottom: 128px;
+
+                }
+            }
         }
-        .navbar-collapse {
-            justify-content: flex-end;
+        .content-body {
+            background: #f0f0f0;
+            padding-top: 63px;
+            #icons {
+                height: 20px;
+                width: 35px;
+            }
+            h2 {
+                color: #333333;
+            }
+           
         }
     }
 }

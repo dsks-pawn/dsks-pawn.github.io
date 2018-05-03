@@ -8,14 +8,41 @@
 * h2 {
   color: #626262;
   font-size: 30px;
-  text-transform: capitalize;
   font-family: 'Playfair Display', serif; }
 * p {
   color: #626262;
   font-size: 14px;
-  text-transform: capitalize;
   font-family: 'Playfair Display', serif; }
-* nav .navbar-collapse {
-  justify-content: flex-end; }
+* section .container .content-head {
+  padding-left: 80px;
+  padding-right: 52px; }
+  * section .container .content-head .bag {
+    width: 420px; }
+    * section .container .content-head .bag .images-fix {
+      height: 280px;
+      width: 420px; }
+    * section .container .content-head .bag .bag-write {
+      padding-top: 24px;
+      padding-bottom: 17px; }
+    * section .container .content-head .bag .bag-body {
+      padding-bottom: 111px; }
+  * section .container .content-head .bag-write-db {
+    padding-top: 91px;
+    padding-bottom: 17px; }
+  * section .container .content-head .bag-title {
+    padding-bottom: 19px; }
+  * section .container .content-head .bag-body-db {
+    width: 893px;
+    padding-bottom: 27px; }
+  * section .container .content-head .bag-bottom-db {
+    padding-bottom: 128px; }
+* section .content-body {
+  background: #f0f0f0;
+  padding-top: 63px; }
+  * section .content-body #icons {
+    height: 20px;
+    width: 35px; }
+  * section .content-body h2 {
+    color: #333333; }
 
 /*# sourceMappingURL=style.css.map */

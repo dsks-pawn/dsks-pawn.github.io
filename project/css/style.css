@@ -220,8 +220,17 @@ html, body, header, main, .content, .slideshow, .slide, .slide__bg {
 }
 .carousel-showmanymoveone .carousel-control {
 	color: #e44c2a !important;
-	margin-top: 80px !important;
-} 
+}
+.glyphicon-menu-left {
+	position: absolute;
+	top: 35%;
+	left: 15px;
+}
+.glyphicon-menu-right {
+	position: absolute;
+	top: 35%;
+	right: 15px;
+}
 .sale {
 	padding-bottom: 50px;
 }

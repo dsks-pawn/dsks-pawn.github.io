@@ -1,0 +1,37 @@
+* {
+    header {
+        .bg-light {
+            background-color: #ffffff !important;
+        }
+        nav  {
+            margin-top: 40px;        
+            #logo {
+                letter-spacing: 10px;
+                font-family: 'Inconsolata', sans-serif;
+                padding-bottom: 46px;
+            }
+            text-transform: uppercase;   
+            padding: .5rem 0rem !important;
+            h2 { 
+                text-transform: uppercase;
+                color: #000000;     
+            }
+            .navbar-collapse {
+                justify-content: flex-end;
+                padding-bottom: 46px;
+            .navbar-nav  {
+                .nav-link {
+                    padding-right:0px;
+                    padding-left: 100px;
+                }
+                }
+            }
+        }
+      
+    }
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1092px;
+        }    
+    } 
+}
