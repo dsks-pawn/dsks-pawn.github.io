@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tổng hợp món ăn</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<link rel="icon" type="images/jepg" href="icons/icon.jpg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!--build:css css/general.min.css-->
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/shopping.css">
+	<link rel="stylesheet" type="text/css" href="css/hover2.css">
+	<!--endbuild-->
+</head>
+<body>
+	<!-- HEADER -->		
+	<header class="container-fuild">
+		<nav class=" navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Nav</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="icon-card-food">
+					<ul>
+						<li class="icons-shopping-food"><a class="icon-card" href=""><i class="fas fa-search"></i></a></li>
+						<li class="icons-shopping-food"><a class="icon-card"  href=""><i class="fas fa-user-circle"></i></a></li>
+						<li class="icons-shopping-food" id="nav-cart-top">
+							<a id="shopping-count" href="basket.html">
+								<i class="glyphicon glyphicon-shopping-cart"></i>
+								<span id="count">1</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="#content-header">Giới thiệu</a></li>
+						<li><a href="news.html">Tin tức</a></li>
+						<li >
+							<img src="images/logo1.png" style="width: 70%">
+						</li>
+						<li class="dropdown">
+							<a href="general.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thực đơn <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="general.html">Bữa sáng</a></li>
+								<li><a href="general.html">Bữa trưa</a></li>
+								<li><a href="general.html">Bữa tối</a></li>
+							</ul>
+
+						</li>
+						<li><a href="#registration">Đặt bàn</a></li>
+						<li><a href="#content-body-food">Images</a></li>
+					</ul>
+					
+				</div>
+			</div>
+		</nav>
+		<!-- NAV -->
+		<div  class="container-fuild" style="margin-top: 50px;">
+			<ol id="breadcrumb-news" class="breadcrumb text-center">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li class="active"> Tổng hợp sản phẩm</li>
+			</ol>
+		</div>
+	</header>
+	<!-- /HEADER -->
+	
+
+	<section id="content-head" class="container-fuild">
+		<article class="flat-tabs container-fuild">
+			<ul class="menu-tab tab">
+				<li class="nav-item">
+					<p class="nav-link tablinks" onclick="openMenu(event, 'default')" id="defaultOpen" >MẶC ĐỊNH<span class="sr-only">(current)</span></p>
+				</li>
+				<li class="nav-item">
+					<p class="nav-link tablinks" onclick="openMenu(event, 'reduction')">GIÁ GIẢM DẦN<span class="sr-only">(current)</span></p>
+				</li>
+				<li class="nav-item">
+					<p class="nav-link tablinks" onclick="openMenu(event, 'increase')">GIÁ TĂNG DẦN<span class="sr-only">(current)</span></p>
+				</li>
+				<li class="nav-item">
+					<p " class="nav-link tablinks" onclick="openMenu(event, 'old')">CŨ ĐẾN MỚI<span class="sr-only">(current)</span></p>
+				</li>
+				<li class="nav-item">
+					<p " class="nav-link tablinks" onclick="openMenu(event, 'new')">CŨ ĐẾN MỚI<span class="sr-only">(current)</span></p>					
+				</ul>
+			</article>
+			<article class="container menu-productl">
+				<article id="default" class="tabcontent">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH CREPE</h6></a>
+									<span class="card-text">300.000đ </span><del> 230.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">MÌ RAMEN</h6></a>
+									<span class="card-text">200.000đ </span><del> 160.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild"  src="images/foot-png/10.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">ĐIỂM TÂM BRAZIL</h6></a>
+									<span class="card-text">200.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">NƯỚC CAM ÉP</h6></a>
+									<span class="card-text">50.000đ </span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN SALAD</h6></a>
+									<span class="card-text">80.000đ </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SALAD THỊT BÒ</h6></a>
+									<span class="card-text">100.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/3.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">LỢN NÒI XÔNG KHÓI SALAD TRỘN</h6></a>
+									<span class="card-text">120.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">TRỨNG CHIÊN SALAD RAU CỦ</h6></a>
+									<span class="card-text">80.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SODA CHANH</h6></a>
+									<span class="card-text">60.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/4.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SỮA CHUA HOA QUẢ</h6></a>
+									<span class="card-text">100.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">Mì SOBA LẠNH</h6></a>
+									<span class="card-text">Hết hàng </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/6.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH MỲ PHÁP</h6></a>
+									<span class="card-text">150.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+				<article id="reduction" class="tabcontent">
+					
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild"  src="images/foot-png/10.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">ĐIỂM TÂM BRAZIL</h6></a>
+									<span class="card-text">200.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">NƯỚC CAM ÉP</h6></a>
+									<span class="card-text">50.000đ </span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN SALAD</h6></a>
+									<span class="card-text">80.000đ </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SALAD THỊT BÒ</h6></a>
+									<span class="card-text">100.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/3.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">LỢN NÒI XÔNG KHÓI SALAD TRỘN</h6></a>
+									<span class="card-text">120.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">TRỨNG CHIÊN SALAD RAU CỦ</h6></a>
+									<span class="card-text">80.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH CREPE</h6></a>
+									<span class="card-text">300.000đ </span><del> 230.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">MÌ RAMEN</h6></a>
+									<span class="card-text">200.000đ </span><del> 160.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SODA CHANH</h6></a>
+									<span class="card-text">60.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/4.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SỮA CHUA HOA QUẢ</h6></a>
+									<span class="card-text">100.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">Mì SOBA LẠNH</h6></a>
+									<span class="card-text">Hết hàng </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/6.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH MỲ PHÁP</h6></a>
+									<span class="card-text">150.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+				<article id="increase" class="tabcontent">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SODA CHANH</h6></a>
+									<span class="card-text">60.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/4.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SỮA CHUA HOA QUẢ</h6></a>
+									<span class="card-text">100.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">Mì SOBA LẠNH</h6></a>
+									<span class="card-text">Hết hàng </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/6.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH MỲ PHÁP</h6></a>
+									<span class="card-text">150.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH CREPE</h6></a>
+									<span class="card-text">300.000đ </span><del> 230.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">MÌ RAMEN</h6></a>
+									<span class="card-text">200.000đ </span><del> 160.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild"  src="images/foot-png/10.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">ĐIỂM TÂM BRAZIL</h6></a>
+									<span class="card-text">200.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">NƯỚC CAM ÉP</h6></a>
+									<span class="card-text">50.000đ </span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN SALAD</h6></a>
+									<span class="card-text">80.000đ </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SALAD THỊT BÒ</h6></a>
+									<span class="card-text">100.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/3.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">LỢN NÒI XÔNG KHÓI SALAD TRỘN</h6></a>
+									<span class="card-text">120.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">TRỨNG CHIÊN SALAD RAU CỦ</h6></a>
+									<span class="card-text">80.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+				</article>
+
+
+				<article id="old" class="tabcontent">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH CREPE</h6></a>
+									<span class="card-text">300.000đ </span><del> 230.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">MÌ RAMEN</h6></a>
+									<span class="card-text">200.000đ </span><del> 160.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SODA CHANH</h6></a>
+									<span class="card-text">60.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/4.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SỮA CHUA HOA QUẢ</h6></a>
+									<span class="card-text">100.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">Mì SOBA LẠNH</h6></a>
+									<span class="card-text">Hết hàng </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/6.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH MỲ PHÁP</h6></a>
+									<span class="card-text">150.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild"  src="images/foot-png/10.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">ĐIỂM TÂM BRAZIL</h6></a>
+									<span class="card-text">200.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">NƯỚC CAM ÉP</h6></a>
+									<span class="card-text">50.000đ </span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN SALAD</h6></a>
+									<span class="card-text">80.000đ </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SALAD THỊT BÒ</h6></a>
+									<span class="card-text">100.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/3.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">LỢN NÒI XÔNG KHÓI SALAD TRỘN</h6></a>
+									<span class="card-text">120.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">TRỨNG CHIÊN SALAD RAU CỦ</h6></a>
+									<span class="card-text">80.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article id="new" class="tabcontent">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SODA CHANH</h6></a>
+									<span class="card-text">60.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/4.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SỮA CHUA HOA QUẢ</h6></a>
+									<span class="card-text">100.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">Mì SOBA LẠNH</h6></a>
+									<span class="card-text">Hết hàng </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/6.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH MỲ PHÁP</h6></a>
+									<span class="card-text">150.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH CREPE</h6></a>
+									<span class="card-text">300.000đ </span><del> 230.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/5.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">MÌ RAMEN</h6></a>
+									<span class="card-text">200.000đ </span><del> 160.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild"  src="images/foot-png/10.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">ĐIỂM TÂM BRAZIL</h6></a>
+									<span class="card-text">200.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/drink/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">NƯỚC CAM ÉP</h6></a>
+									<span class="card-text">50.000đ </span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/1.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN SALAD</h6></a>
+									<span class="card-text">80.000đ </span>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/2.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">SALAD THỊT BÒ</h6></a>
+									<span class="card-text">100.000đ</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/salad/3.png" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">LỢN NÒI XÔNG KHÓI SALAD TRỘN</h6></a>
+									<span class="card-text">120.000đ </span>
+								</div> 
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/7.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">TRỨNG CHIÊN SALAD RAU CỦ</h6></a>
+									<span class="card-text">80.000đ </span><del> 120.000đ</del>
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/10.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">GÀ RÁN TRỨNG ỐP LA</h6></a>
+									<span class="card-text">180.000đ </span><del> 140.000đ</del>
+
+								</div> 
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3">
+							<div class="card">
+								<div class="card-general">
+									<img class="card-img-top img-fuild" src="images/foot-jpg/9.jpg" alt="Card image cap">
+									<div class="card-buy">
+										<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm vào giỏ hàng</a></p>
+									</div>
+								</div>	
+
+								
+								<div class="card-body">
+									<a href="" class="card-link"><h6 class="card-title">BÁNH POPKY BỈ</h6></a>
+									<span class="card-text">Hết hàng</span>								
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+				</article>
+
+			</article>
+
+
+
+			<aside class="row bookmarks">
+				<nav aria-label="Page navigation">
+					<ul class="pagination">
+						<li class="disabled" >
+							<span aria-hidden="true">&laquo;</span>
+						</li>
+						<li class="active" onclick="openMenu(event, 'default')"><a > <span class="page-link">1</span></a></li>
+						<li onclick="openMenu(event, 'reduction')"><a > <span class="page-link">2</span></a></li>
+						<li onclick="openMenu(event, 'increase')"><a > <span class="page-link">3</span></a></li>
+						<li onclick="openMenu(event, 'old')"><a > <span class="page-link">4</span></a></li>
+						<li onclick="openMenu(event, 'new')"><a > <span class="page-link">5</span></a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</section>
+
+
+
+
+		<section id="content-footer" class="container registration">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-5 registration-image">
+					<img class="img-fuild" src="images/nv.png">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-7">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+							<div class="welcome-registration">
+								<span><i>Chào mừng tới cửa hàng của chúng tôi</i></span>
+							</div>
+							<div class="welcome-registration">
+								<h1><b>Liên hệ với chúng tôi</b></h1>
+							</div>
+							<div class="welcome-registration">
+								<ul class="menu-tab row">
+									<li class="nav-item col-6 col-md-6 time-open">Thứ 2 đến thứ 6 <b>6:00 SA - 22:00 CH</b> </li>
+									<li class="nav-item col-6 col-md-6 time-open">Thứ 7 đến Chủ nhật <b>6:00 SA - 12:00 SA</b></li>
+								</ul>
+							</div>
+							<div class="welcome-registration">
+								<a class="nav-link" href=""><h1 id="call-number">0936362262</h1></a>
+							</div>
+							<div class="welcome-registration">
+								<h4><b>ĐẶT BÀN NGAY</b></h4>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<form  action="table-result.html"  id="register-form" class="form-registration">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="username">Tên của bạn</label>
+										<input type="text" class="form-control" name="username"  id="username" placeholder="Tên của bạn" required>
+									</div>
+
+									<div class="form-group col-md-6">
+										<div class="row">
+											<div class="col-xs-7 col-sm-7 col-md-7 date-time">
+												<label for="date-registration">Lịch đặt</label>
+												<input type="date" name="date"  id="date" class="form-control" id="date-registration" required>
+											</div>
+											<div class="col-xs-5 col-sm-5 col-md-5 time-date">
+												<label for="time-registration">Thời gian</label>
+												<input type="time" name="time" id="time" class="form-control" id="time-registration" required>
+											</div>
+
+										</div>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="phone">Số điện thoại</label>
+										<input name="phone_number" id="phone_number" type="number" class="form-control" min="1" max="99999999999" id="phone" placeholder="Số điện thoại của bạn" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="number">Số lượng</label>
+										<input name="count_number" id="count_number" type="number" class="form-control" min="1" max="100" id="number" placeholder="6 người" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="email">Email</label>
+										<input name="email" id="email" type="email" class="form-control" id="email" placeholder="Email" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="message">Lời nhắn</label>
+										<input name="message" id="message" type="type" class="form-control" id="message" placeholder="Lời nhắn" required>
+									</div>
+								</div>
+								<div class="submit-result">
+									<button type="submit" class="btn btn-primary  hvr-bounce-to-left">ĐẶT BÀN NGAY</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</section>
+				<footer class="container-fuild">
+					<aside class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52496.98544511194!2d135.4601306007443!3d34.678394992568435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6553406e2e1%3A0xc55bc16ee46a2fe7!2sOsaka%2C+Osaka+Prefecture%2C+Japan!5e0!3m2!1sen!2s!4v1524388376664" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</aside>
+					<address class="container">
+						<div class="row">
+							<div class="col-xs-12  col-sm-6 col-md-3">
+								<div>
+									<h4 class="address-title"><b>VỀ CHÚNG TÔI</b></h4>
+								</div>
+								<div>
+									<p class="address-top nav-link"><i class="fas fa-map-marker-alt"></i> 14 Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</p>
+								</div>
+								<div class="address-top">
+									<span><i class="fas fa-envelope"></i><a class="nav-link" href=""> techmaster@gmail.com</a></span>
+								</div>
+								<div class="address-top">
+									<span>	<i class="fas fa-phone"></i> <a class="nav-link" href="">0987789987</a></span>
+								</div>
+							</div>
+							<div class="col-xs-12  col-sm-6 col-md-3">
+								<div><h4  class="address-title"><b>BÀI VIẾT MỚI</b></h4></div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<a href="news1.html"><img src="images/news/3.jpg"></a>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 address-body">
+										<p class="fuct-day">25/04/2018</p>
+										<a class="nav-link" href="news1.html">Mẹo hay giảm béo, chống ung thư khi ăn lẩu...</a>
+									</div>
+								</div>
+								<hr/>
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<a href="news2/html"><img src="images/news/2.jpg"></a>
+									</div>
+									<div  class="col-xs-6 col-sm-6 col-md-6 address-body">
+										<p class="fuct-day">25/04/2018</p>
+										<a class="nav-link" href="news3.html">Làm salad rong biển trứng cua ngon mê ly y hệt nhà hàng...</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 address-about-fuct">
+								<h4  class="address-title "><b>HỖ TRỢ</b></h4>
+								<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i>  Về chúng tôi</p></a>
+								<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Trung tâm hỗ trợ</p></a>
+								<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Chính sách bảo mật</p></a>
+								<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Chính sách thanh toán</p></a>
+								<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Chính sách giao hàng</p></a>
+							</div>
+							<div class="col-xs-12 col-sm-6  col-md-3">
+								<h4  class="address-title"><b>MẠNG XÃ HỘI</b></h4>
+								<div class="icons-address">
+									<div>
+										<a href=""><i class="fab  fa-2x fa-facebook-square"></i></a>
+										<a href=""><i class="fab  fa-2x fa-github"></i></a>
+									</div>
+									<div>
+										<a href=""><i class="fab fa-2x fa-twitter"></i></a>
+										<a href=""><i class="fab fa-2x fa-youtube"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</address>
+					<hr/>
+					<aside class="container">
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>© Bản quyền thuộc về <b>Smouse.Na</b> | Cung cấp bởi <a class="nav-link aside-bottom" href="https://techmaster.vn/">Techmaster.vn</a></p>
+							</div>
+							<div class="col-xs-12 col-md-6 text-right">
+								<a class="nav-link aside-bottom" href=""><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+							</div>
+						</div>
+					</aside>
+				</footer>
+				<!-- FOOTER -->
+
+				<!--build:js js/bt-jq.min.js -->
+				<script src="js/jquery-3.3.1.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<!-- endbuild -->
+				<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+				
+				<!--build:js js/general.min.js -->
+				<script src="js/shopping.js" type="text/javascript"></script>
+				<script src="js/general.js" type="text/javascript"></script>
+				<!-- endbuild -->
+	
+				
+			</body>
+			</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thế giới trong tầm tay</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="icon" type="images/jepg" href="icons/icon.png">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+
+	<!-- MASTER -->						
+	<div id="master">
+		<!-- HEADER -->		
+		<header  class="container-fuild">
+			<!-- SLIDER -->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/slider1.jpg" alt="New York">
+						<div class="carousel-caption">
+							<h3>Bạn thấy cuộc sống thật nhàm chán?</h3>
+							<h4> “Hãy ngắm nhìn thế giới. Điều đó tuyệt vời hơn bất cứ giấc mơ nào. “</h4>
+							<p>Ray Bradbury</p>
+						</div>      
+					</div>
+
+					<div class="item">
+						<img  src="images/slider2.jpg" alt="Chicago">
+						<div class="carousel-caption">
+							<h2>Bạn còn sợ hãi điều gì?</h2>
+							<h4> “Sống, du lịch, mạo hiểm, chúc phúc, và đừng hối tiếc.</h4>
+							<p>Jack Kerouac</p>
+
+						</div>      
+					</div>
+
+					<div class="item">
+						<img  src="images/slider3.jpg" alt="Los Angeles">
+						<div class="carousel-caption">
+							<h2>Hãy đi để thấy cuộc đời không vô nghĩa!</h2>
+							<h4> ”Thế giới là một cuốn sách, và ai không đi chỉ đọc được một trang.”</h4>
+							<p>St. Augustine</p>
+						</div>      
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!-- SLIDER -->
+		</header>
+		<!-- /HEADER -->
+
+
+		<!-- NAV -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="hvr-shutter-out-horizontal"><a href="#master"><i class="fas fa-home hvr-icon-rotate "></i> Home</a></li>
+						<li class="hvr-shutter-out-horizontal"><a href="#welcome"> <i class="fas fa-allergies"></i> Giới thiệu</a></li>
+						<li class="hvr-shutter-out-horizontal"><a href="#date"> <i class="fas fa-allergies"></i> Gợi ý</a></li>
+						<li class="hvr-shutter-out-horizontal"><a href="#team"><i class="fas fa-american-sign-language-interpreting"></i> Chúng tôi</a></li>
+						<li class="hvr-shutter-out-horizontal"><a href="#work"><i class="fas fa-images"></i> Thư viện</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hvr-shutter-out-horizontal"><a href="#"><span class="glyphicon glyphicon-user"></span> Username</a></li>
+						<li class="hvr-shutter-out-horizontal"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng xuất</a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<i style="color: black" class="fas fa-search"></i>
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default hvr-wobble-horizontal">Tìm kiếm</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- NAV -->
+
+		<!-- CONTENT -->
+		<section id="content" class="container-fuild text-center">
+			<article id="welcome">
+				<div class="w3-content w3-container w3-padding-64" id="about">
+					<h1 class="w3-center">Lời giới thiệu</h1>
+					<h4 class="w3-center"><em>Với chúng tôi “Du lịch chính là được sống đúng nghĩa.” </em></h4>
+					<div class="text-left">
+						<p>Tuổi trẻ chỉ đến với chúng ta một lần trong đời. Chính vì vậy, sẽ là một sự lãng phí vô cùng lớn nếu những năm tháng tươi đẹp của tuổi trẻ thiếu đi những trải nghiệm và dấu ấn đáng ghi nhớ.</p>
+						<p><b>Du lịch bụi</b> hay gọi tắt là <b>Phượt</b> là một trong những mốt đang sốt nhất của giới trẻ hiện nay. Không chỉ được bước ra thế giới bên ngoài khám phá nhiều điều thú vị mà bạn còn được "check-in" nhiều cảnh đẹp, tìm hiểu về nền văn hoá dân tộc của nhiều nơi trên khắp đất nước cũng như thế giới. Nói về du lịch, mỗi người có một cách trải nghiệm cuộc sống khác nhau. "Đi để trở về" là câu sì lô gân được các bạn chia sẻ nhau nhiều nhất.</p>
+						<p>Nhiều người nghĩ rằng đi du lịch một mình sẽ rất cô đơn. Tuy nhiên, suy nghĩ đó không hoàn toàn chính xác. Chỉ cần vượt qua được rào cản tâm lý của bản thân, bạn sẽ có những trải nghiệm độc đáo mà cả đời không thể nào quên. Khi đi du lịch một mình, du khách sẽ được tận hưởng sự tự do một cách trọn vẹn nhất.
+						</p>
+					</div>
+					<div class="w3-row">
+						<div class="w3-col m6 w3-center w3-padding-large">
+							<div><img  src="images/logo.png" alt="Du lịch"></div>
+							<p><b><i class="fa fa-user w3-margin-right"></i>Không chỉ là sự trải nghiệm</b></p><br>
+							<img src="images/about.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+						</div>
+
+						<!-- Hide this text on small devices -->
+						<div class="w3-col m6 w3-hide-small w3-padding-large">
+							<div class="text-left">
+								<p>Sẽ không còn gì tuyệt vời hơn khoảnh khắc được thỏa sức vẫy vùng trong thế giới riêng của mình, đi tới những nơi mình thích, khám phá khoảng lặng trong tâm hồn mà trước giờ bạn chưa từng nhận ra hay làm quen với những người bạn mới trên hành trình.</p>
+								<p>Đến khi trời tối, cùng quây quần với nhau bên đống lửa trại, hàn huyên trò chuyện và tận hưởng những giây phút vui vẻ giữa thiên nhiên hoang sơ sẽ là những trải nghiệm vô cùng thú vị. Không chỉ có vậy, cảm giác khi nằm trong lều, lắng tai nghe những âm thanh hoang dã của tự nhiên hay hít hà mùi cỏ dại trong sương sớm sẽ mang đến những phút giây đầy cảm xúc khó quên.</p>
+								
+							</div>
+						</div>
+					</div>
+				</article>
+				<article>
+					<div id="one" class="bgimg-2 w3-display-container w3-opacity-min">
+						<div class="w3-display-middle">
+							<span class="w3-xxlarge w3-text-white w3-wide">Vùng Đất Mới</span>
+						</div>
+					</div>
+				</article> 
+				<article id="border-img">
+					<div class="container">
+						<!-- Left to right-->
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="ih-item circle effect9 right_to_left"><a href="#date-tour">
+									<div class="img"><img src="images/bor2.jpg" alt="img"></div>
+									<div class="info">
+										<h3>Xách mông lên và đi</h3>
+										<p>Tuổi trẻ và những cung đường mới</p>
+									</div></a></div>
+								</div>
+								<div class="col-sm-4">
+
+									<div class="ih-item circle effect9 top_to_bottom"><a href="#date-tour">
+										<div class="img"><img src="images/bor3.jpg" alt="img"></div>
+										<div class="info">
+											<h3>Xách mông lên và đi</h3>
+											<p>Tuổi trẻ và những cung đường mới</p>
+										</div></a></div>
+									</div>
+									<div class="col-sm-4">
+										<div class="ih-item circle effect9 left_to_right"><a href="#date-tour">
+											<div class="img"><img src="images/bor1.jpg" alt="img"></div>
+											<div class="info">
+												<h3>Xách mông lên và đi</h3>
+												<p>Tuổi trẻ và những cung đường mới</p>
+											</div></a></div>
+										</div>
+
+									</div>
+								</article>
+								<article id="date">
+									<!-- Container (TOUR Section) -->
+									<div id="tour" class="bg-1">
+										<div class="container">
+											<h2 class="text-center">Gợi ý tour</h2>
+											<p class="text-center">Nếu bạn muốn đi du lịch mà vẫn chưa biết đi đâu<br> Một số tour dưới đây là những điểm đến nổi bật sắp diễn ra  để bạn có thể tham khảo!</p>
+											<ul class="list-group text-left">
+												<li class="list-group-item">Tokyo - Nhật bản <b> - còn 3 ngày </b><span class="label label-danger">Sold Out!</span></li>
+												<li class="list-group-item"> Paris - Pháp <b> - còn 2 ngày</b> <span class="label label-danger">Sold Out!</span></li> 
+												<li class="list-group-item"> New York - Mỹ <b> - còn 7 ngày</b><span class="badge">3</span></li> 
+											</ul>
+
+											<div class="row text-center">
+												<div class="col-sm-4">
+													<div class="thumbnail hvr-shutter-in-vertical">
+														<img src="images/paris.jpeg" alt="Paris" width="400" height="300">
+														<p><strong>Paris</strong></p>
+														<p>Đất nước với những cung điện hoàng gia, tu viện và nhà thờ</p>
+														<button class="hvr-buzz hvr-radial-in" data-toggle="modal" data-target="#myModal">Đăng ký</button>
+													</div>
+												</div>
+
+												<div class="col-sm-4">
+													<div class="thumbnail hvr-shutter-out-vertical">
+														<img src="images/japan.jpg" alt="Japan" width="400" height="300">
+														<p><strong>Japan</strong></p>
+														<p>Ngắm nhìn mặt trời mọc dưới hàng cây anh đào</p>
+														<button class="hvr-buzz hvr-radial-in" data-toggle="modal" data-target="#myModal">Đăng ký</button>
+													</div>
+												</div>
+												<div class="col-sm-4">
+													<div class="thumbnail hvr-shutter-in-vertical">
+														<img src="images/newyork.jpg" alt="New York" width="400" height="300">
+														<p><strong>New York</strong></p>
+														<p>Một trong những đô thị phồn hoa phát triển bậc nhất địa cầu</p>
+														<button class="hvr-buzz hvr-radial-in" data-toggle="modal" data-target="#myModal">Đăng ký</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</article>
+									<article>
+										<div id="two" class="bgimg-2 w3-display-container w3-opacity-min">
+											<div class="w3-display-middle">
+												<span class="w3-xxlarge w3-text-white w3-wide">Trải Nghiệm Mới</span>
+											</div>
+										</div>
+									</article>
+									<article>
+										<!-- Team Section -->
+										<div class="container-fuild" style="padding:128px 16px" id="team">
+											<h2 class="w3-center">Chúng tôi</h2>
+											<p class="w3-center w3-large">Những người có chung niềm đam mê đã gặp nhau trên những nẻo đường</p>
+											<div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+												<div class="w3-col l3 m6 w3-margin-bottom hvr-bubble-float-bottom">
+													<div class="w3-card">
+														<img src="images/theteam1.jpg" alt="John" onclick="onClick(this)" style="width:100%">
+														<div class="w3-container">
+															<h3>John Doe</h3>
+															<p class="w3-opacity">Moderator</p>
+															<p>Cô sinh viên người Nga nung nấu ước mơ đi vòng quanh thế giới với 2 bàn tay trắng và tấm thân ngọc ngà  :))</p>
+															<p><button class="w3-button w3-light-grey w3-block hvr-wobble-vertical test-button"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+														</div>
+													</div>
+												</div>
+												<div class="w3-col l3 m6 w3-margin-bottom hvr-bubble-float-bottom">
+													<div class="w3-card">
+														<img src="images/theteam2.jpg" onclick="onClick(this)" alt="Jane" style="width:100%">
+														<div class="w3-container">
+															<h3>Anja Doe</h3>
+															<p class="w3-opacity">Moderator</p>
+															<p>Là tiểu thư của 1 gia tộc tài phiệt tại Dubai, với cô du lịch là một thứ gia vị gì đó không thể thiếu trong cuộc sống.</p>
+															<p><button class="w3-button w3-light-grey w3-block hvr-wobble-vertical test-button"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+														</div>
+													</div>
+												</div>
+												<div class="w3-col l3 m6 w3-margin-bottom hvr-bubble-float-bottom">
+													<div class="w3-card">
+														<img src="images/theteam3.jpg" onclick="onClick(this)" alt="Mike" style="width:100%">
+														<div class="w3-container">
+															<h3>Mike Ross</h3>
+															<p class="w3-opacity">Moderator</p>
+															<p>Tôi từng nghĩ cuộc sống này thật nhàm chán cho đến khi tôi biết đến 2 chữ du lịch. Tôi không nghĩ nó lại thú vị đến vậy.</p>
+															<p><button class="w3-button w3-light-grey w3-block hvr-wobble-vertical test-button"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+														</div>
+													</div>
+												</div>
+												<div class="w3-col l3 m6 w3-margin-bottom hvr-bubble-float-bottom">
+													<div class="w3-card">
+														<img src="images/theteam4.jpg"  onclick="onClick(this)" alt="Dan" style="width:100%">
+														<div class="w3-container">
+															<h3>Dan Star</h3>
+															<p class="w3-opacity">Moderator</p>
+															<p>Du lịch là cuộc sống của tôi, vì vậy tôi đã chọn công việc là hướng dẫn viên. Mỗi ngày đối với tôi đều rất thú vị và ý nghĩa.</p>
+															<p><button class="w3-button w3-light-grey w3-block hvr-wobble-vertical test-button"><i class="fa fa-envelope"></i> Liên hệ</button></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</article>
+									<article>
+										<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+											<div class="w3-quarter w3-section">
+												<span class="w3-xlarge">14+</span><br>
+												Đối tác
+											</div>
+											<div class="w3-quarter w3-section">
+												<span class="w3-xlarge">55+</span><br>
+												Địa điểm
+											</div>
+											<div class="w3-quarter w3-section">
+												<span class="w3-xlarge">89+</span><br>
+												Sự kiện
+											</div>
+											<div class="w3-quarter w3-section">
+												<span class="w3-xlarge">150+</span><br>
+												Khách hàng
+											</div>
+										</div>
+
+
+										<div id="three" class="bgimg-2 w3-display-container w3-opacity-min">
+											<div class="w3-display-middle">
+												<span class="w3-xxlarge w3-text-white w3-wide">Thử Thách Mới</span>
+											</div>
+										</div>
+
+									</article>
+									<article>
+										<!-- Work Section -->
+										<div class="w3-container" style="padding:128px 16px" id="work">
+											<h2 class="w3-center">Thư viện ảnh</h2>
+											<p class="w3-center w3-large">Một số khoảnh khắc tuyệt vời trong chuyến lữ hành của chúng tôi</p>
+
+											<div class="w3-row-padding" style="margin-top:64px">
+												<div class="w3-col l3 m6">
+													<img src="images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="A microphone">
+												</div>
+												<div class="w3-col l3 m6">
+													<img src="images/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="A phone">
+												</div>
+												<div class="w3-col l3 m6">
+													<img src="images/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="A drone">
+												</div>
+												<div class="w3-col l3 m6">
+													<img src="images/4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="Soundbox">
+												</div>
+											</div>
+
+											<div class="w3-row-padding w3-section">
+												<div class="w3-col l3 m6">
+													<img src="images/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="A tablet">
+												</div>
+												<div class="w3-col l3 m6">
+													<img src="images/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="A camera">
+												</div>
+												<div class="w3-col l3 m6">
+													<img src="images/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="A typewriter">
+												</div>
+												<div class="w3-col l3 m6">
+													<img src="images/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity  hvr-float-shadow" alt="A tableturner">
+												</div>
+
+											</div>
+										</div>
+
+										<!-- Modal for full size images on click-->
+										<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+											<span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+											<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+												<img id="img01" class="w3-image">
+												<p id="caption" class="w3-opacity w3-large"></p>
+											</div>
+										</div>
+									</article>
+									<article id="date-tour">
+										<div class="w3-container">
+											<h2>Một số tour nổi bật</h2>
+										</div>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-6 col-md-3">
+												<ul class="w3-ul w3-border w3-center w3-hover-shadow">
+													<li class="w3-black w3-xlarge w3-padding-32">New york</li>
+													<li class="w3-padding-16"><b>7</b> Ngày</li>
+													<li class="w3-padding-16"><b>6</b> Đêm</li>
+													<li class="w3-padding-16"><b>5</b> Sao</li>
+													<li class="w3-padding-16">
+														<h2 class="w3-wide">$ 1299</h2>
+														<span class="w3-opacity">tất cả dịch vụ</span>
+													</li>
+													<li class="w3-light-grey w3-padding-24">
+														<button class="w3-button w3-green w3-padding-large hvr-wobble-bottom">Đăng ký</button>
+													</li>
+												</ul>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-3">
+												<ul class="w3-ul w3-border w3-center w3-hover-shadow">
+													<li class="w3-black w3-xlarge w3-padding-32">Japan</li>
+													<li class="w3-padding-16"><b>7</b> Ngày</li>
+													<li class="w3-padding-16"><b>6</b> Đêm</li>
+													<li class="w3-padding-16"><b>5</b> Sao</li>
+													<li class="w3-padding-16">
+														<h2 class="w3-wide">$ 999</h2>
+														<span class="w3-opacity">tất cả dịch vụ</span>
+													</li>
+													<li class="w3-light-grey w3-padding-24">
+														<button class="w3-button w3-green w3-padding-large hvr-wobble-skew">Đăng ký</button>
+													</li>
+												</ul>
+											</div>
+
+
+											<div class="col-xs-12 col-sm-6 col-md-3">
+												<ul class="w3-ul w3-border w3-center w3-hover-shadow">
+													<li class="w3-black w3-xlarge w3-padding-32">Berlin</li>
+													<li class="w3-padding-16"><b>7</b> Ngày</li>
+													<li class="w3-padding-16"><b>6</b> Đêm</li>
+													<li class="w3-padding-16"><b>5</b> Sao</li>
+													<li class="w3-padding-16">
+														<h2 class="w3-wide">$ 1099</h2>
+														<span class="w3-opacity">tất cả dịch vụ</span>
+													</li>
+													<li class="w3-light-grey w3-padding-24">
+														<button class="w3-button w3-green w3-padding-large hvr-wobble-bottom">Đăng ký</button>
+													</li>
+												</ul>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-3">
+												<ul class="w3-ul w3-border w3-center w3-hover-shadow">
+													<li class="w3-black w3-xlarge w3-padding-32">Korean</li>
+													<li class="w3-padding-16"><b>7</b> Ngày</li>
+													<li class="w3-padding-16"><b>6</b> Đêm</li>
+													<li class="w3-padding-16"><b>5</b> Sao</li>
+													<li class="w3-padding-16">
+														<h2 class="w3-wide">$ 899</h2>
+														<span class="w3-opacity">tất cả dịch vụ</span>
+													</li>
+													<li class="w3-light-grey w3-padding-24">
+														<button class="w3-button w3-green w3-padding-large hvr-wobble-skew">Đăng ký</button>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+									</article>
+								</section>
+								<!-- /CONTENT -->	
+
+								<!-- FOOTER	 -->
+								<footer id="test" class="w3-center w3-black w3-padding-64">
+									<a href="#master" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
+									<div class="w3-xlarge w3-section">
+										<a href=""><i class="fab fa-facebook-square"></i></a>
+										<a href=""><i class="fas fa-envelope"></i></a>
+										<a href=""><i class="fab fa-instagram"></i></a>
+										<a href=""><i class="fas fa-camera"></i></a>
+										<a href=""><i class="fas fa-cloud"></i></a>
+										<a href=""><i class="fab fa-github"></i></a>
+									</div>
+									<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Master</a></p>
+								</footer>
+								<!-- FOOTER	 -->
+							</div>
+
+
+
+							<script src="js/main.min.js"></script>
+							<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="
+							anonymous"></script>
+							
+							
+
+
+						</script>
+
+					</body>
+					</html>
+
+
+
+

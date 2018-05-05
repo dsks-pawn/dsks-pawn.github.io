@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mì Ramen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+	<link rel="icon" type="images/jepg" href="icons/icon.jpg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/detail.min.css">
+
+	<script src="js/detail-zoom.min.js"></script>
+</head>
+<body>
+
+
+
+
+	<!-- HEADER -->		
+	<header class="container-fuild">
+		<nav class=" navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Nav</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="icon-card-food">
+					<ul>
+						<li class="icons-shopping-food"><a class="icon-card" href=""><i class="fas fa-search"></i></a></li>
+						<li class="icons-shopping-food"><a class="icon-card"  href=""><i class="fas fa-user-circle"></i></a></li>
+						<li class="icons-shopping-food" id="nav-cart-top">
+							<a id="shopping-count" href="basket.html">
+								<i class="glyphicon glyphicon-shopping-cart"></i>
+								<span id="count">1</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="#content-header">Giới thiệu</a></li>
+						<li><a href="news.html">Tin tức</a></li>
+						<li >
+							<img src="images/logo1.png" style="width: 70%">
+						</li>
+						<li class="dropdown">
+							<a href="general.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thực đơn <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="general.html">Bữa sáng</a></li>
+								<li><a href="general.html">Bữa trưa</a></li>
+								<li><a href="general.html">Bữa tối</a></li>
+							</ul>
+
+						</li>
+						<li><a href="#content-footer">Đặt bàn</a></li>
+						<li><a href="#content-body-food">Images</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+		<!-- NAV -->
+		<div  class="container-fuild">
+			<ol id="breadcrumb-news" class="breadcrumb text-center">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li ><a href="general.html">Tổng hợp sản phẩm</a></li>
+				<li class="active" >Mì Ramen</li>
+			</ol>
+		</div>
+	</header>
+	<!-- /HEADER -->
+
+	<section id="content-head" class="container">
+		<article>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-7">
+					<div class="row tab">
+						<div class="col-xs-12 col-md-12">
+							<div id="images-1" class="tabcontent"> <img id="images__1"  src="images/detail/7-1.jpg" data-zoom-image="images/detail/7-1.jpg"/></div>
+							<div id="images-2" class="tabcontent"><img id="images__2" src="images/detail/7.jpg" data-zoom-image="images/detail/7.jpg"/> </div>
+							<div id="images-3" class="tabcontent"><img id="images__3" src="images/detail/7-2.jpg" data-zoom-image="images/detail/7-2.jpg"/></div>							
+							<div id="images-4" class="tabcontent"> <img id="images__4" src="images/detail/7-3.jpg" data-zoom-image="images/detail/7-3.jpg"/> </div>	
+						</div>
+						<div class="col-xs-12 col-md-12 detaill-img">
+							<div class="row ">
+								<div class="col-xs-3 col-md-3">
+									<div class="tablinks hover-cursor" onclick="openMenu(event, 'images-1')"><img class="hvr-float-shadow" src="images/detail/7-1.jpg" alt=""> </div>
+								</div>
+								<div class="col-xs-3 col-md-3">
+									<div class="tablinks hover-cursor" onclick="openMenu(event, 'images-2')"><img class="hvr-float-shadow" src="images/detail/7.jpg" alt=""> </div>
+								</div>
+								<div class="col-xs-3 col-md-3">
+									<div class="tablinks hover-cursor" onclick="openMenu(event, 'images-3')"><img class="hvr-float-shadow" src="images/detail/7-2.jpg" alt=""> </div>
+								</div>
+								<div class="col-xs-3 col-md-3">
+									<div class="tablinks hover-cursor" onclick="openMenu(event, 'images-4')"><img class="hvr-float-shadow" src="images/detail/7-3.jpg" alt=""> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="col-xs-12 col-md-5">
+					<div>
+						<h1 class="title-food"><b>Mì Ramen</b></h1>
+						<p>Thương hiệu: (Đang cập nhật ...)</p>
+						<p>Loại: (Đang cập nhật ...)</p>
+						<h2 class="dolar-food"><b>200.000₫</b></h2>
+						<p>Mô tả sản phẩm đang được cập nhật</p>
+						<form class="form-detaill">
+							<div class="form-group">
+								<select id="number-food">
+									<option> Số lượng</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<input type="number" min="1" class="form-control" id="inputAddress2" placeholder="1 người ăn">
+							</div>
+							<div>
+								<div class="row">
+									<div class="col-xs-6 col-md-6">
+										<button  type="submit" class=" btn btn-primary hvr-bounce-to-left"><a href="#content-footer">Đặt bàn ngay</a></button>
+									</div>
+									<div class="col-xs-6 col-md-6">
+
+										<button type="button" class="btn btn-primary hvr-bounce-to-right" data-toggle="modal" data-target=".bs-example-modal-lg">Đặt món ngay</button>
+
+										<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+											<div class="modal-dialog modal-lg" role="document">
+												<div class="modal-content">
+													<div class="row">
+														<div class="col-xs-6 col-md-6">
+															<h4>Sản phẩm đã được thêm vào cửa hàng</h4>
+															<div class="row">
+																<div class="col-xs-5 col-md-5">
+																	<img src="images/news/1.jpg">
+																</div>
+																<div class="col-xs-7 col-md-7">
+																	<h2><b>Salad Nga</b></h2>
+																	<h3 class="dolar-food">200.000đ</h3>
+
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-6 col-md-6">
+															<h4><b>Giỏ hàng của tôi</b></h4>
+															<p>10 sản phẩm</p>
+															<div class="col-xs-6 col-md-6">
+																<button type="button" class="btn btn-default modal-button hvr-bounce-to-right"" data-dismiss="modal">Tiếp tục mua hàng</button>
+															</div>
+															<div class="col-xs-6 col-md-6">
+																<button type="button"  class="btn btn-primary modal-button hvr-bounce-to-left""><a href="order.html">Tiến hành đặt hàng</a></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="col-xs-12 col-md-12 icon-share">
+							<div class="row">
+								<div class="col-xs-3 col-md-3">
+									<p>Share link:</p>
+								</div>
+								<div class="col-xs-9 col-md-9">
+									<a href=""><i class="fab  fa-google-plus-g"></i></a>
+									<a href=""><i class="fab  fa-twitter"></i></a>
+									<a href=""><i class="fab  fa-pinterest-p"></i></a>
+									<a href=""><i class="fab  fa-facebook-f"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="container note">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Chi tiết sản phẩm</a>
+						</h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in">
+						<div class="panel-body">Món tôm hấp miến này sẽ không quá đơn điệu cho một món hấp bởi hương thơm đến từ tỏi phi quyện đều vào từng con tôm rồi tới lớp miến dai ngon thật hấp dẫn. Bên cạnh đó, lớp hành xanh rì đẹp mắt xếp đều lên bề mặt được thấm qua một lớp dầu nóng làm bay đi mùi hăng sẽ khiến bạn rất bất ngờ đấy! Tôm hấp miến với phần tôm mềm ngọt, phần miến sật sật quả thực là một món ăn rất đáng thử!.</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Lưu ý sản phẩm</a>
+						</h4>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse">
+						<div class="panel-body">Món tôm hấp miến này sẽ không quá đơn điệu cho một món hấp bởi hương thơm đến từ tỏi phi quyện đều vào từng con tôm rồi tới lớp miến dai ngon thật hấp dẫn. Bên cạnh đó, lớp hành xanh rì đẹp mắt xếp đều lên bề mặt được thấm qua một lớp dầu nóng làm bay đi mùi hăng sẽ khiến bạn rất bất ngờ đấy! Tôm hấp miến với phần tôm mềm ngọt, phần miến sật sật quả thực là một món ăn rất đáng thử!</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Đánh giá sản phẩm</a>
+						</h4>
+					</div>
+					<div id="collapse3" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span class="heading">User Rating</span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<p>4.1 average based on 254 reviews.</p>
+							<hr style="border:3px solid #f1f1f1">
+
+							<div class="row">
+								<div class="side">
+									<div class="level-rating">5 <span class="fa fa-star checked"></span></div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+										<div class="bar-5"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>150</div>
+								</div>
+								<div class="side">
+									<div class="level-rating">4 <span class="fa fa-star checked"></span></div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+										<div class="bar-4"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>63</div>
+								</div>
+								<div class="side">
+									<div class="level-rating">3 <span class="fa fa-star checked"></span></div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+										<div class="bar-3"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>15</div>
+								</div>
+								<div class="side">
+									<div class="level-rating">2 <span class="fa fa-star checked"></span></div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+										<div class="bar-2"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>6</div>
+								</div>
+								<div class="side">
+									<div class="level-rating">1 <span class="fa fa-star checked"></span></div>
+								</div>
+								<div class="middle">
+									<div class="bar-container">
+										<div class="bar-1"></div>
+									</div>
+								</div>
+								<div class="side right">
+									<div>20</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</article>
+	</section>
+
+
+	<section id="content-body"  class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 w3-center sale text-center">
+				<h2><b>Sản phẩm liên quan</b></h2>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="carousel carousel-showmanymoveone slide" id="itemslider">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-xs-12  col-sm-6 col-md-2 slider-foot">
+								<div class="card">
+									<div class="card-general">
+										<img src="images/foot-jpg/1.jpg" class="img-responsive center-block">
+										<div class="card-buy">
+											<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm hàng</a></p>
+										</div>
+									</div>
+									<a href="detail5.html"><h4 class="text-center">SALAD NGA</h4></a>
+									<h5 class="text-center">250.000 VND</h5>
+									<del><h6 class="text-center">300.000 VND</h6></del>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="col-xs-12  col-sm-6 col-md-2 slider-foot">
+								<div class="card">
+									<div class="card-general">
+										<img src="images/foot-jpg/2.jpg" class="img-responsive center-block">
+										<div class="card-buy">
+											<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm hàng</a></p>
+										</div>
+									</div>
+									<span class="badge">50%</span>
+									<a href="detail6.html"><h4 class="text-center">BÁNH MÌ SALAD TRỨNG</h4></a>
+									<h5 class="text-center">150.000 VND</h5>
+									<del><h6 class="text-center">300.000 VND</h6></del>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="col-xs-12  col-sm-6 col-md-2 slider-foot">
+								<div class="card">
+									<div class="card-general">
+										<img src="images/foot-jpg/3.jpg" class="img-responsive center-block">
+										<div class="card-buy">
+											<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm hàng</a></p>
+										</div>
+									</div>
+									<a href="detail7.html"><h4 class="text-center">BÁNH MÌ SALAD TÔM</h4></a>
+									<h5 class="text-center">200.000 VND</h5>
+									<del><h6 class="text-center">250.000 VND</h6></del>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="col-xs-12  col-sm-6 col-md-2 slider-foot">
+								<div class="card">
+									<div class="card-general">
+										<img src="images/foot-jpg/4.jpg" class="img-responsive center-block">
+										<div class="card-buy">
+											<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm hàng</a></p>
+										</div>
+									</div>
+									<span class="badge">20%</span>
+									<a href="detail8.html"><h4 class="text-center">TRỨNG THỊT NGUỘI KHOAI TÂY</h4></a>
+									<h5 class="text-center">180.000 VND</h5>
+									<del><h6 class="text-center">200.000 VND</h6></del>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12  col-sm-6 col-md-2 slider-foot">
+								<div class="card">
+									<div class="card-general">
+										<img src="images/foot-jpg/8.jpg" class="img-responsive center-block">
+										<div class="card-buy">
+											<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm hàng</a></p>
+										</div>
+									</div>
+									<span class="badge">10%</span>
+									<a href="detail9.html"><h4 class="text-center">MÌ RAMEN</h4></a>
+									<h5 class="text-center">200.000 VND</h5>
+									<del><h6 class="text-center">220.000 VND</h6></del>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-2 slider-foot">
+								<div class="card">
+									<div class="card-general">
+										<img src="images/foot-jpg/6.jpg" class="img-responsive center-block">
+										<div class="card-buy">
+											<p><a href="javascript:void(0)" class="shopping-card btn btn-primary btn-buy-product" role="button">Thêm hàng</a></p>
+										</div>
+									</div>
+									<a href="detail10.html"><h4 class="text-center">BÁNH MÌ PHÁP</h4></a>
+									<h5 class="text-center">150.000 VND</h5>
+									<del><h6 class="text-center">180.000 VND</h6></del>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- left,right control -->
+					<div id="slider-control">
+						<a class="left carousel-control" href="#itemslider" data-slide="prev"><span class="glyphicon glyphicon-menu-left"></span></a>
+						<a class="right carousel-control" href="#itemslider" data-slide="next"><span class="glyphicon glyphicon-menu-right"></span></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="content-footer" class="container registration">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-5 registration-image">
+				<img class="img-fuild" src="images/nv.png">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-7">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+						<div class="welcome-registration">
+							<span><i>Chào mừng tới cửa hàng của chúng tôi</i></span>
+						</div>
+						<div class="welcome-registration">
+							<h1><b>Liên hệ với chúng tôi</b></h1>
+						</div>
+						<div class="welcome-registration">
+							<ul class="menu-tab row">
+								<li class="nav-item col-6 col-md-6 time-open">Thứ 2 đến thứ 6 <b>6:00 SA - 22:00 CH</b> </li>
+								<li class="nav-item col-6 col-md-6 time-open">Thứ 7 đến Chủ nhật <b>6:00 SA - 12:00 SA</b></li>
+							</ul>
+						</div>
+						<div class="welcome-registration">
+							<a class="nav-link" href=""><h1 id="call-number">0936362262</h1></a>
+						</div>
+						<div class="welcome-registration">
+							<h4><b>ĐẶT BÀN NGAY</b></h4>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<form  action="table-result.html"  id="register-form" class="form-registration">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="username">Tên của bạn</label>
+									<input type="text" class="form-control" name="username"  id="username" placeholder="Tên của bạn" required>
+								</div>
+
+								<div class="form-group col-md-6">
+									<div class="row">
+										<div class="col-xs-7 col-sm-7 col-md-7 date-time">
+											<label for="date-registration">Lịch đặt</label>
+											<input type="date" name="date"  id="date" class="form-control" id="date-registration" required>
+										</div>
+										<div class="col-xs-5 col-sm-5 col-md-5 time-date">
+											<label for="time-registration">Thời gian</label>
+											<input type="time" name="time" id="time" class="form-control" id="time-registration" required>
+										</div>
+
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="phone">Số điện thoại</label>
+									<input name="phone_number" id="phone_number" type="number" class="form-control" min="1" max="99999999999" id="phone" placeholder="Số điện thoại của bạn" required>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="number">Số lượng</label>
+									<input name="count_number" id="count_number" type="number" class="form-control" min="1" max="100" id="number" placeholder="6 người" required>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="email">Email</label>
+									<input name="email" id="email" type="email" class="form-control" id="email" placeholder="Email" required>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="message">Lời nhắn</label>
+									<input name="message" id="message" type="type" class="form-control" id="message" placeholder="Lời nhắn" required>
+								</div>
+							</div>
+							<div class="submit-result">
+								<button type="submit" class="btn btn-primary hvr-bounce-to-left">ĐẶT BÀN NGAY</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+					<div class="card ">
+						<form class="form-chat">
+							<h4><b>VIẾT BÌNH LUẬN</b></h4>
+							<div class="form-group">	
+								<input type="text" class="form-control" id="inputAddress" placeholder=" Họ và tên">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="inputAddress2" placeholder=" Email">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="6"  placeholder=" Nội dung"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary hvr-bounce-to-left">GỬI BÌNH LUẬN</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fuild">
+		<address class="container">
+			<div class="row">
+				<div class="col-xs-12  col-sm-6 col-md-3">
+					<div>
+						<h4 class="address-title"><b>VỀ CHÚNG TÔI</b></h4>
+					</div>
+					<div>
+						<p class="address-top nav-link"><i class="fas fa-map-marker-alt"></i> 14 Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</p>
+					</div>
+					<div class="address-top">
+						<span><i class="fas fa-envelope"></i><a class="nav-link" href=""> techmaster@gmail.com</a></span>
+					</div>
+					<div class="address-top">
+						<span>	<i class="fas fa-phone"></i> <a class="nav-link" href="">0987789987</a></span>
+					</div>
+				</div>
+				<div class="col-xs-12  col-sm-6 col-md-3">
+					<div><h4  class="address-title"><b>BÀI VIẾT MỚI</b></h4></div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<a href="news1.html"><img src="images/news/3.jpg"></a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 address-body">
+							<p class="fuct-day">25/04/2018</p>
+							<a class="nav-link" href="news1.html">Mẹo hay giảm béo, chống ung thư khi ăn lẩu...</a>
+						</div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<a href="news2/html"><img src="images/news/2.jpg"></a>
+						</div>
+						<div  class="col-xs-6 col-sm-6 col-md-6 address-body">
+							<p class="fuct-day">25/04/2018</p>
+							<a class="nav-link" href="news3.html">Làm salad rong biển trứng cua ngon mê ly y hệt nhà hàng...</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 address-about-fuct">
+					<h4  class="address-title "><b>HỖ TRỢ</b></h4>
+					<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i>  Về chúng tôi</p></a>
+					<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Trung tâm hỗ trợ</p></a>
+					<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Chính sách bảo mật</p></a>
+					<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Chính sách thanh toán</p></a>
+					<a class="text-center" href=""><p class="fuct-about"> <i class="fas fa-angle-right"></i> Chính sách giao hàng</p></a>
+				</div>
+				<div class="col-xs-12 col-sm-6  col-md-3">
+					<h4  class="address-title"><b>MẠNG XÃ HỘI</b></h4>
+					<div class="icons-address">
+						<div>
+							<a href=""><i class="fab  fa-2x fa-facebook-square"></i></a>
+							<a href=""><i class="fab  fa-2x fa-github"></i></a>
+						</div>
+						<div>
+							<a href=""><i class="fab fa-2x fa-twitter"></i></a>
+							<a href=""><i class="fab fa-2x fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</address>
+		<hr/>
+		<aside class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<p>© Bản quyền thuộc về <b>Smouse.Na</b> | Cung cấp bởi <a class="nav-link aside-bottom" href="https://techmaster.vn/">Techmaster.vn</a></p>
+				</div>
+				<div class="col-xs-12 col-md-6 text-right">
+					<a class="nav-link aside-bottom" href=""><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+				</div>
+			</div>
+		</aside>
+	</footer>
+	<!-- FOOTER -->
+
+	<script>
+		$("#images_1").elevateZoom({easing : true});
+		$("#images_2").elevateZoom({easing : true});
+		$("#images_3").elevateZoom({easing : true});
+		$("#images_4").elevateZoom({easing : true});
+
+	</script>
+	
+	<script src="js/detail.min.js"></script>
+
+	<script src="js/bt-jq.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	
+</body>
+</html>
