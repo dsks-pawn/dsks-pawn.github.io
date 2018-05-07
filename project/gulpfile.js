@@ -14,10 +14,14 @@ gulp.task('useref', function(){
     .pipe(gulp.dest('dist'))
 });
 
-var imagemin = require('gulp-imagemin');
 
-gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
-  .pipe(imagemin())
-  .pipe(gulp.dest('dist/images'))
+
+var minifyHTML = require('gulp-minify-html');
+
+gulp.task('index', function() {
+	var opts = {comments:true,spare:true};
+	
+  gulp.src('dist/*.html')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('build'))
 });
