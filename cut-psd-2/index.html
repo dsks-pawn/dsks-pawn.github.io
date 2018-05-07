@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,7 +17,11 @@
     <header class="container-fuild">
         <nav>
             <div class="nav-wrapper container">
-                <a href="#" class="brand-logo"> <img src="images/logo.png" alt=""> ebpaint</a>
+                <a href="#" class="brand-logo">
+                    <img class="responsive-img" src="images/logo.png" alt=""> ebpaint</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <a href="#">HOME</a>
@@ -37,8 +41,26 @@
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav" id="mobile-demo">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">BLOG</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+
         <div class="slider">
-            <div class="container">
+            <div class="container center">
                 <div>
                     <h2>We are
                         <b>Webpaint</b>
@@ -49,47 +71,131 @@
                 </div>
                 <div>
                     <button>
-                        Gree cái gì đấy
+                        SEE PORTFOLIO
                     </button>
                 </div>
             </div>
         </div>
     </header>
     <section class="container-fuild">
-        <article class="container">
+        <article class="container content-head">
             <div class="row">
-                <div class="col s12 m6 l3">
-                    <img src="images/home_03.jpg" alt="">
-                    <h5>text</h5>
-                    <p>Chữ gì đó</p>
+                <div class="col s12 m6 l3 center">
+                    <img class="responsive-img" src="images/home_03.jpg" alt="">
+                    <h5>Consectetur</h5>
+                    <p>Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
                 </div>
-                <div class="col s12 m6 l3">
-                    <img src="images/home_03.jpg" alt="">
-                    <h5>text</h5>
-                    <p>Chữ gì đó</p>
+                <div class="col s12 m6 l3 center">
+                    <img class="responsive-img" src="images/home_03.jpg" alt="">
+                    <h5>Tristiquet</h5>
+                    <p>Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.</p>
                 </div>
-                <div class="col s12 m6 l3">
-                    <img src="images/home_03.jpg" alt="">
-                    <h5>text</h5>
-                    <p>Chữ gì đó</p>
+                <div class="col s12 m6 l3 center">
+                    <img class="responsive-img" src="images/home_03.jpg" alt="">
+                    <h5>Fermentum</h5>
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.</p>
                 </div>
-                <div class="col s12 m6 l3">
-                    <img src="images/home_03.jpg" alt="">
-                    <h5>text</h5>
-                    <p>Chữ gì đó</p>
+                <div class="col s12 m6 l3 center">
+                    <img class="responsive-img" src="images/home_03.jpg" alt="">
+                    <h5>Elit Ultricies</h5>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet.</p>
                 </div>
             </div>
         </article>
-
+        <article class="container center content-body">
+            <div>
+                <h3>Our Featured Works</h3>
+                <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">ALL</a>
+                    </li>
+                    <li>
+                        <a href="#">GRAPHIC</a>
+                    </li>
+                    <li>
+                        <a href="#">ILLUSTRATION</a>
+                    </li>
+                    <li>
+                        <a href="#">MOTION</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="container">
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_03.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_05.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_07.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_09.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_15.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_16.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_17.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_18.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_23.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_24.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_25.jpg" alt="">
+                </div>
+                <div class="col s12 m6 l3">
+                    <img class="responsive-img" src="images/home_26.jpg" alt="">
+                </div>
+            </div>
+        </article>
     </section>
-
-
-
+    <footer class="container-fuild center">
+       <address>
+            <div>
+                    <h4>Get in Touch</h4>
+                </div>
+                <div>
+                        <p>Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
+                </div>
+                <div>
+                        <ul>
+                            <li>Moonshine Street No: 14/05 Light City, Jupiter</li>
+                            <li>0247 541 65 87</li>
+                        </ul>
+                </div>
+                <div>
+                    icon
+                </div>
+       </address>
+       <aside>
+           <p>@ 2013 Webpaint. All Rights Reserved.</p>
+       </aside>
+    </footer>
 
 
 
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
