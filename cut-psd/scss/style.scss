@@ -36,7 +36,8 @@
                     }
                    
                     .bag-body {
-                        padding-bottom: 111px;
+                        padding-bottom: 108px;
+                        line-height: 1.6rem;
 
                     }  
                 }
@@ -51,6 +52,9 @@
                 .bag-body-db {
                     width: 893px;
                      padding-bottom: 27px;
+                     p {
+                         line-height: 1.5rem;
+                     }
                 }
                 .bag-bottom-db {
                    padding-bottom: 128px;
@@ -60,7 +64,7 @@
         }
         .content-body {
             background: #f0f0f0;
-            padding-top: 67px;
+            padding-top: 63px;
             padding-bottom: 78px;
             #conten-body-wrap {
                 max-width: 400px;
@@ -100,9 +104,10 @@
                 font-family: 'Playfair Display', serif;
                
                 button {
-                    padding:14px 34px 14px 34px;
+                    padding:14px 27px 14px 39px;
                     color: #626262;
                     font-size: 20px;
+                    margin-right: 34px;
                 }
             }
         }
@@ -115,8 +120,11 @@ footer {
         padding-bottom: 25px;
         .footer-top {
         display: inline-block;
+        padding-left: 80px;
          }
         .footer-body {
+            padding-right: 4px;
+    padding-top: 2px;
         display: inline-block;
         float: right;
         ul {
